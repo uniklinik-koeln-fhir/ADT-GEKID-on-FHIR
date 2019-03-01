@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "STStellungOP",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/STStellungOP",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "O",
+      "display": "Ohne Bezug zu einer operativen Therapie",
+      "definition": "Ohne Bezug zu einer operativen Therapie"
+    },
+    {
+      "code": "A",
+      "display": "Adjuvant",
+      "definition": "Adjuvant"
+    },
+    {
+      "code": "N",
+      "display": "Neoadjuvant",
+      "definition": "Neoadjuvant"
+    },
+    {
+      "code": "I",
+      "display": "Intraoperativ",
+      "definition": "Intraoperativ"
+    },
+    {
+      "code": "S",
+      "display": "Sonstiges",
+      "definition": "Sonstiges"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STStellungOP</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/STStellungOP</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

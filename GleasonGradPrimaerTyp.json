@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "GleasonGradPrimaer_Typ",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Small, uniform glands",
+      "definition": "Small, uniform glands"
+    },
+    {
+      "code": "2",
+      "display": "More space (stroma) between glands",
+      "definition": "More space (stroma) between glands"
+    },
+    {
+      "code": "3",
+      "display": "Distinctly infiltration of cells from glands and margins",
+      "definition": "Distinctly infiltration of cells from glands and margins"
+    },
+    {
+      "code": "4",
+      "display": "Irregular masses of neoplastic cells with few glands",
+      "definition": "Irregular masses of neoplastic cells with few glands"
+    },
+    {
+      "code": "5",
+      "display": "Lack of or ocasional glands, sheets of cells",
+      "definition": "Lack of or ocasional glands, sheets of cells"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GleasonGradPrimaer_Typ</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

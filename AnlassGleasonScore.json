@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "AnlassGleasonScore",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "O",
+      "display": "Op"
+    },
+    {
+      "code": "S",
+      "display": "Stanze"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt"
+    }
+  ],
+  "count": 4,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AnlassGleasonScore</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

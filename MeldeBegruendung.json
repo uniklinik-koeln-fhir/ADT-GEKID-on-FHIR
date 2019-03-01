@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "MeldeBegruendung",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "I",
+      "display": "Patientin/Patient wurde informiert und hat nicht wiedersprochen",
+      "definition": "Patientin/Patient wurde informiert und hat nicht wiedersprochen"
+    },
+    {
+      "code": "A",
+      "display": "Ausnahme",
+      "definition": "Patientenunterrichtung entfallen wegen möglicher gesundheitlicher Nachteile"
+    },
+    {
+      "code": "D",
+      "display": "Meldung von Ärzten ohne unmittelbaren Patientenkontakt",
+      "definition": "Meldung von Ärzten ohne unmittelbaren Patientenkontakt"
+    },
+    {
+      "code": "W",
+      "display": "Patient hat der personenbezogenen Speicherung widersprochen",
+      "definition": "Patient hat der personenbezogenen Speicherung widersprochen"
+    },
+    {
+      "code": "V",
+      "display": "Verstorben",
+      "definition": "Verstorben"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MeldeBegruendung</h2><tt>https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "IntraopPraeparatkontrolle_Typ",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "M",
+      "display": "Mammografie",
+      "definition": "Mammografie"
+    },
+    {
+      "code": "S",
+      "display": "Sonografie",
+      "definition": "Sonografie"
+    },
+    {
+      "code": "N",
+      "display": "Nein",
+      "definition": "Nein"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    }
+  ],
+  "count": 5,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IntraopPraeparatkontrolle_Typ</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

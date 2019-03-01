@@ -1,0 +1,86 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "Fernmetastate_Lokalisation_Type",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PUL",
+      "display": "Lunge",
+      "definition": "Lunge"
+    },
+    {
+      "code": "OSS",
+      "display": "Knochen",
+      "definition": "Knochen"
+    },
+    {
+      "code": "HEP",
+      "display": "Leber",
+      "definition": "Leber"
+    },
+    {
+      "code": "BRA",
+      "display": "Hirn",
+      "definition": "Hirn"
+    },
+    {
+      "code": "LYM",
+      "display": "Lymphknoten",
+      "definition": "Lymphknoten"
+    },
+    {
+      "code": "MAR",
+      "display": "Knochenmark",
+      "definition": "Knochenmark"
+    },
+    {
+      "code": "PLE",
+      "display": "Pleura",
+      "definition": "Pleura"
+    },
+    {
+      "code": "PER",
+      "display": "Peritoneum",
+      "definition": "Peritoneum"
+    },
+    {
+      "code": "ADR",
+      "display": "Nebennieren",
+      "definition": "Nebennieren"
+    },
+    {
+      "code": "SKI",
+      "display": "Haut",
+      "definition": "Haut"
+    },
+    {
+      "code": "OTH",
+      "display": "Andere Organe",
+      "definition": "Andere Organe"
+    },
+    {
+      "code": "GEN",
+      "display": "Generalisierte Metastasierung",
+      "definition": "Generalisierte Metastasierung"
+    }
+  ],
+  "count": 14,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Fernmetastate_Lokalisation_Type</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type</tt><p></p></div>"
+  },
+  "caseSensitive": false,
+  "hierarchyMeaning": "classified-with"
+}

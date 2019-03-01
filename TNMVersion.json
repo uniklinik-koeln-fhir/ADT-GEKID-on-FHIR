@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMVersion",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "6",
+      "display": "6. auflage",
+      "definition": "6. auflage"
+    },
+    {
+      "code": "7",
+      "display": "7. auflage",
+      "definition": "7. auflage"
+    },
+    {
+      "code": "8",
+      "display": "8. auflage",
+      "definition": "8. auflage"
+    }
+  ],
+  "count": 4,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMVersion</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

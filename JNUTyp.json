@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "JNU_Typ",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "J",
+      "display": "Ja",
+      "definition": "Ja"
+    },
+    {
+      "code": "N",
+      "display": "Nein",
+      "definition": "Nein"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    }
+  ],
+  "count": 4,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JNU_Typ</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

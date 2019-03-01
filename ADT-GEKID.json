@@ -1,0 +1,2459 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ADT-GEKID",
+  "extension": [
+    {
+      "url": "http://clinfhir.com/StructureDefinition/userEmail",
+      "valueString": "danieldropuljic@gmail.com"
+    }
+  ],
+  "url": "http://fhirtest.uhn.ca/baseDstu3/StructureDefinition/ADT-GEKID",
+  "identifier": [
+    {
+      "system": "http://clinfhir.com",
+      "value": "author"
+    }
+  ],
+  "name": "ADT-GEKID",
+  "status": "draft",
+  "date": "2019-02-21T09:28:15+01:00",
+  "purpose": "ADT-GEKID",
+  "keyword": [
+    {
+      "system": "http://fhir.hl7.org.nz/NamingSystem/application",
+      "code": "clinfhir"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "ADT-GEKID",
+        "path": "ADT-GEKID",
+        "definition": "No description",
+        "min": 1,
+        "max": "1",
+        "mustSupport": false
+      },
+      {
+        "id": "ADT-GEKID.absender",
+        "path": "ADT-GEKID.absender",
+        "label": "absender",
+        "short": "Absender",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderBezeichnung",
+        "path": "ADT-GEKID.absender.absenderBezeichnung",
+        "label": "absenderBezeichnung",
+        "short": "absenderBezeichnung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderAnsprechpartner",
+        "path": "ADT-GEKID.absender.absenderAnsprechpartner",
+        "label": "absenderAnsprechpartner",
+        "short": "absenderAnsprechpartner",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderAnschrift",
+        "path": "ADT-GEKID.absender.absenderAnschrift",
+        "label": "absenderAnschrift",
+        "short": "absenderAnschrift",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderTelefon",
+        "path": "ADT-GEKID.absender.absenderTelefon",
+        "label": "absenderTelefon",
+        "short": "absenderTelefon",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderEMail",
+        "path": "ADT-GEKID.absender.absenderEMail",
+        "label": "absenderEMail",
+        "short": "absenderEMail",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.absenderID",
+        "path": "ADT-GEKID.absender.absenderID",
+        "label": "absenderID",
+        "short": "absenderID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.softwareID",
+        "path": "ADT-GEKID.absender.softwareID",
+        "label": "softwareID",
+        "short": "softwareID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.absender.installationsID",
+        "path": "ADT-GEKID.absender.installationsID",
+        "label": "installationsID",
+        "short": "installationsID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient",
+        "path": "ADT-GEKID.mengePatient",
+        "label": "mengePatient",
+        "short": "mengePatient",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient",
+        "path": "ADT-GEKID.mengePatient.patient",
+        "label": "patient",
+        "short": "patient",
+        "definition": "No description",
+        "comment": "should be between mengePatient and patientStammdaten",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten",
+        "label": "patientStammdaten",
+        "short": "patientStammdaten",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.krankenversichertenNr",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.krankenversichertenNr",
+        "label": "krankenversichertenNr",
+        "short": "krankenversichertenNr",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.familienangehoerigenNr",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.familienangehoerigenNr",
+        "label": "familienangehoerigenNr",
+        "short": "familienangehoerigenNr",
+        "definition": "not nillable\nmax_length = 10",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.krankenkassenNr",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.krankenkassenNr",
+        "label": "krankenkassenNr",
+        "short": "krankenkassenNr",
+        "definition": "not nillable\nmaxlength = 9",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNachname",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNachname",
+        "label": "patientenNachname",
+        "short": "patientenNachname",
+        "definition": "no explicit cardinality in original model, cardinality >0 ?",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenTitel",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenTitel",
+        "label": "patientenTitel",
+        "short": "patientenTitel",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNamenszusatz",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNamenszusatz",
+        "label": "patientenNamenszusatz",
+        "short": "patientenNamenszusatz",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenVornamen",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenVornamen",
+        "label": "patientenVornamen",
+        "short": "patientenVornamen",
+        "definition": "No description",
+        "comment": "no explicit cardinality in original model, >0?",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsname",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsname",
+        "label": "patientenGeburtsname",
+        "short": "patientenGeburtsname",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName",
+        "label": "mengeFruehereName",
+        "short": "mengeFruehereName",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName.patientenFruehereName",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName.patientenFruehereName",
+        "label": "patientenFruehereName",
+        "short": "patientenFruehereName",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientGeslecht",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientGeslecht",
+        "label": "patientGeslecht",
+        "short": "patientGeslecht",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/administrative-gender"
+          }
+        }
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsdatum",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsdatum",
+        "label": "patientenGeburtsdatum",
+        "short": "patientenGeburtsdatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse",
+        "label": "mengeAdresse",
+        "short": "mengeAddresse",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse",
+        "label": "addresse",
+        "short": "addresse",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenStrasse",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenStrasse",
+        "label": "patientenStrasse",
+        "short": "patientenStrasse",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenHausnummer",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenHausnummer",
+        "label": "patientenHausnummer",
+        "short": "patientenHausnummer",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenLand",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenLand",
+        "label": "patientenLand",
+        "short": "patientenLand",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenPLZ",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenPLZ",
+        "label": "patientenPLZ",
+        "short": "patientenPLZ",
+        "definition": "PLZ_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenOrt",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenOrt",
+        "label": "patientenOrt",
+        "short": "patientenOrt",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigVon",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigVon",
+        "label": "gueltigVon",
+        "short": "gueltigVon",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigBis",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigBis",
+        "label": "gueltigBis",
+        "short": "gueltigBis",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenID",
+        "path": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenID",
+        "label": "patientenID",
+        "short": "patientenID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung",
+        "label": "mengeMeldung",
+        "short": "mengeMeldung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeDatum",
+        "label": "meldeDatum",
+        "short": "meldeDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldebegruendung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldebegruendung",
+        "label": "meldebegruendung",
+        "short": "meldebegruendung",
+        "definition": "Widerspruch/Einwilligung des Patienten \nI = Patientin/Patient wurde informiert und hat nicht widersprochen \nA = Ausnahme: Patientenunterrichtung entfallen wegen möglicher gesundheitlicher Nachteile \nD = Meldung von Ärzten ohne unmittelbaren Patientenkontakt \nW = Patient hat der personenbezogenen Speicherung widersprochen V = Verstorben",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeanlass",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeanlass",
+        "label": "meldeanlass",
+        "short": "meldeanlass",
+        "definition": "* diagnose\n* behandlungsbeginn\n* behandlungsende\n* statusaenderung\n* statusmeldung\n* tod\n* histologyZytologie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung",
+        "label": "tumorZuordnung",
+        "short": "tumorZuordnung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDCode",
+        "label": "primaertumorICDCode",
+        "short": "primaertumorICDCode",
+        "definition": "ICD_TYP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDVersion",
+        "label": "primaertumorICDVersion",
+        "short": "primaertumorICDVersion",
+        "definition": "ICD_Version_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.diagnosedatum",
+        "label": "diagnosedatum",
+        "short": "diagnosedatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.seitenlokalisation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.seitenlokalisation",
+        "label": "seitenlokalisation",
+        "short": "seitenlokalisation",
+        "definition": "seitenlokaliosationTyp (SNOMED CT body site codes?)\nL = links\nR = rechts\nB = beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben\nM = Mittellinie/Mittig\nU = Unbekannt\nT = Trifft nicht u (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.tumorID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.tumorID",
+        "label": "tumorID",
+        "short": "tumorID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose",
+        "label": "diagnose",
+        "short": "diagnose",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDCode",
+        "label": "primaertumorICDCode",
+        "short": "primaertumorICDCode",
+        "definition": "ICD_TYP",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDVersion",
+        "label": "primaertumorICDVersion",
+        "short": "primaertumorICDVersion",
+        "definition": "ICDVersionTyp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorDiagnosetext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorDiagnosetext",
+        "label": "primaertumorDiagnosetext",
+        "short": "primaertumorDiagnosetext",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDO",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDO",
+        "label": "primaertumorTopographieICDO",
+        "short": "primaertumorTopographieICD0",
+        "definition": "C\\d\\d\\.\\d('d)?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICD0Version",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICD0Version",
+        "label": "primaertumorTopographieICD0Version",
+        "short": "primaertumorTopographieICDOVersion",
+        "definition": "31: ICD-O3; 1. Auflage 2003\n32: ICD-O3, 1. Auflage 2013",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDOFreitext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDOFreitext",
+        "label": "primaertumorTopographieICDOFreitext",
+        "short": "primaertumorTopographieICDOFreitext",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosedatum",
+        "label": "diagnosedatum",
+        "short": "diagnosedatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosesicherung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosesicherung",
+        "label": "diagnosesicherung",
+        "short": "diagnosesicherung",
+        "definition": "Höchste erreichte Diagnosesicherheit zum Diagnosedatum. (siehe ICD-O-3 S.60) \n\n1 = Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung) \n2 = Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein. \n4 = Spezifische Tumormarker \n5 = Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein. \n6 = Histologie einer Metastase. \n7 = Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie. \n9 = Unbekannt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.seitenlokalisation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.seitenlokalisation",
+        "label": "seitenlokalisation",
+        "short": "seitenlokalisation",
+        "definition": "Seitenlokalisation_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung",
+        "label": "mengeFruehereTumorerkrankung",
+        "short": "mengeFruehereTumorerkrankung",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
+        "label": "fruehereTumorerkrankung",
+        "short": "fruehereTumorerkrankung",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
+        "label": "freitext",
+        "short": "freitext",
+        "definition": "Freitext zu Tumorerkrankungen die in der Anamnese zu einem früheren Zeitpunkt diagnostiziert/behandelt wurden.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
+        "label": "ICDCode",
+        "short": "ICDCode",
+        "definition": "ICD_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
+        "label": "ICDVersion",
+        "short": "ICDVersion",
+        "definition": "ICD_Version_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
+        "label": "diagnosedatum",
+        "short": "diagnosedatum",
+        "definition": "Diagnosedatum, falls vorhanden Ist Tag und/oder Monat unbekannt, bitte \"00\" einsetzen. Beispiel, wenn nur Diagnosejahr bekannt \"00.00.JJJJ\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie",
+        "label": "mengeHistologie",
+        "short": "mengeHistologie",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie.histologie",
+        "label": "histologie",
+        "short": "histologie",
+        "definition": "Histologie_Typ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFM",
+        "label": "mengeFM",
+        "short": "mengeFM",
+        "definition": "Menge_FM_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.cTNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.cTNM",
+        "label": "cTNM",
+        "short": "cTNM",
+        "definition": "TNM_Typ\nPrätherapeutisches TNM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.pTNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.pTNM",
+        "label": "pTNM",
+        "short": "pTNM",
+        "definition": "TNM_Typ\nPostoperatives TNM. Es ist nicht nötig, dass alle Bestandteile der TNM-Formel die Einstufung 'p' aufweisen.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeWeitereKlassifikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeWeitereKlassifikation",
+        "label": "mengeWeitereKlassifikation",
+        "short": "mengeWeitereKlassifikation",
+        "definition": "Menge_Weitere_Klassifikation_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulMamma",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulMamma",
+        "label": "modulMamma",
+        "short": "modulMamma",
+        "definition": "Modul_Mamma_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulDarm",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulDarm",
+        "label": "modulDarm",
+        "short": "modulDarm",
+        "definition": "Modul_Darm_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulProstata",
+        "label": "modulProstata",
+        "short": "modulProstata",
+        "definition": "Modul_Prostata_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulAllgemein",
+        "label": "modulAllgemein",
+        "short": "modulAllgemein",
+        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.allgemeinerLeistungszustand",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.allgemeinerLeistungszustand",
+        "label": "allgemeinerLeistungszustand",
+        "short": "allgemeinerLeistungszustand",
+        "definition": "Allgemeiner_leistungszustand_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.tumorID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.tumorID",
+        "label": "tumorID",
+        "short": "tumorID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP",
+        "label": "mengeOP",
+        "short": "mengeOP",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP",
+        "label": "OP",
+        "short": "OP",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPIntention",
+        "label": "OPIntention",
+        "short": "OPIntention",
+        "definition": "Gibt an, mit welchem Ziel die Operation durchgeführt wird. \nK = Kurativ \nP = Palliativ \nD = Diagnostisch \nR = Revision/Komplikation \nS= Sonstiges\nX = Fehlende Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPDatum",
+        "label": "OPDatum",
+        "short": "OPDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS",
+        "label": "mengeOPS",
+        "short": "mengeOPS",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS.OPOPS",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS.OPOPS",
+        "label": "OPOPS",
+        "short": "OPOPS",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPOPSVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPOPSVersion",
+        "label": "OPOPSVersion",
+        "short": "OPOPSVersion",
+        "definition": "2004 = version 2004 \n2005 = version 2005 \n2006 = version 2006\n2007 = version 2007\n2008 = version 2008\n2009 = version 2009\n2010 = version 2010\n2011 = version 2011\n2012 = version 2012\n2013 = version 2013\n2014 = version 2014\n2015 = version 2015\n2016 = version 2016\n2017 = version 2017\n2018 = version 2018\n2019 = version 2019\n2020 = version 2020",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.histologie",
+        "label": "histologie",
+        "short": "histologie",
+        "definition": "Histologie_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.TNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.TNM",
+        "label": "TNM",
+        "short": "TNM",
+        "definition": "TNM_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.residualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.residualstatus",
+        "label": "residualstatus",
+        "short": "residualstatus",
+        "definition": "Residualstatus_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation",
+        "label": "mengeKomplikation",
+        "short": "mengeKomplikation",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
+        "label": "OPKomplikation",
+        "short": "OPKomplikation",
+        "definition": "Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist, welche. N = Nein U = Unbekannt Wenn ja, dann Liste der aufgetretenen Komplikationen nach Komplikationsschlüssel ABD Abszeß in einem Drainagekanal ABS Abszeß, intraabdominaler oder intrathorakaler ASF Abszeß, subfaszialer ANI Akute Niereninsuffizienz AEP Alkoholentzugspsychose ALR Allergische Reaktion ohne Schocksymptomatik ANS Anaphylaktischer Schock AEE Anastomoseninsuffizienz einer Enterostomie API Apoplektischer Insult BIF Biliäre Fistel BOG Blutung, obere gastrointestinale (z.B \"Stressulkus\") BOE Bolusverlegung eines Endotubus BSI Bronchusstumpfinsuffizienz CHI Cholangitis DAI Darmanastomoseinsuffizienz DPS Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus) DIC Disseminierte intravasale Koagulopathie DEP Drogenentzugspsychose DLU Druck- und Lagerungsschäden, z.B. Dekubitalulzera DSI Duodenalstumpfinsuffizienz ENF Enterale Fistel GER Gerinnungsstörung HEM Hämatemesis HUR Hämaturie HAE Hämorrhagischer Schock HFI Harnfistel HNK Hautnekrose im Operationsbereich HZI Herzinsuffizienz HRS Herzrhythmusstörungen HNA Hirnnervenausfälle HOP Hirnorganisches Psychosyndrom (z.B.\"Durchgangssyndrom\") HYB Hyperbilirubinämie HYF Hypopharynxfistel IFV Ileofemorale Venenthrombose KAS Kardiogener Schock KES Komplikationen einer Stomaanlage KIM Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation KRA Krampfanfall KDS Kurzdarmsyndrom LEV Leberversagen LOE Lungenödem LYF Lymphfistel LYE Lymphozele MES Magenentleerungsstörung MIL Mechanischer Ileus MED Mediastinitis MAT Mesenterialarterien- oder -venenthrombose MYI Myokardinfarkt RNB Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt NAB Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt NIN Nahtinsuffizienz, anderweitig nicht erwähnt OES Ösophagitis OSM Osteitis, Osteomyelitis PAF Pankreasfistel PIT Pankreatitis PAB Peranale Blutung PPA Periphere Parese PAV Peripherer arterieller Verschluß (Embolie, Thrombose) PER Peritonitis PLB Platzbauch PEY Pleuraempyem PLE Pleuraerguß PMN Pneumonie PNT Pneumothorax PDA Protrahierte Darmatonie (paralytischer Ileus) PAE Pulmonalarterienembolie RPA Rekurrensparese RIN Respiratorische Insuffizienz SKI Septische Komplikation eines Implantates SES Septischer Schock SFH Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes SON Sonstige Komplikation STK Stomakomplikation (z.B. Blutung, Nekrose, Stenose) TZP Thrombozytopenie TIA TIA (transitorische ischämische Attacke) oder RIND (reversibles ischämisches neurologisches Defizit) TRZ Transfusionszwischenfall WUH Wundhämatom (konservativ therapiert) WSS Wundheilungsstörung, subkutane",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulMamma",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulMamma",
+        "label": "modulMamma",
+        "short": "modulMamma",
+        "definition": "Modul_Mamma_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulDarm",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulDarm",
+        "label": "modulDarm",
+        "short": "modulDarm",
+        "definition": "Modul_Darm_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulProstata",
+        "label": "modulProstata",
+        "short": "modulProstata",
+        "definition": "Modul_Prostata_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulAllgemein",
+        "label": "modulAllgemein",
+        "short": "modulAllgemein",
+        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur",
+        "label": "mengeOperateur",
+        "short": "mengeOperateur",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur.nameOperateur",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur.nameOperateur",
+        "label": "nameOperateur",
+        "short": "nameOperateur",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPID",
+        "label": "OPID",
+        "short": "OPID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST",
+        "label": "mengeST",
+        "short": "mengeST",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST",
+        "label": "ST",
+        "short": "ST",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STIntention",
+        "label": "STIntention",
+        "short": "STIntention",
+        "definition": "Gibt an, mit welcher Intention die Strahlentherapie durchgeführt wird. \nK = Kurativ \nP = Palliativ \nS = Sonstiges \nX = Keine Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STStellungOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STStellungOP",
+        "label": "STStellungOP",
+        "short": "STStellungOP",
+        "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die Bestrahlung steht \nO = Ohne Bezug zu einer operativen Therapie \nA = Adjuvant\nN = Neoadjuvant \nI = Intraoperativ \nS = Sonstiges",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung",
+        "label": "mengeBestrahlung",
+        "short": "mengeBestrahlung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung",
+        "label": "bestrahlung",
+        "short": "bestrahlung",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
+        "label": "STZielgebiet",
+        "short": "STZielgebiet",
+        "definition": "1. ZNS\n1.1. Ganzhirn\n1.2. Teilhirn\n1.3. Neuroachse\n2. Kopf-Hals\n2.+ Kopf-Hals mit Lymphknoten\n2.- Kopf-Hals ohne Lymphknoten\n2.1 Orbita\n2.1.+Orbita mit Lymphknoten\n2.1.- Orbita ohne Lymphknoten\n2.2. Nase/ Nasennebenhöhle\n2.2.+ Nase/ Nasennebenhöhle mit Lymphknoten\n2.2.- Nase/ Nasennebenhöhle ohne Lymphknoten\n2.3. Mundhöhle\n2.3.+ Mundhöhle mit Lymphknoten\n2.3.- Mundhöhle ohne Lymphknoten\n2.4. Ohr\n2.4.+ Ohr mit Lymphknoten\n2.4.- Ohr ohne Lymphknoten\n2.5. Speicheldrüse\n2.5.+ Speicheldrüse mit Lymphknoten\n2.5.- Speicheldrüse ohne Lymphknoten\n2.6. Pharynx\n2.6.+ Pharynx mit Lymphknoten\n2.6.-Pharynx ohne Lymphknoten\n2.7.Larynx\n2.7.+Larynx mit Lymphknoten\n2.7.-Larynx ohne Lymphknoten\n2.8.Schilddrüse\n2.8.+Schilddrüse mit Lymphknoten\n2.8.-Schilddrüse ohne Lymphknoten\n2.9.Halslymphknoten (also ohne Primärtumor)\n\n3.Thorax\n3.+Thorax mit Lymphknoten\n3.-Thorax ohne Lymphknoten\n3.1.Mamma als Ganzbrust\n3.1.+Mamma als Ganzbrust mit Lymphknoten\n3.1.-Mamma als Ganzbrust ohne Lymphknoten\n3.2.Mamma als Teilbrust\n3.2.+Mamma als Teilbrust mit Lymphknoten\n3.2.-Mamma als Teilbrust ohne Lymphknoten\n3.3.Brustwand (z.B. Rezidiven n. Ablatio Sarkome)\n3.3.+Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten\n3.3.-Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten\n3.4.Lunge\n3.4.+Lunge mit Lymphknoten\n3.4.-Lunge ohne Lymphknoten\n3.5.Ösophagus\n3.5.+Ösophagus mit Lymphknoten\n3.5.-Ösophagus ohne Lymphknoten\n3.6.Thymus\n3.6.+Thymus mit Lymphknoten\n3.6.-Thymus ohne Lymphknoten\n3.7.Mediastinale Lymphknoten (also ohne Primärtumor)\n\n4.Abdomen (ohne Becken)\n4.+Abdomen (ohne Becken) mit Lymphknoten\n4.-Abdomen (ohne Becken) ohne Lymphknoten\n4.1.Magen\n4.1.+Magen mit Lymphknoten\n4.1.-Magen ohne Lymphknoten\n4.2.Pankreas\n4.2.+Pankreas mit Lymphknoten\n4.2.-Pankreas ohne Lymphknoten\n4.3.Leber\n4.3.+Leber mit Lymphknoten\n4.3.-Leber ohne Lymphknoten\n4.4.Milz\n4.4.+Milz mit Lymphknoten\n4.4.-Milz ohne Lymphknoten\n4.5.Niere\n4.5.+Niere mit Lymphknoten\n4.5.-Niere ohne Lymphknoten\n4.6.Nebenniere\n4.6.+Nebenniere mit Lymphknoten\n4.6.-Nebenniere ohne Lymphknoten\n4.7.Retroperitoneale Lymphknoten (also ohne Primärtumor)\n4.8.Retroperitoneum (z.B. Sarkome);\n4.8.+Retroperitoneum (z.B. Sarkome); mit Lymphknoten\n4.8.-Retroperitoneum (z.B. Sarkome); ohne Lymphknoten\n4.9.Bauchwand (z.B. Sarkome)\n4.9.+Bauchwand (z.B. Sarkome) mit Lymphknoten\n4.9.-Bauchwand (z.B. Sarkome) ohne Lymphknoten\n\n5.Becken\n5.+Becken mit Lymphknoten\n5.-Becken ohne Lymphknoten\n5.1.Rektum\n5.1.+Rektum mit Lymphknoten\n5.1.-Rektum ohne Lymphknoten\n5.2.Analbereich\n5.2.+Analbereich mit Lymphknoten\n5.2.-Analbereich ohne Lymphknoten\n5.3.Harnblase\n5.3.+Harnblase mit Lymphknoten\n5.3.-Harnblase ohne Lymphknoten\n5.4.Prostata\n5.4.+Prostata mit Lymphknoten\n5.4.-Prostata ohne Lymphknoten\n5.5.Hoden\n5.5.+Hoden mit Lymphknoten\n5.5.-Hoden ohne Lymphknoten\n5.6.Penis\n5.6.+Penis mit Lymphknoten\n5.6.-Penis ohne Lymphknoten\n5.7.Uterus/Zervix\n5.7.+Uterus/Zervix mit Lymphknoten\n5.7.-Uterus/Zervix ohne Lymphknoten\n5.7.1.Uterus\n5.7.1.+Uterus mit Lymphknoten\n5.7.1.-Uterus ohne Lymphknoten\n5.7.2.Zervix\n5.7.2.+Zervix mit Lymphknoten\n5.7.2.-Zervix ohne Lymphknoten\n5.8.Ovar\n5.8.+Ovar mit Lymphknoten\n5.8.-Ovar ohne Lymphknoten\n5.9.Vulva\n5.9.+Vulva mit Lymphknoten\n5.9.-Vulva ohne Lymphknoten\n5.10.Vagina\n5.10.+Vagina mit Lymphknoten\n5.10.-Vagina ohne Lymphknoten\n5.11.Beckenwand\n5.11.+Beckenwand mit Lymphknoten\n5.11.-Beckenwand ohne Lymphknoten\n5.12.Beckenlymphknoten (ohne Primärtumor)\n\n6.Stütz/Bewegungsapparat\n6.1.Schädelknochen\n6.2.Rippen\n6.3.Sternum\n6.4.HWS\n6.5.BWS\n6.6.LWS\n6.7.knöchernes Becken\n6.8.Hüfte\n6.9.Achsel\n6.10.Oberarm\n6.11.Unterarm\n6.12.Hand\n6.13.Leiste\n6.14.Oberschenkel\n6.15.Unterschenkel\n6.16.Fuß\n\n7.Haut\n7.+Haut mit Lymphknoten\n7.- Haut ohne Lymphknoten\n7.1.Primärer Hauttumor (auch kutane Lymphome)\n7.2.Hautmetastasen\n\n8.Sonstiges\n8.1.Ganzkörperbestrahlung\n8.2.Mantelfeldbestrahlung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
+        "label": "STSeiteZielgebiet",
+        "short": "STSeiteZielgebiet",
+        "definition": "Gibt Seitenlokalisation des Zielgebietes an L = Links R = Rechts B = Beidseits M = Mittig U = Unbekannt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
+        "label": "STBeginnDatum",
+        "short": "STBeginnDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
+        "label": "STEndeDatum",
+        "short": "STEndeDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
+        "label": "STApplikationenstart",
+        "short": "STApplikationenstart",
+        "definition": "Gibt an, mit welcher Technik die Strahlentherapie durchgeführt wird. P = Perkutan (Teletherapie) K = Endokavitäre Kontakttherapie (Brachytherapie) I = Interstitielle Kontakttherapie (Brachytherapie) M = Metabolische Therapie (Radionuklide) wenn P: zusätzliche Box RC = Radiochemotherapie/Sensitizer: ja/nein wenn K oder I: zusätzliche Box HDR = High dose rate therapy PDR = Pulsed dose rate therapy LDR = Low dose rate therapy wenn M SIRT = Selektive Interne Radio-Therapie PRRT = Peptid-Radio-Rezeptor-Therapie S = Sonstiges",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
+        "label": "STGesamtdosis",
+        "short": "STGesamtdosis",
+        "definition": "Strahlendosis_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
+        "label": "STEinzeldosis",
+        "short": "STEinzeldosis",
+        "definition": "Strahlendosis_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STEndeGrund",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STEndeGrund",
+        "label": "STEndeGrund",
+        "short": "STEndeGrund",
+        "definition": "Gibt den Grund an, warum die Strahlentherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie P = Abbruch wegen Progress U = unbekannt S = Abbruch aus sonstigen Gründen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.residualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.residualstatus",
+        "label": "residualstatus",
+        "short": "residualstatus",
+        "definition": "Residualstatus_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung",
+        "label": "mengeNemenwirkung",
+        "short": "mengeNemenwirkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
+        "label": "STNebenwirkung",
+        "short": "STNebenwirkung",
+        "definition": "Nebenwirkung_Typ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.modulAllgemein",
+        "label": "modulAllgemein",
+        "short": "modulAllgemein",
+        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STID",
+        "label": "STID",
+        "short": "STID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST",
+        "label": "mengeSYST",
+        "short": "mengeSYST",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST",
+        "label": "SYST",
+        "short": "SYST",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTIntention",
+        "label": "SYSTIntention",
+        "short": "SYSTIntention",
+        "definition": "Gibt an, mit welcher Intention die Systemische Therapie durchgeführt wird. \nK = Kurativ P = Palliativ S = Sonstiges X = Keine Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTStellungOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTStellungOP",
+        "label": "SYSTStellungOP",
+        "short": "SYSTStellungOP",
+        "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die systemische Therapie steht O = Ohne Bezug zu einer operativen Therapie A = Adjuvant N = Neoadjuvant I = intraoperativ S = Sonstiges",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart",
+        "label": "mengeTherapieart",
+        "short": "mengeTherapieart",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
+        "label": "SYSTTherapieart",
+        "short": "SYSTTherapieart",
+        "definition": "Gibt an, welche Art der Therapie bzw. abwartende Strategie durchgeführt wurde CH = Chemotherapie HO = Hormontherapie IM = Immun- und Antikörpertherapie KM = Knochenmarktransplantation WS = Wait and see AS = Active Surveillance ZS = Zielgerichtete Substanzen SO = Sonstiges Mehrfachangaben möglich",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
+        "label": "SYSTTherapieartAnmerkung",
+        "short": "SYSTTherapieartAnmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTProtokoll",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTProtokoll",
+        "label": "SYSTProtokoll",
+        "short": "SYSTProtokoll",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTBeginnDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTBeginnDatum",
+        "label": "SYSTBeginnDatum",
+        "short": "SYSTBeginnDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz",
+        "label": "mengeSubstanz",
+        "short": "mengeSubstanz",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
+        "label": "SYSTSubstanz",
+        "short": "SYSTSubstanz",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeGrund",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeGrund",
+        "label": "SYSTEndeGrund",
+        "short": "SYSTEndeGrund",
+        "definition": "Gibt den Grund an, warum die Systemtherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie R = Reguläres Ende mit Dosisreduktion P = Abbruch wegen Progress U = Unbekannt S = Abbruch aus sonstigen Gründen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeDatum",
+        "label": "SYSTEndeDatum",
+        "short": "SYSTEndeDatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.residualStatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.residualStatus",
+        "label": "residualStatus",
+        "short": "residualStatus",
+        "definition": "Residualstatus_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung",
+        "label": "mengeNebenwirkung",
+        "short": "mengeNebenwirkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
+        "label": "SYSTNebenwirkung",
+        "short": "SYSTNebenwirkung",
+        "definition": "Nebenwirkung_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.modulAllgemein",
+        "label": "modulAllgemein",
+        "short": "modulAllgemein",
+        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTID",
+        "label": "SYSTID",
+        "short": "SYSTID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf",
+        "label": "mengeVerlauf",
+        "short": "mengeVerlauf",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf",
+        "label": "verlauf",
+        "short": "verlauf",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.histologie",
+        "label": "histologie",
+        "short": "histologie",
+        "definition": "Histologie_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.TNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.TNM",
+        "label": "TNM",
+        "short": "TNM",
+        "definition": "TNM_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
+        "label": "mengeWeitereKlassifikation",
+        "short": "mengeWeitereKlassifikation",
+        "definition": "Menge_Weitere_klassifikation_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
+        "label": "untersuchungsdatumVerlauf",
+        "short": "untersuchungsdatumVerlauf",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
+        "label": "gesamtbeurteilungTumorstatus",
+        "short": "gesamtbeurteilungTumorstatus",
+        "definition": "Gesamtbeurteilung der Erkrankung unter Berücksichtigung aller Manifestationen. V = Vollremission (complete remission, CR) T = Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR) K = Keine Änderung (no change, NC) = stable disease P = Progression D = Divergentes Geschehen B = Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR) R = Vollremission mit residualen Auffälligkeiten (CRr) U = Beurteilung unmöglich X = Fehlende Angaben",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
+        "label": "verlaufLokalerTumorstatus",
+        "short": "verlaufLokalerTumorstatus",
+        "definition": "Beurteilung der Situation im Primärtumorbereich K = Kein Tumor nachweisbar T = Tumorreste (Residualtumor) P = Tumorreste Residualtumor Progress N = Tumorreste Residualtumor No Change R = Lokalrezidiv F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
+        "label": "verlaufTumorstatusLymphknoten",
+        "short": "verlaufTumorstatusLymphknoten",
+        "definition": "Beurteilung der Situation im Bereich der regionären Lymphknoten K = Kein Lymphknotenbefall nachweisbar R = Neu aufgetretenes Lymphknotenrezidiv T = Bekannter Lymphknotenbefall Residuen P = Bekannter Lymphknotenbefall Progress N = Bekannter Lymphknotenbefall No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
+        "label": "verlaufTumorstatusFernmetastasen",
+        "short": "VerlaufTumorstatusFernmetastasen",
+        "definition": "Beurteilung der Situation im Bereich der Fernmetastasen K = Keine Fernmetastasen nachweisbar M = Verbliebene Fernmetastase(n) R = Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv T = Fernmetastasenl Residuen P = Fernmetastasen Progress N = Fernmetastasen No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeFM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeFM",
+        "label": "mengeFM",
+        "short": "MengeFM",
+        "definition": "Menge_FM_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
+        "label": "allgemeinerLeistungsZustand",
+        "short": "AllgemeinerLeistungsZustand",
+        "definition": "Allgemeiner_Leistungszustand_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulProstata",
+        "label": "modulProstata",
+        "short": "modulProstata",
+        "definition": "Modul_Prostata_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulAllgemein",
+        "label": "modulAllgemein",
+        "short": "modulAllgemein",
+        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod",
+        "label": "Tod",
+        "short": "Tod",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.sterbedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.sterbedatum",
+        "label": "sterbedatum",
+        "short": "sterbedatum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
+        "label": "todTumorbedingt",
+        "short": "todTumorbedingt",
+        "definition": "Krebs-Tod-Relation J = Ja N = Nein U = Unbekannt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
+        "label": "mengeTodesursache",
+        "short": "mengeTodesursache",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
+        "label": "todesursacheICD",
+        "short": "TodesursacheICD",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
+        "label": "todesursacheICDVersion",
+        "short": "todesursacheICDVersion",
+        "definition": "ICD_Version_Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlaufID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlaufID",
+        "label": "verlaufID",
+        "short": "verlaufID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz",
+        "label": "mengeTumorkonferenz",
+        "short": "mengeTumorkonferenz",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz",
+        "label": "tumorkonferenz",
+        "short": "tumorkonferenz",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
+        "label": "tumorkonferenzDatum",
+        "short": "tumorkonferenzDatum",
+        "definition": "DatumTyp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
+        "label": "tumorkonferenzTyp",
+        "short": "tumorkonferenzTyp",
+        "definition": "Typ der Tumorkonferenz praeth = prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation) postop = postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie) postth = posttherapeutisch (manche Tumoren werden nicht operiert)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenzID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenzID",
+        "label": "tumorkonferenzID",
+        "short": "tumorkonferenzID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem",
+        "label": "mengeZusatzitem",
+        "short": "mengeZusatzitem",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem",
+        "label": "zuzatzitem",
+        "short": "zuzatzitem",
+        "definition": "No description",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.datum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.datum",
+        "label": "datum",
+        "short": "datum",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.art",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.art",
+        "label": "art",
+        "short": "art",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.wert",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.wert",
+        "label": "wert",
+        "short": "wert",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.bemerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.bemerkung",
+        "label": "bemerkung",
+        "short": "bemerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldungID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldungID",
+        "label": "meldungID",
+        "short": "meldungID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.melderID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.melderID",
+        "label": "melderID",
+        "short": "melderID",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.anmerkung",
+        "label": "anmerkung",
+        "short": "anmerkung",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengeMelder",
+        "path": "ADT-GEKID.mengeMelder",
+        "label": "mengeMelder",
+        "short": "mengeMelder",
+        "definition": "No description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengeMelder.melder",
+        "path": "ADT-GEKID.mengeMelder.melder",
+        "label": "melder",
+        "short": "melder",
+        "definition": "Melder_Typ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

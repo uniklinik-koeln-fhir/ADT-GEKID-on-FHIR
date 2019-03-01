@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "GleasonScoreErgebnis_Typ",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/GleasonScoreErgebnis_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "6",
+      "display": "5% relapse risk",
+      "definition": "5% relapse risk"
+    },
+    {
+      "code": "7a",
+      "display": "17% relapse risk",
+      "definition": "17% relapse risk"
+    },
+    {
+      "code": "7b",
+      "display": "35% relapse risk",
+      "definition": "35% relapse risk"
+    },
+    {
+      "code": "8",
+      "display": "37% relapse risk",
+      "definition": "37% relapse risk"
+    },
+    {
+      "code": "9",
+      "display": "76% relapse risk",
+      "definition": "76% relapse risk"
+    },
+    {
+      "code": "10",
+      "display": "76% relapse risk",
+      "definition": "76% relapse risk"
+    }
+  ],
+  "count": 7,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GleasonScoreErgebnis_Typ</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/GleasonScoreErgebnis_Typ</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}
