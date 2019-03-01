@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMS",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SX",
+      "display": "Werte der Serumtumormarker nicht verfügbar oder entsprechende Untersuchungen nicht vorgenommen",
+      "definition": "Werte der Serumtumormarker nicht verfügbar oder entsprechende Untersuchungen nicht vorgenommen"
+    },
+    {
+      "code": "S0",
+      "display": "Serumtumormarker innerhalb der normalen Grenzen",
+      "definition": "Serumtumormarker innerhalb der normalen Grenzen"
+    },
+    {
+      "code": "S1",
+      "display": "LDH <1,5N Und <HCG 5000 Und <AFP 1000, N = obere Grenze des Normalwertes",
+      "definition": "LDH <1,5N Und <HCG 5000 Und <AFP 1000, N = obere Grenze des Normalwertes"
+    },
+    {
+      "code": "S2",
+      "display": "LDH 1,5-10N Oder HCG 5000-50000 Oder AFP 1000-10000, N = obere Grenze des Normalwertes",
+      "definition": "LDH 1,5-10N Oder HCG 5000-50000 Oder AFP 1000-10000, N = obere Grenze des Normalwertes"
+    },
+    {
+      "code": "S3",
+      "display": "LDH >10N Oder HCG >50000 Oder AFP >10000, N = obere Grenze des Normalwertes",
+      "definition": "LDH >10N Oder HCG >50000 Oder AFP >10000, N = obere Grenze des Normalwertes"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMS</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMS</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

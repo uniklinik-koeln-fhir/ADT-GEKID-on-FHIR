@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMV",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMV",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "VX",
+      "display": "Veneninvasion kann nicht beurteilt werden",
+      "definition": "Veneninvasion kann nicht beurteilt werden"
+    },
+    {
+      "code": "V0",
+      "display": "Keine Veneninvasion",
+      "definition": "Keine Veneninvasion"
+    },
+    {
+      "code": "V1",
+      "display": "Mikroscopische Veneninvasion",
+      "definition": "Mikroscopische Veneninvasion"
+    },
+    {
+      "code": "V2",
+      "display": "Makroscopische Veneninvasion",
+      "definition": "Makroscopische Veneninvasion"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMV</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMV</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

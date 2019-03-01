@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMcpuPraefixTyp",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "display": "Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht",
+      "definition": "Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht"
+    },
+    {
+      "code": "c",
+      "display": "Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht",
+      "definition": "Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht"
+    },
+    {
+      "code": "p",
+      "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung, mit der auch der höchste Grad der jeweiligen Kategorie hätte festgestellt werden können",
+      "definition": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung, mit der auch der höchste Grad der jeweiligen Kategorie hätte festgestellt werden können"
+    },
+    {
+      "code": "u",
+      "display": "Feststellung mit Ultraschall (Unterkategorie von c mit besonderer diagnostischer Relevanz, z.B. beim Rektumkarzinom)",
+      "definition": "Feststellung mit Ultraschall (Unterkategorie von c mit besonderer diagnostischer Relevanz, z.B. beim Rektumkarzinom)"
+    }
+  ],
+  "count": 5,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMcpuPraefixTyp</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}
