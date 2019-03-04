@@ -26,7 +26,6 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
