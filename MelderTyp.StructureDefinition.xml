@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MelderTyp" />
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/MelderTyp" />
+  <name value="MelderTyp" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="MelderTyp">
+      <path value="MelderTyp" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderIKNR">
+      <path value="MelderTyp.melderIKNR" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderLANR">
+      <path value="MelderTyp.melderLANR" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderBSNR">
+      <path value="MelderTyp.melderBSNR" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.meldendeStelle">
+      <path value="MelderTyp.meldendeStelle" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderKHAbtStationPraxis">
+      <path value="MelderTyp.melderKHAbtStationPraxis" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderArztname">
+      <path value="MelderTyp.melderArztname" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderAnschrift">
+      <path value="MelderTyp.melderAnschrift" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderPLZ">
+      <path value="MelderTyp.melderPLZ" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderOrt">
+      <path value="MelderTyp.melderOrt" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <maxLength value="5" />
+    </element>
+    <element id="MelderTyp.melderBankname">
+      <path value="MelderTyp.melderBankname" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderKontoinhaber">
+      <path value="MelderTyp.melderKontoinhaber" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="MelderTyp.melderBIC">
+      <path value="MelderTyp.melderBIC" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <maxLength value="11" />
+    </element>
+    <element id="MelderTyp.melderIBAN">
+      <path value="MelderTyp.melderIBAN" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <maxLength value="34" />
+    </element>
+  </snapshot>
+</StructureDefinition>

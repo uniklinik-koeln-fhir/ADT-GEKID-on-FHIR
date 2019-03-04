@@ -7,7 +7,7 @@
       "valueString": "danieldropuljic@gmail.com"
     }
   ],
-  "url": "http://fhirtest.uhn.ca/baseDstu3/StructureDefinition/ADT-GEKID",
+  "url": "https://www.uk-koeln.de/fhir/StructureDefinition/ADT-GEKID",
   "identifier": [
     {
       "system": "http://clinfhir.com",
@@ -26,6 +26,7 @@
   ],
   "kind": "logical",
   "abstract": false,
+  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
@@ -227,13 +228,14 @@
         "label": "familienangehoerigenNr",
         "short": "familienangehoerigenNr",
         "definition": "not nillable\nmax_length = 10",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
           }
-        ]
+        ],
+        "maxLength": 10
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.krankenkassenNr",
@@ -241,13 +243,14 @@
         "label": "krankenkassenNr",
         "short": "krankenkassenNr",
         "definition": "not nillable\nmaxlength = 9",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
             "code": "string"
           }
-        ]
+        ],
+        "maxLength": 9
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNachname",
@@ -537,8 +540,19 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeDatum",
         "label": "meldeDatum",
         "short": "meldeDatum",
         "definition": "No description",
@@ -551,8 +565,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldebegruendung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldebegruendung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldebegruendung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldebegruendung",
         "label": "meldebegruendung",
         "short": "meldebegruendung",
         "definition": "Widerspruch/Einwilligung des Patienten \nI = Patientin/Patient wurde informiert und hat nicht widersprochen \nA = Ausnahme: Patientenunterrichtung entfallen wegen möglicher gesundheitlicher Nachteile \nD = Meldung von Ärzten ohne unmittelbaren Patientenkontakt \nW = Patient hat der personenbezogenen Speicherung widersprochen V = Verstorben",
@@ -560,13 +574,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeanlass",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldeanlass",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeanlass",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeanlass",
         "label": "meldeanlass",
         "short": "meldeanlass",
         "definition": "* diagnose\n* behandlungsbeginn\n* behandlungsende\n* statusaenderung\n* statusmeldung\n* tod\n* histologyZytologie",
@@ -574,13 +589,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystems/meldeanlass"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung",
         "label": "tumorZuordnung",
         "short": "tumorZuordnung",
         "definition": "No description",
@@ -593,8 +609,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDCode",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDCode",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDCode",
         "label": "primaertumorICDCode",
         "short": "primaertumorICDCode",
         "definition": "ICD_TYP",
@@ -602,13 +618,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDVersion",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.primaertumorICDVersion",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDVersion",
         "label": "primaertumorICDVersion",
         "short": "primaertumorICDVersion",
         "definition": "ICD_Version_Typ",
@@ -616,13 +633,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.diagnosedatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.diagnosedatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.diagnosedatum",
         "label": "diagnosedatum",
         "short": "diagnosedatum",
         "definition": "No description",
@@ -635,8 +653,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.seitenlokalisation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.seitenlokalisation",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.seitenlokalisation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.seitenlokalisation",
         "label": "seitenlokalisation",
         "short": "seitenlokalisation",
         "definition": "seitenlokaliosationTyp (SNOMED CT body site codes?)\nL = links\nR = rechts\nB = beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben\nM = Mittellinie/Mittig\nU = Unbekannt\nT = Trifft nicht u (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)",
@@ -644,13 +662,14 @@
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.tumorID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.tumorZuordnung.tumorID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.tumorID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.tumorID",
         "label": "tumorID",
         "short": "tumorID",
         "definition": "No description",
@@ -663,8 +682,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose",
         "label": "diagnose",
         "short": "diagnose",
         "definition": "No description",
@@ -677,8 +696,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDCode",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDCode",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDCode",
         "label": "primaertumorICDCode",
         "short": "primaertumorICDCode",
         "definition": "ICD_TYP",
@@ -686,13 +705,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDVersion",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorICDVersion",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDVersion",
         "label": "primaertumorICDVersion",
         "short": "primaertumorICDVersion",
         "definition": "ICDVersionTyp",
@@ -700,13 +720,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorDiagnosetext",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorDiagnosetext",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorDiagnosetext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorDiagnosetext",
         "label": "primaertumorDiagnosetext",
         "short": "primaertumorDiagnosetext",
         "definition": "No description",
@@ -719,8 +740,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDO",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDO",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDO",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDO",
         "label": "primaertumorTopographieICDO",
         "short": "primaertumorTopographieICD0",
         "definition": "C\\d\\d\\.\\d('d)?",
@@ -733,22 +754,22 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICD0Version",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICD0Version",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOVersion",
         "label": "primaertumorTopographieICD0Version",
         "short": "primaertumorTopographieICDOVersion",
-        "definition": "31: ICD-O3; 1. Auflage 2003\n32: ICD-O3, 1. Auflage 2013",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDOFreitext",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.primaertumorTopographieICDOFreitext",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOFreitext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOFreitext",
         "label": "primaertumorTopographieICDOFreitext",
         "short": "primaertumorTopographieICDOFreitext",
         "definition": "No description",
@@ -761,8 +782,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosedatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosedatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosedatum",
         "label": "diagnosedatum",
         "short": "diagnosedatum",
         "definition": "No description",
@@ -775,8 +796,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosesicherung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.diagnosesicherung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosesicherung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosesicherung",
         "label": "diagnosesicherung",
         "short": "diagnosesicherung",
         "definition": "Höchste erreichte Diagnosesicherheit zum Diagnosedatum. (siehe ICD-O-3 S.60) \n\n1 = Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung) \n2 = Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein. \n4 = Spezifische Tumormarker \n5 = Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein. \n6 = Histologie einer Metastase. \n7 = Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie. \n9 = Unbekannt",
@@ -784,13 +805,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.seitenlokalisation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.seitenlokalisation",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.seitenlokalisation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.seitenlokalisation",
         "label": "seitenlokalisation",
         "short": "seitenlokalisation",
         "definition": "Seitenlokalisation_Typ",
@@ -798,18 +820,19 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung",
         "label": "mengeFruehereTumorerkrankung",
         "short": "mengeFruehereTumorerkrankung",
         "definition": "No description",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "BackboneElement"
@@ -817,8 +840,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung",
         "label": "fruehereTumorerkrankung",
         "short": "fruehereTumorerkrankung",
         "definition": "No description",
@@ -831,10 +854,9 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext",
         "label": "freitext",
-        "short": "freitext",
         "definition": "Freitext zu Tumorerkrankungen die in der Anamnese zu einem früheren Zeitpunkt diagnostiziert/behandelt wurden.",
         "min": 0,
         "max": "1",
@@ -845,8 +867,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode",
         "label": "ICDCode",
         "short": "ICDCode",
         "definition": "ICD_Typ",
@@ -855,12 +877,16 @@
         "type": [
           {
             "code": "string"
+          },
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion",
         "label": "ICDVersion",
         "short": "ICDVersion",
         "definition": "ICD_Version_Typ",
@@ -868,13 +894,14 @@
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum",
         "label": "diagnosedatum",
         "short": "diagnosedatum",
         "definition": "Diagnosedatum, falls vorhanden Ist Tag und/oder Monat unbekannt, bitte \"00\" einsetzen. Beispiel, wenn nur Diagnosejahr bekannt \"00.00.JJJJ\"",
@@ -887,8 +914,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie",
         "label": "mengeHistologie",
         "short": "mengeHistologie",
         "definition": "No description",
@@ -901,8 +928,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie.histologie",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeHistologie.histologie",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologie",
         "label": "histologie",
         "short": "histologie",
         "definition": "Histologie_Typ",
@@ -910,13 +937,26 @@
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeFM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologieID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologieID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFM",
         "label": "mengeFM",
         "short": "mengeFM",
         "definition": "Menge_FM_Typ",
@@ -929,8 +969,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.cTNM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.cTNM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.cTNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.cTNM",
         "label": "cTNM",
         "short": "cTNM",
         "definition": "TNM_Typ\nPrätherapeutisches TNM",
@@ -938,13 +978,14 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.pTNM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.pTNM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.pTNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.pTNM",
         "label": "pTNM",
         "short": "pTNM",
         "definition": "TNM_Typ\nPostoperatives TNM. Es ist nicht nötig, dass alle Bestandteile der TNM-Formel die Einstufung 'p' aufweisen.",
@@ -952,27 +993,61 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeWeitereKlassifikation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.mengeWeitereKlassifikation",
-        "label": "mengeWeitereKlassifikation",
-        "short": "mengeWeitereKlassifikation",
-        "definition": "Menge_Weitere_Klassifikation_Typ",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.datum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.datum",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "dateTime",
+            "profile": "http://hl7.org/fhir/StructureDefinition/dateTime"
           }
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulMamma",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulMamma",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.name",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.stadium",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.stadium",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulMamma",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulMamma",
         "label": "modulMamma",
         "short": "modulMamma",
         "definition": "Modul_Mamma_Typ",
@@ -985,8 +1060,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulDarm",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulDarm",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulDarm",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulDarm",
         "label": "modulDarm",
         "short": "modulDarm",
         "definition": "Modul_Darm_Typ",
@@ -999,8 +1074,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulProstata",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulProstata",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulProstata",
         "label": "modulProstata",
         "short": "modulProstata",
         "definition": "Modul_Prostata_Typ",
@@ -1013,8 +1088,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulAllgemein",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.modulAllgemein",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein",
         "label": "modulAllgemein",
         "short": "modulAllgemein",
         "definition": "Modul_Allgemein_Typ",
@@ -1027,8 +1102,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.allgemeinerLeistungszustand",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.allgemeinerLeistungszustand",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.allgemeinerLeistungszustand",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.allgemeinerLeistungszustand",
         "label": "allgemeinerLeistungszustand",
         "short": "allgemeinerLeistungszustand",
         "definition": "Allgemeiner_leistungszustand_Typ",
@@ -1041,8 +1116,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -1055,8 +1130,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.tumorID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.diagnose.tumorID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.tumorID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.tumorID",
         "label": "tumorID",
         "short": "tumorID",
         "definition": "No description",
@@ -1069,8 +1144,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP",
         "label": "mengeOP",
         "short": "mengeOP",
         "definition": "No description",
@@ -1083,8 +1158,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP",
         "label": "OP",
         "short": "OP",
         "definition": "No description",
@@ -1097,8 +1172,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPIntention",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPIntention",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPIntention",
         "label": "OPIntention",
         "short": "OPIntention",
         "definition": "Gibt an, mit welchem Ziel die Operation durchgeführt wird. \nK = Kurativ \nP = Palliativ \nD = Diagnostisch \nR = Revision/Komplikation \nS= Sonstiges\nX = Fehlende Angabe",
@@ -1111,8 +1186,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPDatum",
         "label": "OPDatum",
         "short": "OPDatum",
         "definition": "No description",
@@ -1125,8 +1200,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS",
         "label": "mengeOPS",
         "short": "mengeOPS",
         "definition": "No description",
@@ -1139,8 +1214,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS.OPOPS",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOPS.OPOPS",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS.OPOPS",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS.OPOPS",
         "label": "OPOPS",
         "short": "OPOPS",
         "definition": "No description",
@@ -1153,8 +1228,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPOPSVersion",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPOPSVersion",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPOPSVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPOPSVersion",
         "label": "OPOPSVersion",
         "short": "OPOPSVersion",
         "definition": "2004 = version 2004 \n2005 = version 2005 \n2006 = version 2006\n2007 = version 2007\n2008 = version 2008\n2009 = version 2009\n2010 = version 2010\n2011 = version 2011\n2012 = version 2012\n2013 = version 2013\n2014 = version 2014\n2015 = version 2015\n2016 = version 2016\n2017 = version 2017\n2018 = version 2018\n2019 = version 2019\n2020 = version 2020",
@@ -1167,8 +1242,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.histologie",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.histologie",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.histologie",
         "label": "histologie",
         "short": "histologie",
         "definition": "Histologie_Typ",
@@ -1181,8 +1256,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.TNM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.TNM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.TNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.TNM",
         "label": "TNM",
         "short": "TNM",
         "definition": "TNM_Typ",
@@ -1195,8 +1270,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.residualstatus",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.residualstatus",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus",
         "label": "residualstatus",
         "short": "residualstatus",
         "definition": "Residualstatus_Typ",
@@ -1209,8 +1284,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation",
         "label": "mengeKomplikation",
         "short": "mengeKomplikation",
         "definition": "No description",
@@ -1223,8 +1298,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
         "label": "OPKomplikation",
         "short": "OPKomplikation",
         "definition": "Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist, welche. N = Nein U = Unbekannt Wenn ja, dann Liste der aufgetretenen Komplikationen nach Komplikationsschlüssel ABD Abszeß in einem Drainagekanal ABS Abszeß, intraabdominaler oder intrathorakaler ASF Abszeß, subfaszialer ANI Akute Niereninsuffizienz AEP Alkoholentzugspsychose ALR Allergische Reaktion ohne Schocksymptomatik ANS Anaphylaktischer Schock AEE Anastomoseninsuffizienz einer Enterostomie API Apoplektischer Insult BIF Biliäre Fistel BOG Blutung, obere gastrointestinale (z.B \"Stressulkus\") BOE Bolusverlegung eines Endotubus BSI Bronchusstumpfinsuffizienz CHI Cholangitis DAI Darmanastomoseinsuffizienz DPS Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus) DIC Disseminierte intravasale Koagulopathie DEP Drogenentzugspsychose DLU Druck- und Lagerungsschäden, z.B. Dekubitalulzera DSI Duodenalstumpfinsuffizienz ENF Enterale Fistel GER Gerinnungsstörung HEM Hämatemesis HUR Hämaturie HAE Hämorrhagischer Schock HFI Harnfistel HNK Hautnekrose im Operationsbereich HZI Herzinsuffizienz HRS Herzrhythmusstörungen HNA Hirnnervenausfälle HOP Hirnorganisches Psychosyndrom (z.B.\"Durchgangssyndrom\") HYB Hyperbilirubinämie HYF Hypopharynxfistel IFV Ileofemorale Venenthrombose KAS Kardiogener Schock KES Komplikationen einer Stomaanlage KIM Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation KRA Krampfanfall KDS Kurzdarmsyndrom LEV Leberversagen LOE Lungenödem LYF Lymphfistel LYE Lymphozele MES Magenentleerungsstörung MIL Mechanischer Ileus MED Mediastinitis MAT Mesenterialarterien- oder -venenthrombose MYI Myokardinfarkt RNB Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt NAB Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt NIN Nahtinsuffizienz, anderweitig nicht erwähnt OES Ösophagitis OSM Osteitis, Osteomyelitis PAF Pankreasfistel PIT Pankreatitis PAB Peranale Blutung PPA Periphere Parese PAV Peripherer arterieller Verschluß (Embolie, Thrombose) PER Peritonitis PLB Platzbauch PEY Pleuraempyem PLE Pleuraerguß PMN Pneumonie PNT Pneumothorax PDA Protrahierte Darmatonie (paralytischer Ileus) PAE Pulmonalarterienembolie RPA Rekurrensparese RIN Respiratorische Insuffizienz SKI Septische Komplikation eines Implantates SES Septischer Schock SFH Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes SON Sonstige Komplikation STK Stomakomplikation (z.B. Blutung, Nekrose, Stenose) TZP Thrombozytopenie TIA TIA (transitorische ischämische Attacke) oder RIND (reversibles ischämisches neurologisches Defizit) TRZ Transfusionszwischenfall WUH Wundhämatom (konservativ therapiert) WSS Wundheilungsstörung, subkutane",
@@ -1237,8 +1312,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulMamma",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulMamma",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulMamma",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulMamma",
         "label": "modulMamma",
         "short": "modulMamma",
         "definition": "Modul_Mamma_Typ",
@@ -1251,8 +1326,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulDarm",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulDarm",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulDarm",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulDarm",
         "label": "modulDarm",
         "short": "modulDarm",
         "definition": "Modul_Darm_Typ",
@@ -1265,8 +1340,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulProstata",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulProstata",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulProstata",
         "label": "modulProstata",
         "short": "modulProstata",
         "definition": "Modul_Prostata_Typ",
@@ -1279,8 +1354,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulAllgemein",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.modulAllgemein",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein",
         "label": "modulAllgemein",
         "short": "modulAllgemein",
         "definition": "Modul_Allgemein_Typ",
@@ -1293,8 +1368,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur",
         "label": "mengeOperateur",
         "short": "mengeOperateur",
         "definition": "No description",
@@ -1307,8 +1382,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur.nameOperateur",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.mengeOperateur.nameOperateur",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur.nameOperateur",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur.nameOperateur",
         "label": "nameOperateur",
         "short": "nameOperateur",
         "definition": "No description",
@@ -1321,8 +1396,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -1335,8 +1410,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeOP.OP.OPID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPID",
         "label": "OPID",
         "short": "OPID",
         "definition": "No description",
@@ -1349,8 +1424,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST",
         "label": "mengeST",
         "short": "mengeST",
         "definition": "No description",
@@ -1363,8 +1438,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST",
         "label": "ST",
         "short": "ST",
         "definition": "No description",
@@ -1377,8 +1452,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STIntention",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STIntention",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STIntention",
         "label": "STIntention",
         "short": "STIntention",
         "definition": "Gibt an, mit welcher Intention die Strahlentherapie durchgeführt wird. \nK = Kurativ \nP = Palliativ \nS = Sonstiges \nX = Keine Angabe",
@@ -1391,8 +1466,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STStellungOP",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STStellungOP",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STStellungOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STStellungOP",
         "label": "STStellungOP",
         "short": "STStellungOP",
         "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die Bestrahlung steht \nO = Ohne Bezug zu einer operativen Therapie \nA = Adjuvant\nN = Neoadjuvant \nI = Intraoperativ \nS = Sonstiges",
@@ -1405,8 +1480,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung",
         "label": "mengeBestrahlung",
         "short": "mengeBestrahlung",
         "definition": "No description",
@@ -1419,8 +1494,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung",
         "label": "bestrahlung",
         "short": "bestrahlung",
         "definition": "No description",
@@ -1433,8 +1508,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet",
         "label": "STZielgebiet",
         "short": "STZielgebiet",
         "definition": "1. ZNS\n1.1. Ganzhirn\n1.2. Teilhirn\n1.3. Neuroachse\n2. Kopf-Hals\n2.+ Kopf-Hals mit Lymphknoten\n2.- Kopf-Hals ohne Lymphknoten\n2.1 Orbita\n2.1.+Orbita mit Lymphknoten\n2.1.- Orbita ohne Lymphknoten\n2.2. Nase/ Nasennebenhöhle\n2.2.+ Nase/ Nasennebenhöhle mit Lymphknoten\n2.2.- Nase/ Nasennebenhöhle ohne Lymphknoten\n2.3. Mundhöhle\n2.3.+ Mundhöhle mit Lymphknoten\n2.3.- Mundhöhle ohne Lymphknoten\n2.4. Ohr\n2.4.+ Ohr mit Lymphknoten\n2.4.- Ohr ohne Lymphknoten\n2.5. Speicheldrüse\n2.5.+ Speicheldrüse mit Lymphknoten\n2.5.- Speicheldrüse ohne Lymphknoten\n2.6. Pharynx\n2.6.+ Pharynx mit Lymphknoten\n2.6.-Pharynx ohne Lymphknoten\n2.7.Larynx\n2.7.+Larynx mit Lymphknoten\n2.7.-Larynx ohne Lymphknoten\n2.8.Schilddrüse\n2.8.+Schilddrüse mit Lymphknoten\n2.8.-Schilddrüse ohne Lymphknoten\n2.9.Halslymphknoten (also ohne Primärtumor)\n\n3.Thorax\n3.+Thorax mit Lymphknoten\n3.-Thorax ohne Lymphknoten\n3.1.Mamma als Ganzbrust\n3.1.+Mamma als Ganzbrust mit Lymphknoten\n3.1.-Mamma als Ganzbrust ohne Lymphknoten\n3.2.Mamma als Teilbrust\n3.2.+Mamma als Teilbrust mit Lymphknoten\n3.2.-Mamma als Teilbrust ohne Lymphknoten\n3.3.Brustwand (z.B. Rezidiven n. Ablatio Sarkome)\n3.3.+Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten\n3.3.-Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten\n3.4.Lunge\n3.4.+Lunge mit Lymphknoten\n3.4.-Lunge ohne Lymphknoten\n3.5.Ösophagus\n3.5.+Ösophagus mit Lymphknoten\n3.5.-Ösophagus ohne Lymphknoten\n3.6.Thymus\n3.6.+Thymus mit Lymphknoten\n3.6.-Thymus ohne Lymphknoten\n3.7.Mediastinale Lymphknoten (also ohne Primärtumor)\n\n4.Abdomen (ohne Becken)\n4.+Abdomen (ohne Becken) mit Lymphknoten\n4.-Abdomen (ohne Becken) ohne Lymphknoten\n4.1.Magen\n4.1.+Magen mit Lymphknoten\n4.1.-Magen ohne Lymphknoten\n4.2.Pankreas\n4.2.+Pankreas mit Lymphknoten\n4.2.-Pankreas ohne Lymphknoten\n4.3.Leber\n4.3.+Leber mit Lymphknoten\n4.3.-Leber ohne Lymphknoten\n4.4.Milz\n4.4.+Milz mit Lymphknoten\n4.4.-Milz ohne Lymphknoten\n4.5.Niere\n4.5.+Niere mit Lymphknoten\n4.5.-Niere ohne Lymphknoten\n4.6.Nebenniere\n4.6.+Nebenniere mit Lymphknoten\n4.6.-Nebenniere ohne Lymphknoten\n4.7.Retroperitoneale Lymphknoten (also ohne Primärtumor)\n4.8.Retroperitoneum (z.B. Sarkome);\n4.8.+Retroperitoneum (z.B. Sarkome); mit Lymphknoten\n4.8.-Retroperitoneum (z.B. Sarkome); ohne Lymphknoten\n4.9.Bauchwand (z.B. Sarkome)\n4.9.+Bauchwand (z.B. Sarkome) mit Lymphknoten\n4.9.-Bauchwand (z.B. Sarkome) ohne Lymphknoten\n\n5.Becken\n5.+Becken mit Lymphknoten\n5.-Becken ohne Lymphknoten\n5.1.Rektum\n5.1.+Rektum mit Lymphknoten\n5.1.-Rektum ohne Lymphknoten\n5.2.Analbereich\n5.2.+Analbereich mit Lymphknoten\n5.2.-Analbereich ohne Lymphknoten\n5.3.Harnblase\n5.3.+Harnblase mit Lymphknoten\n5.3.-Harnblase ohne Lymphknoten\n5.4.Prostata\n5.4.+Prostata mit Lymphknoten\n5.4.-Prostata ohne Lymphknoten\n5.5.Hoden\n5.5.+Hoden mit Lymphknoten\n5.5.-Hoden ohne Lymphknoten\n5.6.Penis\n5.6.+Penis mit Lymphknoten\n5.6.-Penis ohne Lymphknoten\n5.7.Uterus/Zervix\n5.7.+Uterus/Zervix mit Lymphknoten\n5.7.-Uterus/Zervix ohne Lymphknoten\n5.7.1.Uterus\n5.7.1.+Uterus mit Lymphknoten\n5.7.1.-Uterus ohne Lymphknoten\n5.7.2.Zervix\n5.7.2.+Zervix mit Lymphknoten\n5.7.2.-Zervix ohne Lymphknoten\n5.8.Ovar\n5.8.+Ovar mit Lymphknoten\n5.8.-Ovar ohne Lymphknoten\n5.9.Vulva\n5.9.+Vulva mit Lymphknoten\n5.9.-Vulva ohne Lymphknoten\n5.10.Vagina\n5.10.+Vagina mit Lymphknoten\n5.10.-Vagina ohne Lymphknoten\n5.11.Beckenwand\n5.11.+Beckenwand mit Lymphknoten\n5.11.-Beckenwand ohne Lymphknoten\n5.12.Beckenlymphknoten (ohne Primärtumor)\n\n6.Stütz/Bewegungsapparat\n6.1.Schädelknochen\n6.2.Rippen\n6.3.Sternum\n6.4.HWS\n6.5.BWS\n6.6.LWS\n6.7.knöchernes Becken\n6.8.Hüfte\n6.9.Achsel\n6.10.Oberarm\n6.11.Unterarm\n6.12.Hand\n6.13.Leiste\n6.14.Oberschenkel\n6.15.Unterschenkel\n6.16.Fuß\n\n7.Haut\n7.+Haut mit Lymphknoten\n7.- Haut ohne Lymphknoten\n7.1.Primärer Hauttumor (auch kutane Lymphome)\n7.2.Hautmetastasen\n\n8.Sonstiges\n8.1.Ganzkörperbestrahlung\n8.2.Mantelfeldbestrahlung",
@@ -1447,8 +1522,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
         "label": "STSeiteZielgebiet",
         "short": "STSeiteZielgebiet",
         "definition": "Gibt Seitenlokalisation des Zielgebietes an L = Links R = Rechts B = Beidseits M = Mittig U = Unbekannt",
@@ -1461,8 +1536,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum",
         "label": "STBeginnDatum",
         "short": "STBeginnDatum",
         "definition": "No description",
@@ -1475,8 +1550,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum",
         "label": "STEndeDatum",
         "short": "STEndeDatum",
         "definition": "No description",
@@ -1489,8 +1564,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
         "label": "STApplikationenstart",
         "short": "STApplikationenstart",
         "definition": "Gibt an, mit welcher Technik die Strahlentherapie durchgeführt wird. P = Perkutan (Teletherapie) K = Endokavitäre Kontakttherapie (Brachytherapie) I = Interstitielle Kontakttherapie (Brachytherapie) M = Metabolische Therapie (Radionuklide) wenn P: zusätzliche Box RC = Radiochemotherapie/Sensitizer: ja/nein wenn K oder I: zusätzliche Box HDR = High dose rate therapy PDR = Pulsed dose rate therapy LDR = Low dose rate therapy wenn M SIRT = Selektive Interne Radio-Therapie PRRT = Peptid-Radio-Rezeptor-Therapie S = Sonstiges",
@@ -1503,8 +1578,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis",
         "label": "STGesamtdosis",
         "short": "STGesamtdosis",
         "definition": "Strahlendosis_Typ",
@@ -1517,8 +1592,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis",
         "label": "STEinzeldosis",
         "short": "STEinzeldosis",
         "definition": "Strahlendosis_Typ",
@@ -1531,8 +1606,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STEndeGrund",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STEndeGrund",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STEndeGrund",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STEndeGrund",
         "label": "STEndeGrund",
         "short": "STEndeGrund",
         "definition": "Gibt den Grund an, warum die Strahlentherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie P = Abbruch wegen Progress U = unbekannt S = Abbruch aus sonstigen Gründen",
@@ -1545,8 +1620,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.residualstatus",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.residualstatus",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.residualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.residualstatus",
         "label": "residualstatus",
         "short": "residualstatus",
         "definition": "Residualstatus_Typ",
@@ -1559,8 +1634,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung",
         "label": "mengeNemenwirkung",
         "short": "mengeNemenwirkung",
         "definition": "No description",
@@ -1573,8 +1648,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung",
         "label": "STNebenwirkung",
         "short": "STNebenwirkung",
         "definition": "Nebenwirkung_Typ",
@@ -1587,8 +1662,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.modulAllgemein",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.modulAllgemein",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein",
         "label": "modulAllgemein",
         "short": "modulAllgemein",
         "definition": "Modul_Allgemein_Typ",
@@ -1601,8 +1676,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -1615,8 +1690,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeST.ST.STID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STID",
         "label": "STID",
         "short": "STID",
         "definition": "No description",
@@ -1629,8 +1704,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST",
         "label": "mengeSYST",
         "short": "mengeSYST",
         "definition": "No description",
@@ -1643,8 +1718,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST",
         "label": "SYST",
         "short": "SYST",
         "definition": "No description",
@@ -1657,8 +1732,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTIntention",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTIntention",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTIntention",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTIntention",
         "label": "SYSTIntention",
         "short": "SYSTIntention",
         "definition": "Gibt an, mit welcher Intention die Systemische Therapie durchgeführt wird. \nK = Kurativ P = Palliativ S = Sonstiges X = Keine Angabe",
@@ -1671,8 +1746,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTStellungOP",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTStellungOP",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTStellungOP",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTStellungOP",
         "label": "SYSTStellungOP",
         "short": "SYSTStellungOP",
         "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die systemische Therapie steht O = Ohne Bezug zu einer operativen Therapie A = Adjuvant N = Neoadjuvant I = intraoperativ S = Sonstiges",
@@ -1685,8 +1760,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart",
         "label": "mengeTherapieart",
         "short": "mengeTherapieart",
         "definition": "No description",
@@ -1699,8 +1774,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
         "label": "SYSTTherapieart",
         "short": "SYSTTherapieart",
         "definition": "Gibt an, welche Art der Therapie bzw. abwartende Strategie durchgeführt wurde CH = Chemotherapie HO = Hormontherapie IM = Immun- und Antikörpertherapie KM = Knochenmarktransplantation WS = Wait and see AS = Active Surveillance ZS = Zielgerichtete Substanzen SO = Sonstiges Mehrfachangaben möglich",
@@ -1713,8 +1788,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTTherapieartAnmerkung",
         "label": "SYSTTherapieartAnmerkung",
         "short": "SYSTTherapieartAnmerkung",
         "definition": "No description",
@@ -1727,8 +1802,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTProtokoll",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTProtokoll",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTProtokoll",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTProtokoll",
         "label": "SYSTProtokoll",
         "short": "SYSTProtokoll",
         "definition": "No description",
@@ -1741,8 +1816,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTBeginnDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTBeginnDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTBeginnDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTBeginnDatum",
         "label": "SYSTBeginnDatum",
         "short": "SYSTBeginnDatum",
         "definition": "No description",
@@ -1755,8 +1830,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz",
         "label": "mengeSubstanz",
         "short": "mengeSubstanz",
         "definition": "No description",
@@ -1769,8 +1844,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz",
         "label": "SYSTSubstanz",
         "short": "SYSTSubstanz",
         "definition": "No description",
@@ -1783,8 +1858,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeGrund",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeGrund",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeGrund",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeGrund",
         "label": "SYSTEndeGrund",
         "short": "SYSTEndeGrund",
         "definition": "Gibt den Grund an, warum die Systemtherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie R = Reguläres Ende mit Dosisreduktion P = Abbruch wegen Progress U = Unbekannt S = Abbruch aus sonstigen Gründen",
@@ -1797,8 +1872,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTEndeDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeDatum",
         "label": "SYSTEndeDatum",
         "short": "SYSTEndeDatum",
         "definition": "No description",
@@ -1811,8 +1886,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.residualStatus",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.residualStatus",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.residualStatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.residualStatus",
         "label": "residualStatus",
         "short": "residualStatus",
         "definition": "Residualstatus_Typ",
@@ -1825,8 +1900,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung",
         "label": "mengeNebenwirkung",
         "short": "mengeNebenwirkung",
         "definition": "No description",
@@ -1839,8 +1914,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
         "label": "SYSTNebenwirkung",
         "short": "SYSTNebenwirkung",
         "definition": "Nebenwirkung_Typ",
@@ -1853,8 +1928,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.modulAllgemein",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.modulAllgemein",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein",
         "label": "modulAllgemein",
         "short": "modulAllgemein",
         "definition": "Modul_Allgemein_Typ",
@@ -1867,8 +1942,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -1881,8 +1956,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeSYST.SYST.SYSTID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTID",
         "label": "SYSTID",
         "short": "SYSTID",
         "definition": "No description",
@@ -1895,8 +1970,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf",
         "label": "mengeVerlauf",
         "short": "mengeVerlauf",
         "definition": "No description",
@@ -1909,8 +1984,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf",
         "label": "verlauf",
         "short": "verlauf",
         "definition": "No description",
@@ -1923,8 +1998,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.histologie",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.histologie",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.histologie",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.histologie",
         "label": "histologie",
         "short": "histologie",
         "definition": "Histologie_Typ",
@@ -1937,8 +2012,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.TNM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.TNM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.TNM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.TNM",
         "label": "TNM",
         "short": "TNM",
         "definition": "TNM_Typ",
@@ -1951,8 +2026,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
         "label": "mengeWeitereKlassifikation",
         "short": "mengeWeitereKlassifikation",
         "definition": "Menge_Weitere_klassifikation_Typ",
@@ -1965,8 +2040,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf",
         "label": "untersuchungsdatumVerlauf",
         "short": "untersuchungsdatumVerlauf",
         "definition": "No description",
@@ -1979,8 +2054,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
         "label": "gesamtbeurteilungTumorstatus",
         "short": "gesamtbeurteilungTumorstatus",
         "definition": "Gesamtbeurteilung der Erkrankung unter Berücksichtigung aller Manifestationen. V = Vollremission (complete remission, CR) T = Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR) K = Keine Änderung (no change, NC) = stable disease P = Progression D = Divergentes Geschehen B = Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR) R = Vollremission mit residualen Auffälligkeiten (CRr) U = Beurteilung unmöglich X = Fehlende Angaben",
@@ -1993,8 +2068,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
         "label": "verlaufLokalerTumorstatus",
         "short": "verlaufLokalerTumorstatus",
         "definition": "Beurteilung der Situation im Primärtumorbereich K = Kein Tumor nachweisbar T = Tumorreste (Residualtumor) P = Tumorreste Residualtumor Progress N = Tumorreste Residualtumor No Change R = Lokalrezidiv F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
@@ -2007,8 +2082,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
         "label": "verlaufTumorstatusLymphknoten",
         "short": "verlaufTumorstatusLymphknoten",
         "definition": "Beurteilung der Situation im Bereich der regionären Lymphknoten K = Kein Lymphknotenbefall nachweisbar R = Neu aufgetretenes Lymphknotenrezidiv T = Bekannter Lymphknotenbefall Residuen P = Bekannter Lymphknotenbefall Progress N = Bekannter Lymphknotenbefall No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
@@ -2021,8 +2096,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
         "label": "verlaufTumorstatusFernmetastasen",
         "short": "VerlaufTumorstatusFernmetastasen",
         "definition": "Beurteilung der Situation im Bereich der Fernmetastasen K = Keine Fernmetastasen nachweisbar M = Verbliebene Fernmetastase(n) R = Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv T = Fernmetastasenl Residuen P = Fernmetastasen Progress N = Fernmetastasen No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
@@ -2035,8 +2110,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeFM",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.mengeFM",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeFM",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeFM",
         "label": "mengeFM",
         "short": "MengeFM",
         "definition": "Menge_FM_Typ",
@@ -2049,8 +2124,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand",
         "label": "allgemeinerLeistungsZustand",
         "short": "AllgemeinerLeistungsZustand",
         "definition": "Allgemeiner_Leistungszustand_Typ",
@@ -2063,8 +2138,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulProstata",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulProstata",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulProstata",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulProstata",
         "label": "modulProstata",
         "short": "modulProstata",
         "definition": "Modul_Prostata_Typ",
@@ -2077,8 +2152,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulAllgemein",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.modulAllgemein",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein",
         "label": "modulAllgemein",
         "short": "modulAllgemein",
         "definition": "Modul_Allgemein_Typ",
@@ -2091,8 +2166,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod",
         "label": "Tod",
         "short": "Tod",
         "definition": "No description",
@@ -2105,8 +2180,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.sterbedatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.sterbedatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.sterbedatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.sterbedatum",
         "label": "sterbedatum",
         "short": "sterbedatum",
         "definition": "No description",
@@ -2119,8 +2194,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
         "label": "todTumorbedingt",
         "short": "todTumorbedingt",
         "definition": "Krebs-Tod-Relation J = Ja N = Nein U = Unbekannt",
@@ -2133,8 +2208,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache",
         "label": "mengeTodesursache",
         "short": "mengeTodesursache",
         "definition": "No description",
@@ -2147,8 +2222,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
         "label": "todesursacheICD",
         "short": "TodesursacheICD",
         "definition": "No description",
@@ -2161,8 +2236,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
         "label": "todesursacheICDVersion",
         "short": "todesursacheICDVersion",
         "definition": "ICD_Version_Typ",
@@ -2175,8 +2250,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlauf.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -2189,8 +2264,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlaufID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeVerlauf.verlaufID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlaufID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlaufID",
         "label": "verlaufID",
         "short": "verlaufID",
         "definition": "No description",
@@ -2203,8 +2278,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz",
         "label": "mengeTumorkonferenz",
         "short": "mengeTumorkonferenz",
         "definition": "No description",
@@ -2217,8 +2292,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz",
         "label": "tumorkonferenz",
         "short": "tumorkonferenz",
         "definition": "No description",
@@ -2231,8 +2306,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum",
         "label": "tumorkonferenzDatum",
         "short": "tumorkonferenzDatum",
         "definition": "DatumTyp",
@@ -2245,8 +2320,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
         "label": "tumorkonferenzTyp",
         "short": "tumorkonferenzTyp",
         "definition": "Typ der Tumorkonferenz praeth = prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation) postop = postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie) postth = posttherapeutisch (manche Tumoren werden nicht operiert)",
@@ -2259,8 +2334,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -2273,8 +2348,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenzID",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeTumorkonferenz.tumorkonferenzID",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenzID",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenzID",
         "label": "tumorkonferenzID",
         "short": "tumorkonferenzID",
         "definition": "No description",
@@ -2287,8 +2362,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem",
         "label": "mengeZusatzitem",
         "short": "mengeZusatzitem",
         "definition": "No description",
@@ -2301,8 +2376,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem",
         "label": "zuzatzitem",
         "short": "zuzatzitem",
         "definition": "No description",
@@ -2315,8 +2390,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.datum",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.datum",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.datum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.datum",
         "label": "datum",
         "short": "datum",
         "definition": "No description",
@@ -2329,8 +2404,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.art",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.art",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.art",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.art",
         "label": "art",
         "short": "art",
         "definition": "No description",
@@ -2343,8 +2418,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.wert",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.wert",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.wert",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.wert",
         "label": "wert",
         "short": "wert",
         "definition": "No description",
@@ -2357,8 +2432,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.bemerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.zuzatzitem.bemerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.bemerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.bemerkung",
         "label": "bemerkung",
         "short": "bemerkung",
         "definition": "No description",
@@ -2371,8 +2446,8 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.anmerkung",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.mengeZusatzitem.anmerkung",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.anmerkung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.anmerkung",
         "label": "anmerkung",
         "short": "anmerkung",
         "definition": "No description",
@@ -2450,7 +2525,8 @@
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/MelderTyp"
           }
         ]
       }

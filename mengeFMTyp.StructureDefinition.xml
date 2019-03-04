@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/MengeFMTyp" />
+  <name value="mengeFMTyp" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="mengeFMTyp">
+      <path value="mengeFMTyp" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase">
+      <path value="mengeFMTyp.fernmetastase" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.FMDiagnosedatum">
+      <path value="mengeFMTyp.fernmetastase.FMDiagnosedatum" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.FMLokalisation">
+      <path value="mengeFMTyp.fernmetastase.FMLokalisation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>
