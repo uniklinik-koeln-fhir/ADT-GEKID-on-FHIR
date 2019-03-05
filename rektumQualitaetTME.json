@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "rektumQualitaetTME",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Grad 1 (gut)",
+      "definition": "Grad 1 (gut)"
+    },
+    {
+      "code": "2",
+      "display": "Grad 2 (moderat)",
+      "definition": "Grad 2 (moderat)"
+    },
+    {
+      "code": "3",
+      "display": "Grad 3 (schlecht)",
+      "definition": "Grad 3 (schlecht)"
+    },
+    {
+      "code": "P",
+      "display": "PME durchgeführt",
+      "definition": "PME durchgeführt"
+    },
+    {
+      "code": "L",
+      "display": "Lokale Exzision durchgeführt",
+      "definition": "Lokale Exzision durchgeführt"
+    },
+    {
+      "code": "A",
+      "display": "Andere Operation durchgeführt",
+      "definition": "Andere Operation durchgeführt"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    }
+  ],
+  "count": 8,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>rektumQualitaetTME</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

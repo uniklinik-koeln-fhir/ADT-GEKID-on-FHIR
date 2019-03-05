@@ -26,6 +26,7 @@
   ],
   "kind": "logical",
   "abstract": false,
+  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
@@ -464,7 +465,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
           }
         ]
       },
@@ -589,7 +591,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystems/meldeanlass"
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass"
           }
         ]
       },
@@ -1054,7 +1056,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulMammaTyp"
           }
         ]
       },
@@ -1068,7 +1071,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulDarmTyp"
           }
         ]
       },
@@ -1082,21 +1086,43 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein",
-        "label": "modulAllgemein",
-        "short": "modulAllgemein",
-        "definition": "Modul_Allgemein_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
           }
         ]
       },
@@ -1110,7 +1136,8 @@
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ"
           }
         ]
       },

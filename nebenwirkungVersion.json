@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "nebenwirkungVersion",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/nebenwirkungversionTyp",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "4",
+      "display": "Version 4",
+      "definition": "Version 4"
+    },
+    {
+      "code": "4.03",
+      "display": "Version 4.03",
+      "definition": "Version 4.03"
+    },
+    {
+      "code": "5",
+      "display": "Version 5",
+      "definition": "Version 5"
+    },
+    {
+      "code": "Sonstige",
+      "display": "Falls andere bzw. ältere Versionen verwendet werden",
+      "definition": "Falls andere bzw. ältere Versionen verwendet werden"
+    }
+  ],
+  "count": 5,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>nebenwirkungVersion</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/nebenwirkungversionTyp</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

@@ -6,6 +6,7 @@
   <fhirVersion value="3.0.1" />
   <kind value="logical" />
   <abstract value="false" />
+  <type value="Element" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <snapshot>
@@ -41,6 +42,41 @@
       <type>
         <code value="CodeableConcept" />
         <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.nebenwirkungTyp">
+      <path value="mengeFMTyp.fernmetastase.nebenwirkungTyp" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungGrad">
+      <path value="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungGrad" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungArt">
+      <path value="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungArt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungVersion">
+      <path value="mengeFMTyp.fernmetastase.nebenwirkungTyp.nebenwirkungVersion" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/nebenwirkungversionTyp" />
       </type>
     </element>
   </snapshot>

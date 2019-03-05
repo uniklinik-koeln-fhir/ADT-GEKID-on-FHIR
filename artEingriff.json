@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "artEingriff",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "E",
+      "display": "Elektiveingriff",
+      "definition": "Elektiveingriff"
+    },
+    {
+      "code": "N",
+      "display": "Notfalleingriff",
+      "definition": "Notfalleingriff"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    }
+  ],
+  "count": 4,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>artEingriff</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "ASA",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ASA",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Normaler, ansonsten gesunder Patient",
+      "definition": "Normaler, ansonsten gesunder Patient"
+    },
+    {
+      "code": "2",
+      "display": "Patient mit leichter Allgemeinerkrankung",
+      "definition": "Patient mit leichter Allgemeinerkrankung"
+    },
+    {
+      "code": "3",
+      "display": "Patient mit schwerer Allgemeinerkrankung und Leistungseinschränkung",
+      "definition": "Patient mit schwerer Allgemeinerkrankung und Leistungseinschränkung"
+    },
+    {
+      "code": "4",
+      "display": "Patient mit inaktivierender Allgemeinerkrankung, ständige Lebensbedrohung",
+      "definition": "Patient mit inaktivierender Allgemeinerkrankung, ständige Lebensbedrohung"
+    },
+    {
+      "code": "5",
+      "display": "Moribunder Patient",
+      "definition": "Moribunder Patient"
+    }
+  ],
+  "count": 6,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ASA</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ASA</tt><p></p></div>"
+  }
+}

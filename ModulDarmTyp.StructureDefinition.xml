@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulDarmTyp" />
+  <name value="ModulDarmTyp" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="ModulDarmTyp">
+      <path value="ModulDarmTyp" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumAbstandAnokutanlinie">
+      <path value="ModulDarmTyp.rektumAbstandAnokutanlinie" />
+      <definition value="\d(\d)?(\d)?|U" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumAbstandAboralerResektionsrand">
+      <path value="ModulDarmTyp.rektumAbstandAboralerResektionsrand" />
+      <definition value="\d(\d)?(\d)?|U" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumAbstandCircResektionsebene">
+      <path value="ModulDarmTyp.rektumAbstandCircResektionsebene" />
+      <definition value="\d(\d)?(\d)?|U" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumQualitaetTME">
+      <path value="ModulDarmTyp.rektumQualitaetTME" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumMRTDuennschichtAngabemesorektaleFaszie">
+      <path value="ModulDarmTyp.rektumMRTDuennschichtAngabemesorektaleFaszie" />
+      <definition value="0|[1-9](\d)?|[DNU]" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.artEingriff">
+      <path value="ModulDarmTyp.artEingriff" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.rektumAnzeichnungStomaposition">
+      <path value="ModulDarmTyp.rektumAnzeichnungStomaposition" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.gradRektumAnastomoseninsuffizienz">
+      <path value="ModulDarmTyp.gradRektumAnastomoseninsuffizienz" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.ASA">
+      <path value="ModulDarmTyp.ASA" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ASA" />
+      </type>
+    </element>
+    <element id="ModulDarmTyp.RASMutation">
+      <path value="ModulDarmTyp.RASMutation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ASA" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>
