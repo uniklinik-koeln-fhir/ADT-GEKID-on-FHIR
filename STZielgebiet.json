@@ -1,0 +1,765 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "STZielgebiet",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1.",
+      "display": "ZNS",
+      "definition": "ZNS"
+    },
+    {
+      "code": "1.1.",
+      "display": "Ganzhirn",
+      "definition": "Ganzhirn"
+    },
+    {
+      "code": "1.2.",
+      "display": "Teilhirn",
+      "definition": "Teilhirn"
+    },
+    {
+      "code": "1.3.",
+      "display": "Neuroachse",
+      "definition": "Neuroachse"
+    },
+    {
+      "code": "2.",
+      "display": "Kopf-Hals",
+      "definition": "Kopf-Hals"
+    },
+    {
+      "code": "2.+",
+      "display": "Kopf-Hals mit Lymphknoten",
+      "definition": "Kopf-Hals mit Lymphknoten"
+    },
+    {
+      "code": "2.1.+",
+      "display": "Orbita mit Lymphknoten",
+      "definition": "Orbita mit Lymphknoten"
+    },
+    {
+      "code": "2.1.-",
+      "display": "Orbita ohne Lymphknoten",
+      "definition": "Orbita ohne Lymphknoten"
+    },
+    {
+      "code": "2.2.",
+      "display": "Nase/ Nasennebenhöhle",
+      "definition": "Nase/ Nasennebenhöhle"
+    },
+    {
+      "code": "2.2.+",
+      "display": "Nase/ Nasennebenhöhle mit Lymphknoten",
+      "definition": "Nase/ Nasennebenhöhle mit Lymphknoten"
+    },
+    {
+      "code": "2.2.-",
+      "display": "Nase/ Nasennebenhöhle ohne Lymphknoten",
+      "definition": "Nase/ Nasennebenhöhle ohne Lymphknoten"
+    },
+    {
+      "code": "2.3.",
+      "display": "Mundhöhle",
+      "definition": "Mundhöhle"
+    },
+    {
+      "code": "2.3.+",
+      "display": "Mundhöhle mit Lymphknoten",
+      "definition": "Mundhöhle mit Lymphknoten"
+    },
+    {
+      "code": "2.3.-",
+      "display": "Mundhöhle mit Lymphknoten",
+      "definition": "Mundhöhle mit Lymphknoten"
+    },
+    {
+      "code": "2.4.",
+      "display": "Ohr",
+      "definition": "Ohr"
+    },
+    {
+      "code": "2.4.+",
+      "display": "Ohr mit Lymphknoten",
+      "definition": "Ohr mit Lymphknoten"
+    },
+    {
+      "code": "2.4.-",
+      "display": "Ohr ohne Lymphknoten",
+      "definition": "Ohr ohne Lymphknoten"
+    },
+    {
+      "code": "2.5.",
+      "display": "Speicheldrüse",
+      "definition": "Speicheldrüse"
+    },
+    {
+      "code": "2.5.+",
+      "display": "Speicheldrüse mit Lymphknoten",
+      "definition": "Speicheldrüse mit Lymphknoten"
+    },
+    {
+      "code": "2.5.-",
+      "display": "Speicheldrüse ohne Lymphknoten",
+      "definition": "Speicheldrüse ohne Lymphknoten"
+    },
+    {
+      "code": "2.6.",
+      "display": "Pharynx",
+      "definition": "Pharynx"
+    },
+    {
+      "code": "2.6.+",
+      "display": "Pharynx mit Lymphknoten",
+      "definition": "Pharynx mit Lymphknoten"
+    },
+    {
+      "code": "2.6.-",
+      "display": "Pharynx ohne Lymphknoten",
+      "definition": "Pharynx ohne Lymphknoten"
+    },
+    {
+      "code": "2.7.",
+      "display": "Larynx",
+      "definition": "Larynx"
+    },
+    {
+      "code": "2.7.+",
+      "display": "Larynx mit Lymphknoten",
+      "definition": "Larynx mit Lymphknoten"
+    },
+    {
+      "code": "2.7.-",
+      "display": "Larynx ohne Lymphknoten",
+      "definition": "Larynx ohne Lymphknoten"
+    },
+    {
+      "code": "2.8.",
+      "display": "Schilddrüse",
+      "definition": "Schilddrüse"
+    },
+    {
+      "code": "2.8.+",
+      "display": "Schilddrüse mit Lymphknoten",
+      "definition": "Schilddrüse mit Lymphknoten"
+    },
+    {
+      "code": "2.8.-",
+      "display": "Schilddrüse ohne Lymphknoten",
+      "definition": "Schilddrüse ohne Lymphknoten"
+    },
+    {
+      "code": "2.9.",
+      "display": "Halslymphknoten (also ohne Primärtumor)",
+      "definition": "Halslymphknoten (also ohne Primärtumor)"
+    },
+    {
+      "code": "3.",
+      "display": "Thorax",
+      "definition": "Thorax"
+    },
+    {
+      "code": "3.+",
+      "display": "Thorax mit Lymphknoten",
+      "definition": "Thorax mit Lymphknoten"
+    },
+    {
+      "code": "3.-",
+      "display": "Thorax ohne Lymphknoten",
+      "definition": "Thorax ohne Lymphknoten"
+    },
+    {
+      "code": "3.1.",
+      "display": "Mamma als Ganzbrust",
+      "definition": "Mamma als Ganzbrust"
+    },
+    {
+      "code": "3.1.+",
+      "display": "Mamma als Ganzbrust mit Lymphknoten",
+      "definition": "Mamma als Ganzbrust mit Lymphknoten"
+    },
+    {
+      "code": "3.1.-",
+      "display": "Mamma als Ganzbrust ohne Lymphknoten",
+      "definition": "Mamma als Ganzbrust ohne Lymphknoten"
+    },
+    {
+      "code": "3.2.",
+      "display": "Mamma als Teilbrust",
+      "definition": "Mamma als Teilbrust"
+    },
+    {
+      "code": "3.2.+",
+      "display": "Mamma als Teilbrust mit Lymphknoten",
+      "definition": "Mamma als Teilbrust mit Lymphknoten"
+    },
+    {
+      "code": "3.2.-",
+      "display": "Mamma als Teilbrust ohne Lymphknoten",
+      "definition": "Mamma als Teilbrust ohne Lymphknoten"
+    },
+    {
+      "code": "3.3.",
+      "display": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome)",
+      "definition": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome)"
+    },
+    {
+      "code": "3.3.+",
+      "display": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten",
+      "definition": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten"
+    },
+    {
+      "code": "3.3.-",
+      "display": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten",
+      "definition": "Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten"
+    },
+    {
+      "code": "3.4.",
+      "display": "Lunge",
+      "definition": "Lunge"
+    },
+    {
+      "code": "3.4.+",
+      "display": "Lunge mit Lymphknoten",
+      "definition": "Lunge mit Lymphknoten"
+    },
+    {
+      "code": "3.4.-",
+      "display": "Lunge ohne Lymphknoten",
+      "definition": "Lunge ohne Lymphknoten"
+    },
+    {
+      "code": "3.5.",
+      "display": "Ösophagus",
+      "definition": "Ösophagus"
+    },
+    {
+      "code": "3.5.+",
+      "display": "Ösophagus mit Lymphknoten",
+      "definition": "Ösophagus mit Lymphknoten"
+    },
+    {
+      "code": "3.5.-",
+      "display": "Ösophagus ohne Lymphknoten",
+      "definition": "Ösophagus ohne Lymphknoten"
+    },
+    {
+      "code": "3.6.",
+      "display": "Thymus",
+      "definition": "Thymus"
+    },
+    {
+      "code": "3.6.+",
+      "display": "Thymus mit Lymphknoten",
+      "definition": "Thymus mit Lymphknoten"
+    },
+    {
+      "code": "3.6.-",
+      "display": "Thymus ohne Lymphknoten",
+      "definition": "Thymus ohne Lymphknoten"
+    },
+    {
+      "code": "3.7.",
+      "display": "Mediastinale Lymphknoten (also ohne Primärtumor)",
+      "definition": "Mediastinale Lymphknoten (also ohne Primärtumor)"
+    },
+    {
+      "code": "4.",
+      "display": "Abdomen (ohne Becken)",
+      "definition": "Abdomen (ohne Becken)"
+    },
+    {
+      "code": "4.+",
+      "display": "Abdomen (ohne Becken) mit Lymphknoten",
+      "definition": "Abdomen (ohne Becken) mit Lymphknoten"
+    },
+    {
+      "code": "4.-",
+      "display": "Abdomen (ohne Becken) ohne Lymphknoten",
+      "definition": "Abdomen (ohne Becken) ohne Lymphknoten"
+    },
+    {
+      "code": "4.1.",
+      "display": "Magen",
+      "definition": "Magen"
+    },
+    {
+      "code": "4.1.+",
+      "display": "Magen mit Lymphknoten",
+      "definition": "Magen mit Lymphknoten"
+    },
+    {
+      "code": "4.1.-",
+      "display": "Magen ohne Lymphknoten",
+      "definition": "Magen ohne Lymphknoten"
+    },
+    {
+      "code": "4.2.",
+      "display": "Pankreas",
+      "definition": "Pankreas"
+    },
+    {
+      "code": "4.2.+",
+      "display": "Pankreas mit Lymphknoten",
+      "definition": "Pankreas mit Lymphknoten"
+    },
+    {
+      "code": "4.2.-",
+      "display": "Pankreas ohne Lymphknoten",
+      "definition": "Pankreas ohne Lymphknoten"
+    },
+    {
+      "code": "4.3.",
+      "display": "Leber",
+      "definition": "Leber"
+    },
+    {
+      "code": "4.3.+",
+      "display": "Leber mit Lymphknoten",
+      "definition": "Leber mit Lymphknoten"
+    },
+    {
+      "code": "4.3.-",
+      "display": "Leber ohne Lymphknoten",
+      "definition": "Leber ohne Lymphknoten"
+    },
+    {
+      "code": "4.4.",
+      "display": "Milz",
+      "definition": "Milz"
+    },
+    {
+      "code": "4.4.+",
+      "display": "Milz mit Lymphknoten",
+      "definition": "Milz mit Lymphknoten"
+    },
+    {
+      "code": "4.4.-",
+      "display": "Milz ohne Lymphknoten",
+      "definition": "Milz ohne Lymphknoten"
+    },
+    {
+      "code": "4.5.",
+      "display": "Niere",
+      "definition": "Niere"
+    },
+    {
+      "code": "4.5.+",
+      "display": "Niere mit Lymphknoten",
+      "definition": "Niere mit Lymphknoten"
+    },
+    {
+      "code": "4.5.-",
+      "display": "Niere ohne Lymphknoten",
+      "definition": "Niere ohne Lymphknoten"
+    },
+    {
+      "code": "4.6.",
+      "display": "Nebenniere",
+      "definition": "Nebenniere"
+    },
+    {
+      "code": "4.6.+",
+      "display": "Nebenniere mit Lymphknoten",
+      "definition": "Nebenniere mit Lymphknoten"
+    },
+    {
+      "code": "4.6.-",
+      "display": "Nebenniere ohne Lymphknoten",
+      "definition": "Nebenniere ohne Lymphknoten"
+    },
+    {
+      "code": "4.7.",
+      "display": "Retroperitoneale Lymphknoten (also ohne Primärtumor)",
+      "definition": "Retroperitoneale Lymphknoten (also ohne Primärtumor)"
+    },
+    {
+      "code": "4.8.",
+      "display": "Retroperitoneum (z.B. Sarkome)",
+      "definition": "Retroperitoneum (z.B. Sarkome)"
+    },
+    {
+      "code": "4.8.+",
+      "display": "Retroperitoneum (z.B. Sarkome) mit Lymphknoten",
+      "definition": "Retroperitoneum (z.B. Sarkome) mit Lymphknoten"
+    },
+    {
+      "code": "4.8.-",
+      "display": "Retroperitoneum (z.B. Sarkome) ohne Lymphknoten",
+      "definition": "Retroperitoneum (z.B. Sarkome) ohne Lymphknoten"
+    },
+    {
+      "code": "4.9.",
+      "display": "Bauchwand (z.B. Sarkome)",
+      "definition": "Bauchwand (z.B. Sarkome)"
+    },
+    {
+      "code": "4.9.+",
+      "display": "Bauchwand (z.B. Sarkome) mit Lymphknoten",
+      "definition": "Bauchwand (z.B. Sarkome) mit Lymphknoten"
+    },
+    {
+      "code": "4.9.-",
+      "display": "Bauchwand (z.B. Sarkome) ohne Lymphknoten",
+      "definition": "Bauchwand (z.B. Sarkome) ohne Lymphknoten"
+    },
+    {
+      "code": "5.",
+      "definition": "Becken",
+      "display": "Becken"
+    },
+    {
+      "code": "5.+",
+      "display": "Becken mit Lymphknoten",
+      "definition": "Becken mit Lymphknoten"
+    },
+    {
+      "code": "5.-",
+      "display": "Becken ohne Lymphknoten",
+      "definition": "Becken ohne Lymphknoten"
+    },
+    {
+      "code": "5.1.",
+      "display": "Rektum",
+      "definition": "Rektum"
+    },
+    {
+      "code": "5.1.+",
+      "display": "Rektum mit Lymphknoten",
+      "definition": "Rektum mit Lymphknoten"
+    },
+    {
+      "code": "5.1.-",
+      "display": "Rektum ohne Lymphknoten",
+      "definition": "Rektum ohne Lymphknoten"
+    },
+    {
+      "code": "5.2.",
+      "display": "Analbereich",
+      "definition": "Analbereich"
+    },
+    {
+      "code": "5.2.+",
+      "display": "Analbereich mit Lymphknoten",
+      "definition": "Analbereich mit Lymphknoten"
+    },
+    {
+      "code": "5.2.-",
+      "display": "Analbereich ohne Lymphknoten",
+      "definition": "Analbereich ohne Lymphknoten"
+    },
+    {
+      "code": "5.3.",
+      "display": "Harnblase",
+      "definition": "Harnblase"
+    },
+    {
+      "code": "5.3.+",
+      "display": "Harnblase mit Lymphknoten",
+      "definition": "Harnblase mit Lymphknoten"
+    },
+    {
+      "code": "5.3.-",
+      "definition": "Harnblase ohne Lymphknoten",
+      "display": "Harnblase ohne Lymphknoten"
+    },
+    {
+      "code": "5.4.",
+      "display": "Prostata",
+      "definition": "Prostata"
+    },
+    {
+      "code": "5.4.+",
+      "display": "Prostata mit Lymphknoten",
+      "definition": "Prostata mit Lymphknoten"
+    },
+    {
+      "code": "5.4.-",
+      "display": "Prostata ohne Lymphknoten",
+      "definition": "Prostata ohne Lymphknoten"
+    },
+    {
+      "code": "5.5.",
+      "display": "Hoden",
+      "definition": "Hoden"
+    },
+    {
+      "code": "5.5.+",
+      "display": "Hoden mit Lymphknoten",
+      "definition": "Hoden mit Lymphknoten"
+    },
+    {
+      "code": "5.5.-",
+      "display": "Hoden ohne Lymphknoten",
+      "definition": "Hoden ohne Lymphknoten"
+    },
+    {
+      "code": "5.6.",
+      "display": "Penis",
+      "definition": "Penis"
+    },
+    {
+      "code": "5.6.+",
+      "display": "Penis mit Lymphknoten",
+      "definition": "Penis mit Lymphknoten"
+    },
+    {
+      "code": "5.6.-",
+      "display": "Penis ohne Lymphknoten",
+      "definition": "Penis ohne Lymphknoten"
+    },
+    {
+      "code": "5.7.",
+      "display": "Uterus/Zervix",
+      "definition": "Uterus/Zervix"
+    },
+    {
+      "code": "5.7.+",
+      "display": "Uterus/Zervix mit Lymphknoten",
+      "definition": "Uterus/Zervix mit Lymphknoten"
+    },
+    {
+      "code": "5.7.-",
+      "display": "Uterus/Zervix ohne Lymphknoten",
+      "definition": "Uterus/Zervix ohne Lymphknoten"
+    },
+    {
+      "code": "5.7.1.",
+      "display": "Uterus",
+      "definition": "Uterus"
+    },
+    {
+      "code": "5.7.1.+",
+      "display": "Uterus mit Lymphknoten",
+      "definition": "Uterus mit Lymphknoten"
+    },
+    {
+      "code": "5.7.1.-",
+      "display": "Uterus ohne Lymphknoten",
+      "definition": "Uterus ohne Lymphknoten"
+    },
+    {
+      "code": "5.7.2.",
+      "display": "Zervix",
+      "definition": "Zervix"
+    },
+    {
+      "code": "5.7.2.+",
+      "display": "Zervix mit Lymphknoten",
+      "definition": "Zervix mit Lymphknoten"
+    },
+    {
+      "code": "5.7.2.-",
+      "definition": "Zervix ohne Lymphknoten",
+      "display": "Zervix ohne Lymphknoten"
+    },
+    {
+      "code": "5.8.",
+      "display": "Ovar",
+      "definition": "Ovar"
+    },
+    {
+      "code": "5.8.+",
+      "display": "Ovar mit Lymphknoten",
+      "definition": "Ovar mit Lymphknoten"
+    },
+    {
+      "code": "5.8.-",
+      "display": "Ovar ohne Lymphknoten",
+      "definition": "Ovar ohne Lymphknoten"
+    },
+    {
+      "code": "5.9.",
+      "display": "Vulva",
+      "definition": "Vulva"
+    },
+    {
+      "code": "5.9.+",
+      "display": "Vulva mit Lymphknoten",
+      "definition": "Vulva mit Lymphknoten"
+    },
+    {
+      "code": "5.9.-",
+      "display": "Vulva ohne Lymphknoten",
+      "definition": "Vulva ohne Lymphknoten"
+    },
+    {
+      "code": "5.10.",
+      "display": "Vagina",
+      "definition": "Vagina"
+    },
+    {
+      "code": "5.10.+",
+      "display": "Vagina mit Lymphknoten",
+      "definition": "Vagina mit Lymphknoten"
+    },
+    {
+      "code": "5.10.-",
+      "display": "Vagina ohne Lymphknoten",
+      "definition": "Vagina ohne Lymphknoten"
+    },
+    {
+      "code": "5.11.",
+      "display": "Beckenwand",
+      "definition": "Beckenwand"
+    },
+    {
+      "code": "5.11.+",
+      "display": "Beckenwand mit Lymphknoten",
+      "definition": "Beckenwand mit Lymphknoten"
+    },
+    {
+      "code": "5.11.-",
+      "display": "Beckenwand ohne Lymphknoten",
+      "definition": "Beckenwand ohne Lymphknoten"
+    },
+    {
+      "code": "5.12.",
+      "display": "Beckenlymphknoten (ohne Primärtumor)",
+      "definition": "Beckenlymphknoten (ohne Primärtumor)"
+    },
+    {
+      "code": "6.",
+      "display": "Stütz/Bewegungsapparat",
+      "definition": "Stütz/Bewegungsapparat"
+    },
+    {
+      "code": "6.1.",
+      "display": "Schädelknochen",
+      "definition": "Schädelknochen"
+    },
+    {
+      "code": "6.2.",
+      "display": "Rippen",
+      "definition": "Rippen"
+    },
+    {
+      "code": "6.3.",
+      "display": "Sternum",
+      "definition": "Sternum"
+    },
+    {
+      "code": "6.4.",
+      "display": "HWS",
+      "definition": "HWS"
+    },
+    {
+      "code": "6.5.",
+      "display": "BWS",
+      "definition": "BWS"
+    },
+    {
+      "code": "6.6.",
+      "display": "LWS",
+      "definition": "LWS"
+    },
+    {
+      "code": "6.7.",
+      "display": "knöchernes Becken",
+      "definition": "knöchernes Becken"
+    },
+    {
+      "code": "6.8.",
+      "display": "Hüfte",
+      "definition": "Hüfte"
+    },
+    {
+      "code": "6.9.",
+      "display": "Achsel",
+      "definition": "Achsel"
+    },
+    {
+      "code": "6.10.",
+      "display": "Oberarm",
+      "definition": "Oberarm"
+    },
+    {
+      "code": "6.11.",
+      "definition": "Unterarm",
+      "display": "Unterarm"
+    },
+    {
+      "code": "6.12.",
+      "display": "Hand",
+      "definition": "Hand"
+    },
+    {
+      "code": "6.13.",
+      "display": "Leiste",
+      "definition": "Leiste"
+    },
+    {
+      "code": "6.14.",
+      "display": "Oberschenkel",
+      "definition": "Oberschenkel"
+    },
+    {
+      "code": "6.15.",
+      "display": "Unterschenkel",
+      "definition": "Unterschenkel"
+    },
+    {
+      "code": "6.16.",
+      "definition": "Fuß",
+      "display": "Fuß"
+    },
+    {
+      "code": "7.",
+      "display": "Haut",
+      "definition": "Haut"
+    },
+    {
+      "code": "7.+",
+      "display": "Haut mit Lymphknoten",
+      "definition": "Haut mit Lymphknoten"
+    },
+    {
+      "code": "7.-",
+      "display": "Haut ohne Lymphknoten",
+      "definition": "Haut ohne Lymphknoten"
+    },
+    {
+      "code": "7.1.",
+      "display": "Primärer Hauttumor (auch kutane Lymphome)",
+      "definition": "Primärer Hauttumor (auch kutane Lymphome)"
+    },
+    {
+      "code": "7.2.",
+      "display": "Hautmetastasen",
+      "definition": "Hautmetastasen"
+    },
+    {
+      "code": "8.",
+      "display": "Sonstiges",
+      "definition": "Sonstiges"
+    },
+    {
+      "code": "8.1.",
+      "display": "Ganzkörperbestrahlung",
+      "definition": "Ganzkörperbestrahlung"
+    },
+    {
+      "code": "8.2.",
+      "display": "Mantelfeldbestrahlung",
+      "definition": "Mantelfeldbestrahlung"
+    }
+  ],
+  "count": 149,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STZielgebiet</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

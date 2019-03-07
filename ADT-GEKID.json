@@ -26,7 +26,6 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
@@ -965,7 +964,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/MengeFMTyp"
           }
         ]
       },
@@ -1106,7 +1106,7 @@
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept",
@@ -1118,7 +1118,7 @@
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept",
@@ -1202,12 +1202,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPIntention",
         "label": "OPIntention",
         "short": "OPIntention",
-        "definition": "Gibt an, mit welchem Ziel die Operation durchgeführt wird. \nK = Kurativ \nP = Palliativ \nD = Diagnostisch \nR = Revision/Komplikation \nS= Sonstiges\nX = Fehlende Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ"
           }
         ]
       },
@@ -1263,9 +1263,12 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "positiveInt",
+            "profile": "http://hl7.org/fhir/StructureDefinition/positiveInt"
           }
-        ]
+        ],
+        "minValuePositiveInt": 2004,
+        "maxValuePositiveInt": 2018
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.histologie",
@@ -1277,7 +1280,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ"
           }
         ]
       },
@@ -1291,21 +1295,43 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus",
-        "label": "residualstatus",
-        "short": "residualstatus",
-        "definition": "Residualstatus_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.lokaleBeurteilungResidualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.lokaleBeurteilungResidualstatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/R_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.gesamtbeurteilungResidualstatus",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.gesamtbeurteilungResidualstatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/R_Typ"
           }
         ]
       },
@@ -1328,12 +1354,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation.OPKomplikation",
         "label": "OPKomplikation",
         "short": "OPKomplikation",
-        "definition": "Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist, welche. N = Nein U = Unbekannt Wenn ja, dann Liste der aufgetretenen Komplikationen nach Komplikationsschlüssel ABD Abszeß in einem Drainagekanal ABS Abszeß, intraabdominaler oder intrathorakaler ASF Abszeß, subfaszialer ANI Akute Niereninsuffizienz AEP Alkoholentzugspsychose ALR Allergische Reaktion ohne Schocksymptomatik ANS Anaphylaktischer Schock AEE Anastomoseninsuffizienz einer Enterostomie API Apoplektischer Insult BIF Biliäre Fistel BOG Blutung, obere gastrointestinale (z.B \"Stressulkus\") BOE Bolusverlegung eines Endotubus BSI Bronchusstumpfinsuffizienz CHI Cholangitis DAI Darmanastomoseinsuffizienz DPS Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus) DIC Disseminierte intravasale Koagulopathie DEP Drogenentzugspsychose DLU Druck- und Lagerungsschäden, z.B. Dekubitalulzera DSI Duodenalstumpfinsuffizienz ENF Enterale Fistel GER Gerinnungsstörung HEM Hämatemesis HUR Hämaturie HAE Hämorrhagischer Schock HFI Harnfistel HNK Hautnekrose im Operationsbereich HZI Herzinsuffizienz HRS Herzrhythmusstörungen HNA Hirnnervenausfälle HOP Hirnorganisches Psychosyndrom (z.B.\"Durchgangssyndrom\") HYB Hyperbilirubinämie HYF Hypopharynxfistel IFV Ileofemorale Venenthrombose KAS Kardiogener Schock KES Komplikationen einer Stomaanlage KIM Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation KRA Krampfanfall KDS Kurzdarmsyndrom LEV Leberversagen LOE Lungenödem LYF Lymphfistel LYE Lymphozele MES Magenentleerungsstörung MIL Mechanischer Ileus MED Mediastinitis MAT Mesenterialarterien- oder -venenthrombose MYI Myokardinfarkt RNB Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt NAB Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt NIN Nahtinsuffizienz, anderweitig nicht erwähnt OES Ösophagitis OSM Osteitis, Osteomyelitis PAF Pankreasfistel PIT Pankreatitis PAB Peranale Blutung PPA Periphere Parese PAV Peripherer arterieller Verschluß (Embolie, Thrombose) PER Peritonitis PLB Platzbauch PEY Pleuraempyem PLE Pleuraerguß PMN Pneumonie PNT Pneumothorax PDA Protrahierte Darmatonie (paralytischer Ileus) PAE Pulmonalarterienembolie RPA Rekurrensparese RIN Respiratorische Insuffizienz SKI Septische Komplikation eines Implantates SES Septischer Schock SFH Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes SON Sonstige Komplikation STK Stomakomplikation (z.B. Blutung, Nekrose, Stenose) TZP Thrombozytopenie TIA TIA (transitorische ischämische Attacke) oder RIND (reversibles ischämisches neurologisches Defizit) TRZ Transfusionszwischenfall WUH Wundhämatom (konservativ therapiert) WSS Wundheilungsstörung, subkutane",
         "min": 0,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation"
           }
         ]
       },
@@ -1347,7 +1373,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulMammaTyp"
           }
         ]
       },
@@ -1361,7 +1388,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulDarmTyp"
           }
         ]
       },
@@ -1375,21 +1403,43 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein",
-        "label": "modulAllgemein",
-        "short": "modulAllgemein",
-        "definition": "Modul_Allgemein_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumSozialdienstkontakt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumSozialdienstkontakt",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumStudienrekrutierung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumStudienrekrutierung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
           }
         ]
       },
@@ -1482,12 +1532,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STIntention",
         "label": "STIntention",
         "short": "STIntention",
-        "definition": "Gibt an, mit welcher Intention die Strahlentherapie durchgeführt wird. \nK = Kurativ \nP = Palliativ \nS = Sonstiges \nX = Keine Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention"
           }
         ]
       },
@@ -1496,12 +1546,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STStellungOP",
         "label": "STStellungOP",
         "short": "STStellungOP",
-        "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die Bestrahlung steht \nO = Ohne Bezug zu einer operativen Therapie \nA = Adjuvant\nN = Neoadjuvant \nI = Intraoperativ \nS = Sonstiges",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP"
           }
         ]
       },
@@ -1543,7 +1593,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet"
           }
         ]
       },
@@ -1552,12 +1603,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet",
         "label": "STSeiteZielgebiet",
         "short": "STSeiteZielgebiet",
-        "definition": "Gibt Seitenlokalisation des Zielgebietes an L = Links R = Rechts B = Beidseits M = Mittig U = Unbekannt",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"
           }
         ]
       },
@@ -1590,16 +1641,16 @@
         ]
       },
       {
-        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
-        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationenstart",
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationsart",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationsart",
         "label": "STApplikationenstart",
         "short": "STApplikationenstart",
-        "definition": "Gibt an, mit welcher Technik die Strahlentherapie durchgeführt wird. P = Perkutan (Teletherapie) K = Endokavitäre Kontakttherapie (Brachytherapie) I = Interstitielle Kontakttherapie (Brachytherapie) M = Metabolische Therapie (Radionuklide) wenn P: zusätzliche Box RC = Radiochemotherapie/Sensitizer: ja/nein wenn K oder I: zusätzliche Box HDR = High dose rate therapy PDR = Pulsed dose rate therapy LDR = Low dose rate therapy wenn M SIRT = Selektive Interne Radio-Therapie PRRT = Peptid-Radio-Rezeptor-Therapie S = Sonstiges",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart"
           }
         ]
       },
@@ -1613,7 +1664,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ"
           }
         ]
       },
@@ -1627,7 +1679,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ"
           }
         ]
       },
@@ -1641,7 +1694,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund"
           }
         ]
       },
@@ -1655,7 +1709,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/R_Typ"
           }
         ]
       },
@@ -1683,21 +1738,43 @@
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein",
-        "label": "modulAllgemein",
-        "short": "modulAllgemein",
-        "definition": "Modul_Allgemein_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumSozialdienstkontakt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumSozialdienstkontakt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumStudienrekrutierung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumStudienrekrutierung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
           }
         ]
       },
@@ -1762,12 +1839,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTIntention",
         "label": "SYSTIntention",
         "short": "SYSTIntention",
-        "definition": "Gibt an, mit welcher Intention die Systemische Therapie durchgeführt wird. \nK = Kurativ P = Palliativ S = Sonstiges X = Keine Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/STIntention"
           }
         ]
       },
@@ -1776,12 +1853,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTStellungOP",
         "label": "SYSTStellungOP",
         "short": "SYSTStellungOP",
-        "definition": "Gibt an, in welchem Bezug zu einer operativen Therapie die systemische Therapie steht O = Ohne Bezug zu einer operativen Therapie A = Adjuvant N = Neoadjuvant I = intraoperativ S = Sonstiges",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP"
           }
         ]
       },
@@ -1804,12 +1881,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart",
         "label": "SYSTTherapieart",
         "short": "SYSTTherapieart",
-        "definition": "Gibt an, welche Art der Therapie bzw. abwartende Strategie durchgeführt wurde CH = Chemotherapie HO = Hormontherapie IM = Immun- und Antikörpertherapie KM = Knochenmarktransplantation WS = Wait and see AS = Active Surveillance ZS = Zielgerichtete Substanzen SO = Sonstiges Mehrfachangaben möglich",
         "min": 0,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart"
           }
         ]
       },
@@ -1888,12 +1965,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeGrund",
         "label": "SYSTEndeGrund",
         "short": "SYSTEndeGrund",
-        "definition": "Gibt den Grund an, warum die Systemtherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie R = Reguläres Ende mit Dosisreduktion P = Abbruch wegen Progress U = Unbekannt S = Abbruch aus sonstigen Gründen",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund"
           }
         ]
       },
@@ -1916,12 +1993,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.residualStatus",
         "label": "residualStatus",
         "short": "residualStatus",
-        "definition": "Residualstatus_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/R_Typ"
           }
         ]
       },
@@ -1944,26 +2021,47 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung",
         "label": "SYSTNebenwirkung",
         "short": "SYSTNebenwirkung",
-        "definition": "Nebenwirkung_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein",
-        "label": "modulAllgemein",
-        "short": "modulAllgemein",
-        "definition": "Modul_Allgemein_Typ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumSozialdienstkontakt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumSozialdienstkontakt",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumStudienrekrutierung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumStudienrekrutierung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
           }
         ]
       },
@@ -2028,12 +2126,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.histologie",
         "label": "histologie",
         "short": "histologie",
-        "definition": "Histologie_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ"
           }
         ]
       },
@@ -2042,26 +2140,59 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.TNM",
         "label": "TNM",
         "short": "TNM",
-        "definition": "TNM_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation",
-        "label": "mengeWeitereKlassifikation",
-        "short": "mengeWeitereKlassifikation",
-        "definition": "Menge_Weitere_klassifikation_Typ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.datum",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.datum",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "dateTime",
+            "profile": "http://hl7.org/fhir/StructureDefinition/dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.name",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.stadium",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.stadium",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string",
+            "profile": "http://hl7.org/fhir/StructureDefinition/string"
           }
         ]
       },
@@ -2084,12 +2215,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus",
         "label": "gesamtbeurteilungTumorstatus",
         "short": "gesamtbeurteilungTumorstatus",
-        "definition": "Gesamtbeurteilung der Erkrankung unter Berücksichtigung aller Manifestationen. V = Vollremission (complete remission, CR) T = Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR) K = Keine Änderung (no change, NC) = stable disease P = Progression D = Divergentes Geschehen B = Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR) R = Vollremission mit residualen Auffälligkeiten (CRr) U = Beurteilung unmöglich X = Fehlende Angaben",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus"
           }
         ]
       },
@@ -2098,12 +2229,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus",
         "label": "verlaufLokalerTumorstatus",
         "short": "verlaufLokalerTumorstatus",
-        "definition": "Beurteilung der Situation im Primärtumorbereich K = Kein Tumor nachweisbar T = Tumorreste (Residualtumor) P = Tumorreste Residualtumor Progress N = Tumorreste Residualtumor No Change R = Lokalrezidiv F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus"
           }
         ]
       },
@@ -2112,12 +2243,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten",
         "label": "verlaufTumorstatusLymphknoten",
         "short": "verlaufTumorstatusLymphknoten",
-        "definition": "Beurteilung der Situation im Bereich der regionären Lymphknoten K = Kein Lymphknotenbefall nachweisbar R = Neu aufgetretenes Lymphknotenrezidiv T = Bekannter Lymphknotenbefall Residuen P = Bekannter Lymphknotenbefall Progress N = Bekannter Lymphknotenbefall No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten"
           }
         ]
       },
@@ -2126,12 +2257,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen",
         "label": "verlaufTumorstatusFernmetastasen",
         "short": "VerlaufTumorstatusFernmetastasen",
-        "definition": "Beurteilung der Situation im Bereich der Fernmetastasen K = Keine Fernmetastasen nachweisbar M = Verbliebene Fernmetastase(n) R = Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv T = Fernmetastasenl Residuen P = Fernmetastasen Progress N = Fernmetastasen No Change F = Fraglicher Befund U = Unbekannt X = Fehlende Angabe",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen"
           }
         ]
       },
@@ -2145,7 +2276,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/MengeFMTyp"
           }
         ]
       },
@@ -2159,7 +2291,8 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ"
           }
         ]
       },
@@ -2173,21 +2306,43 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp"
           }
         ]
       },
       {
         "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein",
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein",
-        "label": "modulAllgemein",
-        "short": "modulAllgemein",
-        "definition": "Modul_Allgemein_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumSozialdienstkontakt",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumSozialdienstkontakt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
+          }
+        ]
+      },
+      {
+        "id": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumStudienrekrutierung",
+        "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumStudienrekrutierung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
           }
         ]
       },
@@ -2224,12 +2379,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.todTumorbedingt",
         "label": "todTumorbedingt",
         "short": "todTumorbedingt",
-        "definition": "Krebs-Tod-Relation J = Ja N = Nein U = Unbekannt",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ"
           }
         ]
       },
@@ -2252,12 +2407,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD",
         "label": "todesursacheICD",
         "short": "TodesursacheICD",
-        "definition": "No description",
         "min": 0,
         "max": "*",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
           }
         ]
       },
@@ -2266,12 +2421,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion",
         "label": "todesursacheICDVersion",
         "short": "todesursacheICDVersion",
-        "definition": "ICD_Version_Typ",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
           }
         ]
       },
@@ -2350,12 +2505,12 @@
         "path": "ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp",
         "label": "tumorkonferenzTyp",
         "short": "tumorkonferenzTyp",
-        "definition": "Typ der Tumorkonferenz praeth = prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation) postop = postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie) postth = posttherapeutisch (manche Tumoren werden nicht operiert)",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ"
           }
         ]
       },

@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
-  "name": "STIntention",
-  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention",
+  "name": "OPIntentionTyp",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
   "status": "draft",
   "contact": [
     {
@@ -26,20 +26,30 @@
       "definition": "Palliativ"
     },
     {
+      "code": "D",
+      "display": "Diagnostisch",
+      "definition": "Diagnostisch"
+    },
+    {
+      "code": "R",
+      "display": "Revision/Komplikation",
+      "definition": "Revision/Komplikation"
+    },
+    {
       "code": "S",
       "display": "Sonstiges",
       "definition": "Sonstiges"
     },
     {
       "code": "X",
-      "display": "Keine Angabe",
-      "definition": "Keine Angabe"
+      "display": "Fehlende Angabe",
+      "definition": "Fehlende Angabe"
     }
   ],
-  "count": 5,
+  "count": 7,
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STIntention</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention</tt><p></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OPIntentionTyp</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ</tt><p></p></div>"
   },
   "hierarchyMeaning": "classified-with"
 }

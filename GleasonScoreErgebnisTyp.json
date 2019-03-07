@@ -17,33 +17,33 @@
   "concept": [
     {
       "code": "6",
-      "display": "5% relapse risk",
-      "definition": "5% relapse risk"
+      "display": "Only individual discrete well-formed glands",
+      "definition": "Only individual discrete well-formed glands, 5% relapse risk"
     },
     {
       "code": "7a",
-      "display": "17% relapse risk",
-      "definition": "17% relapse risk"
+      "display": "Predominantly well-formed glands with a lesser component of poorly-formed/fused/cribriform glands",
+      "definition": "Predominantly well-formed glands with a lesser component of poorly-formed/fused/cribriform glands, 17% relapse risk"
     },
     {
       "code": "7b",
-      "display": "35% relapse risk",
-      "definition": "35% relapse risk"
+      "display": "Predominantly poorly-formed/fused/cribriform glands with a lesser component of well-formed glands",
+      "definition": "Predominantly poorly-formed/fused/cribriform glands with a lesser component of well-formed glands, 35% relapse risk"
     },
     {
       "code": "8",
-      "display": "37% relapse risk",
-      "definition": "37% relapse risk"
+      "display": "Only poorly-formed/fused/cribriform glands or Predominantly well-formed glands with a lesser component lacking glands or Predominantly lacking glands with a lesser component of well-formed glands",
+      "definition": "Only poorly-formed/fused/cribriform glands or Predominantly well-formed glands with a lesser component lacking glands or Predominantly lacking glands with a lesser component of well-formed glands, 37% relapse risk"
     },
     {
       "code": "9",
-      "display": "76% relapse risk",
-      "definition": "76% relapse risk"
+      "display": "Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands",
+      "definition": "Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands, 76% relapse risk"
     },
     {
       "code": "10",
-      "display": "76% relapse risk",
-      "definition": "76% relapse risk"
+      "display": "Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands",
+      "definition": "Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands, 76% relapse risk"
     }
   ],
   "count": 7,

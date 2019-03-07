@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "SYSTTherapieart",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CH",
+      "display": "Chemotherapie",
+      "definition": "Chemotherapie"
+    },
+    {
+      "code": "HO",
+      "display": "Hormontherapie",
+      "definition": "Hormontherapie"
+    },
+    {
+      "code": "IM",
+      "display": "Immun- und Antikörpertherapie",
+      "definition": "Immun- und Antikörpertherapie"
+    },
+    {
+      "code": "KM",
+      "display": "Knochenmarktransplantation",
+      "definition": "Knochenmarktransplantation"
+    },
+    {
+      "code": "WS",
+      "display": "Wait and see",
+      "definition": "Wait and see"
+    },
+    {
+      "code": "AS",
+      "display": "Active Surveillance",
+      "definition": "Active Surveillance"
+    },
+    {
+      "code": "ZS",
+      "display": "Zielgerichtete Substanzen",
+      "definition": "Zielgerichtete Substanzen"
+    },
+    {
+      "code": "SO",
+      "display": "Sonstiges",
+      "definition": "Sonstiges"
+    }
+  ],
+  "count": 9,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SYSTTherapieart</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

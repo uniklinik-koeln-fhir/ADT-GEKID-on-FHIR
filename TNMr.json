@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMr",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "display": "\"native\" Klassifikation vor Eintreten eines Rezidivs",
+      "definition": "\"native\" Klassifikation vor Eintreten eines Rezidivs"
+    },
+    {
+      "code": "r",
+      "display": "Klassifikation erfolgte zur Beurteilung eines Rezidivs",
+      "definition": "Klassifikation erfolgte zur Beurteilung eines Rezidivs"
+    }
+  ],
+  "count": 3,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMr</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

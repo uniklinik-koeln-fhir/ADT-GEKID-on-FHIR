@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "name": "STStellungOP",
-  "url": "https://www.uk-koeln.de/fhir/CodeSystem/STStellungOP",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
   "status": "draft",
   "contact": [
     {
@@ -44,7 +44,6 @@
   "count": 6,
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STStellungOP</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/STStellungOP</tt><p></p></div>"
-  },
-  "hierarchyMeaning": "classified-with"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STStellungOP</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP</tt><p></p></div>"
+  }
 }

@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "VerlaufLokalerTumorstatus",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "K",
+      "display": "Kein Tumor nachweisbar",
+      "definition": "Kein Tumor nachweisbar"
+    },
+    {
+      "code": "T",
+      "display": "Tumorreste (Residualtumor)",
+      "definition": "Tumorreste (Residualtumor)"
+    },
+    {
+      "code": "P",
+      "display": "Tumorreste Residualtumor Progress",
+      "definition": "Tumorreste Residualtumor Progress"
+    },
+    {
+      "code": "N",
+      "display": "Tumorreste Residualtumor No Change",
+      "definition": "Tumorreste Residualtumor No Change"
+    },
+    {
+      "code": "R",
+      "display": "Lokalrezidiv",
+      "definition": "Lokalrezidiv"
+    },
+    {
+      "code": "F",
+      "display": "Fraglicher Befund",
+      "definition": "Fraglicher Befund"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    },
+    {
+      "code": "X",
+      "display": "Fehlende Angabe",
+      "definition": "Fehlende Angabe"
+    }
+  ],
+  "count": 9,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VerlaufLokalerTumorstatus</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

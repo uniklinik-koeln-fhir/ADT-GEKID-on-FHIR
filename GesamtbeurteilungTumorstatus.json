@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "GesamtbeurteilungTumorstatus",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "V",
+      "display": "Vollremission (complete remission, CR)",
+      "definition": "Vollremission (complete remission, CR)"
+    },
+    {
+      "code": "T",
+      "display": "Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)",
+      "definition": "Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)"
+    },
+    {
+      "code": "K",
+      "display": "Keine Änderung (no change, NC) = stable disease",
+      "definition": "Keine Änderung (no change, NC) = stable disease"
+    },
+    {
+      "code": "P",
+      "display": "Progression",
+      "definition": "Progression"
+    },
+    {
+      "code": "D",
+      "display": "Divergentes Geschehen",
+      "definition": "Divergentes Geschehen"
+    },
+    {
+      "code": "B",
+      "display": "Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)",
+      "definition": "Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)"
+    },
+    {
+      "code": "U",
+      "display": "Beurteilung unmöglich",
+      "definition": "Beurteilung unmöglich"
+    },
+    {
+      "code": "X",
+      "definition": "Fehlende Angaben",
+      "display": "Fehlende Angaben"
+    },
+    {
+      "code": "R",
+      "display": "Vollremission mit residualen Auffälligkeiten (CRr)",
+      "definition": "Vollremission mit residualen Auffälligkeiten (CRr)"
+    }
+  ],
+  "count": 10,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GesamtbeurteilungTumorstatus</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with",
+  "id": "c48ac531-990e-439f-bbbe-f274be5fc93e"
+}

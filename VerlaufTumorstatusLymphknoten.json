@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "VerlaufTumorstatusLymphknoten",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "K",
+      "display": "Kein Lymphknotenbefall nachweisbar",
+      "definition": "Kein Lymphknotenbefall nachweisbar"
+    },
+    {
+      "code": "R",
+      "display": "Neu aufgetretenes Lymphknotenrezidiv",
+      "definition": "Neu aufgetretenes Lymphknotenrezidiv"
+    },
+    {
+      "code": "T",
+      "display": "Bekannter Lymphknotenbefall Residuen",
+      "definition": "Bekannter Lymphknotenbefall Residuen"
+    },
+    {
+      "code": "P",
+      "display": "Bekannter Lymphknotenbefall Progress",
+      "definition": "Bekannter Lymphknotenbefall Progress"
+    },
+    {
+      "code": "N",
+      "display": "Bekannter Lymphknotenbefall No Change",
+      "definition": "Bekannter Lymphknotenbefall No Change"
+    },
+    {
+      "code": "F",
+      "display": "Fraglicher Befund",
+      "definition": "Fraglicher Befund"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt",
+      "definition": "Unbekannt"
+    },
+    {
+      "code": "X",
+      "display": "Fehlende Angabe",
+      "definition": "Fehlende Angabe"
+    }
+  ],
+  "count": 9,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VerlaufTumorstatusLymphknoten</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}
