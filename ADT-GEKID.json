@@ -26,6 +26,7 @@
   ],
   "kind": "logical",
   "abstract": false,
+  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
@@ -875,9 +876,6 @@
         "min": 0,
         "max": "1",
         "type": [
-          {
-            "code": "string"
-          },
           {
             "code": "CodeableConcept",
             "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
@@ -1844,7 +1842,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/STIntention"
+            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention"
           }
         ]
       },
