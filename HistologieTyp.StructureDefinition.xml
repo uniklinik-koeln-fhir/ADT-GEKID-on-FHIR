@@ -103,7 +103,7 @@
     <element id="histologieTyp.sentinelLKbefallen">
       <path value="histologieTyp.sentinelLKbefallen" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="positiveInt" />
         <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
