@@ -7,6 +7,7 @@
   <fhirVersion value="3.0.1" />
   <kind value="logical" />
   <abstract value="false" />
+  <type value="Element" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <snapshot>
@@ -42,9 +43,13 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="urn:oid:2.16.840.1.113883.6.43.1" />
+      </binding>
     </element>
     <element id="histologieTyp.morphologieICD0Version">
       <path value="histologieTyp.morphologieICD0Version" />

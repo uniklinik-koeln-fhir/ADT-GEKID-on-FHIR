@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "TNMaSymbol",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "m",
+      "display": "multiple Tumoren ohne Angabe der Zahl",
+      "definition": "multiple Tumoren ohne Angabe der Zahl"
+    },
+    {
+      "code": "2",
+      "display": "(2)",
+      "definition": "(2)"
+    },
+    {
+      "code": "3",
+      "display": "(3)",
+      "definition": "(3)"
+    },
+    {
+      "code": "4",
+      "display": "(4)",
+      "definition": "(4)"
+    },
+    {
+      "code": "5",
+      "display": "(5)",
+      "definition": "(5)"
+    },
+    {
+      "code": "6",
+      "display": "(6)",
+      "definition": "(6)"
+    },
+    {
+      "code": "7",
+      "display": "(7)",
+      "definition": "(7)"
+    },
+    {
+      "code": "8",
+      "display": "(8)",
+      "definition": "(8)"
+    },
+    {
+      "code": "9",
+      "display": "(9)",
+      "definition": "(9)"
+    }
+  ],
+  "count": 10,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMaSymbol</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "classified-with"
+}

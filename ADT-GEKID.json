@@ -20,6 +20,7 @@
   ],
   "kind": "logical",
   "abstract": false,
+  "type": "Element",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "snapshot": {
@@ -612,8 +613,9 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
+            "code": "Reference",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
           }
         ]
       },
@@ -699,8 +701,9 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
+            "code": "Reference",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
           }
         ]
       },
@@ -743,7 +746,8 @@
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1"
           }
         ]
       },
