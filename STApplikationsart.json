@@ -1,0 +1,100 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "STApplikationsart",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "P",
+      "display": "Perkutan (Teletherapie)",
+      "definition": "Perkutan (Teletherapie)"
+    },
+    {
+      "code": "PRCJ",
+      "display": "Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja",
+      "definition": "Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja"
+    },
+    {
+      "code": "PRCN",
+      "display": "erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein",
+      "definition": "erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein"
+    },
+    {
+      "code": "K",
+      "display": "Endokavitäre Kontakttherapie (Brachytherapie)",
+      "definition": "Endokavitäre Kontakttherapie (Brachytherapie)"
+    },
+    {
+      "code": "KHDR",
+      "display": "Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy",
+      "definition": "Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy"
+    },
+    {
+      "code": "KPDR",
+      "display": "Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy",
+      "definition": "Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy"
+    },
+    {
+      "code": "KLDR",
+      "display": "Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy",
+      "definition": "Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy"
+    },
+    {
+      "code": "I",
+      "display": "Interstitielle Kontakttherapie (Brachytherapie)",
+      "definition": "Interstitielle Kontakttherapie (Brachytherapie)"
+    },
+    {
+      "code": "IHDR",
+      "display": "Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy",
+      "definition": "Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy"
+    },
+    {
+      "code": "IPDR",
+      "display": "Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy",
+      "definition": "Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy"
+    },
+    {
+      "code": "ILDR",
+      "display": "Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy",
+      "definition": "Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy"
+    },
+    {
+      "code": "M",
+      "display": "Metabolische Therapie (Radionuklide)",
+      "definition": "Metabolische Therapie (Radionuklide)"
+    },
+    {
+      "code": "MSIRT",
+      "display": "Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie",
+      "definition": "Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie"
+    },
+    {
+      "code": "MPRRT",
+      "display": "Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie",
+      "definition": "Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie"
+    },
+    {
+      "code": "S",
+      "display": "Sonstiges",
+      "definition": "Sonstiges"
+    }
+  ],
+  "count": 16,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STApplikationsart</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart</tt><p></p></div>"
+  },
+  "hierarchyMeaning": "part-of"
+}

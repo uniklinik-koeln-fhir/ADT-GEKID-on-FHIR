@@ -6,6 +6,7 @@
   <fhirVersion value="3.0.1" />
   <kind value="logical" />
   <abstract value="false" />
+  <type value="Element" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <snapshot>
@@ -76,8 +77,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="CodeableConcept" />
+        <profile value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-t" />
       </type>
     </element>
     <element id="TNMTyp.TNMmSymbol">
@@ -85,8 +86,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
       </type>
     </element>
     <element id="TNMTyp.TNMcpuPraefixN">
@@ -103,8 +104,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="CodeableConcept" />
+        <profile value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-n-qualifier-i" />
       </type>
     </element>
     <element id="TNMTyp.TNMcpuPraefixM">
@@ -121,8 +122,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="CodeableConcept" />
+        <profile value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-m" />
       </type>
     </element>
     <element id="TNMTyp.TNML">

@@ -1,12 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ADT-GEKID",
-  "extension": [
-    {
-      "url": "http://clinfhir.com/StructureDefinition/userEmail",
-      "valueString": "danieldropuljic@gmail.com"
-    }
-  ],
   "url": "https://www.uk-koeln.de/fhir/StructureDefinition/ADT-GEKID",
   "identifier": [
     {
@@ -619,8 +613,9 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
+            "code": "Reference",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
           }
         ]
       },
@@ -706,8 +701,9 @@
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
+            "code": "Reference",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/CodeSystem"
           }
         ]
       },
@@ -750,7 +746,8 @@
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept",
+            "profile": "urn:oid:2.16.840.1.113883.6.43.1"
           }
         ]
       },
@@ -978,7 +975,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
@@ -993,7 +990,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
