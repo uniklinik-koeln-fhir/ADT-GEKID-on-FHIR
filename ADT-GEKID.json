@@ -975,7 +975,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
@@ -990,7 +990,7 @@
         "type": [
           {
             "code": "CodeableConcept",
-            "profile": "https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp"
+            "profile": "https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ"
           }
         ]
       },
