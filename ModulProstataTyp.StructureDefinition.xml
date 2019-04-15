@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp" />
   <name value="ModulProstataTyp" />
@@ -5,6 +6,7 @@
   <fhirVersion value="3.0.1" />
   <kind value="logical" />
   <abstract value="false" />
+  <type value="Element" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <snapshot>
@@ -104,11 +106,9 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="positiveInt" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
       </type>
-      <minValuePositiveInt value="0" />
-      <maxValuePositiveInt value="100" />
     </element>
     <element id="ModulProstata.CaBefallStanze.U">
       <path value="ModulProstata.CaBefallStanze.U" />
@@ -116,8 +116,8 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
       </type>
     </element>
     <element id="ModulProstata.PSA">
