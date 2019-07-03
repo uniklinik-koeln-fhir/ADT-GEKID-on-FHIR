@@ -6,7 +6,6 @@
   <fhirVersion value="3.0.1" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Element" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <snapshot>
@@ -27,26 +26,8 @@
         <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
       </type>
     </element>
-    <element id="ModulMammaTyp.hormonrezeptorStatusOestrogen">
-      <path value="ModulMammaTyp.hormonrezeptorStatusOestrogen" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
-      </type>
-    </element>
-    <element id="ModulMammaTyp.hormonrezeptorStatusProgresteron">
-      <path value="ModulMammaTyp.hormonrezeptorStatusProgresteron" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
-      </type>
-    </element>
-    <element id="ModulMammaTyp.her2neuStatus">
-      <path value="ModulMammaTyp.her2neuStatus" />
+    <element id="ModulMammaTyp.hormonrezeptor">
+      <path value="ModulMammaTyp.hormonrezeptor" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -70,24 +51,6 @@
       <type>
         <code value="CodeableConcept" />
         <profile value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
-      </type>
-    </element>
-    <element id="ModulMammaTyp.tumorgroesseInvasiv">
-      <path value="ModulMammaTyp.tumorgroesseInvasiv" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
-      </type>
-    </element>
-    <element id="ModulMammaTyp.tumorgroesseDCIS">
-      <path value="ModulMammaTyp.tumorgroesseDCIS" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
       </type>
     </element>
   </snapshot>

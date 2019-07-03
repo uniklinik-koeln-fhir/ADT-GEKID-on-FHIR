@@ -16,24 +16,19 @@
   "content": "complete",
   "concept": [
     {
-      "code": "2013",
-      "display": "ICD-10-GM Version 2013",
-      "definition": "ICD-10-GM Version 2013"
+      "code": "31",
+      "display": "ICD-O3; 1. Auflage 2003",
+      "definition": "ICD-O3; 1. Auflage 2003"
     },
     {
-      "code": "2014",
-      "display": "ICD-10-GM Version 2014",
-      "definition": "ICD-10-GM Version 2014"
+      "code": "32",
+      "display": "ICD-O3; 2. Auflage 2013",
+      "definition": "ICD-O3; 2. Auflage 2013"
     },
     {
-      "code": "2015",
-      "display": "ICD-10-GM Version 2015",
-      "definition": "ICD-10-GM Version 2015"
-    },
-    {
-      "code": "2016",
-      "display": "ICD-10-GM Version 2016",
-      "definition": "ICD-10-GM Version 2016"
+      "code": "bb",
+      "display": "Neue Codes aus den WHO-Klassifikationen (Bluebooks)",
+      "definition": "Neue Codes aus den WHO-Klassifikationen (Bluebooks)"
     }
   ],
   "count": 4,
