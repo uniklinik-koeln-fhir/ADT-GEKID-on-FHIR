@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+  "name": "STStellungOP",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STStellungOP</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP</tt></div>"
+  }
+}

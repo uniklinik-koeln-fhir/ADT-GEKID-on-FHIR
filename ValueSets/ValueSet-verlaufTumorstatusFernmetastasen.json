@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Tumorstatus_Fernmetastasen",
+  "name": "verlaufTumorstatusFernmetastasen",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>verlaufTumorstatusFernmetastasen</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Tumorstatus_Fernmetastasen</tt></div>"
+  }
+}

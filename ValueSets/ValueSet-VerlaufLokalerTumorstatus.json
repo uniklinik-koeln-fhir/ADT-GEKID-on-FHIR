@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Lokaler_Tumorstatus",
+  "name": "VerlaufLokalerTumorstatus",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VerlaufLokalerTumorstatus</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Lokaler_Tumorstatus</tt></div>"
+  }
+}

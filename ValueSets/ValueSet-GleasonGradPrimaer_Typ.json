@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.uk-koeln.de/fhir/ValueSet/GleasonGradPrimaer_Typ",
+  "name": "GleasonGradPrimaer_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GleasonGradPrimaer_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/GleasonGradPrimaer_Typ</tt></div>"
+  }
+}

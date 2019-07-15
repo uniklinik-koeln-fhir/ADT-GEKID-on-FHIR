@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://test.de/fhir/ValueSet/Datum_NU_Typ",
+  "name": "Datum_NU_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://test.de/fhir/CodeSystem/Datum_NU_Typ"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Datum_NU_Typ</h2><tt>https://test.de/fhir/ValueSet/Datum_NU_Typ</tt></div>"
+  }
+}

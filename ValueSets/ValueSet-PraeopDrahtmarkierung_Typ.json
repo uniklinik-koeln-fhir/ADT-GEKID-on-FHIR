@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.uk-koeln.de/fhir/ValueSet/PraeopDrahtmarkierung_Typ",
+  "name": "PraeopDrahtmarkierung_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PraeopDrahtmarkierung_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/PraeopDrahtmarkierung_Typ</tt></div>"
+  }
+}

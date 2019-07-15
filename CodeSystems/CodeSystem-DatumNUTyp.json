@@ -1,0 +1,40 @@
+{
+  "resourceType":"CodeSystem",
+  "name":"Datum_NU_Typ",
+  "url":"https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ",
+  "status":"draft",
+  "contact": [
+      {
+          "telecom": [
+              {
+                  "system":"email"
+              }
+          ]
+      }
+  ],
+  "compositional":false,
+  "content":"complete",
+  "concept": [
+      {
+          "code":"yyyy-mm-dd",
+          "display":"Datum des Kontakts",
+          "definition":"Datum des Kontakts"
+      },
+      {
+          "code":"N",
+          "display":"Nein – kein Kontakt",
+          "definition":"Nein – kein Kontakt"
+      },
+      {
+          "code":"U",
+          "display":"Unbekannt",
+          "definition":"Unbekannt"
+      }
+  ],
+  "count":"4",
+  "text":{
+      "status":"generated",
+      --- We have skipped the narrative for rendering purposes ---
+  },
+  "hierarchyMeaning":"classified-with"
+}
