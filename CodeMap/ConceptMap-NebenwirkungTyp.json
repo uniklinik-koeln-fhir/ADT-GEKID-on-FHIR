@@ -1,0 +1,79 @@
+{
+  "resourceType": "ConceptMap",
+  "name": "Nebenwirkung_Typ",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "260413007",
+              "equivalence": "narrower",
+              "display": "None"
+            }
+          ],
+          "code": "Keine oder höchstens Grad 2"
+        },
+        {
+          "target": [
+            {
+              "code": "260404005",
+              "equivalence": "equivalent",
+              "display": "Strong"
+            }
+          ],
+          "code": "Stark/ausgeprägt"
+        },
+        {
+          "target": [
+            {
+              "code": "442452003",
+              "equivalence": "equivalent",
+              "display": "Life threatening severity"
+            }
+          ],
+          "code": "Lebensbedrohlich"
+        },
+        {
+          "target": [
+            {
+              "code": "399166001",
+              "equivalence": "equivalent",
+              "display": "Fatal"
+            }
+          ],
+          "code": "Tödlich"
+        },
+        {
+          "target": [
+            {
+              "code": "261665006",
+              "equivalence": "equivalent",
+              "display": "Unknown"
+            }
+          ],
+          "code": "Unbekannt"
+        }
+      ],
+      "target": "http://snomed.info/sct",
+      "source": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Nebenwirkung_Typ</h2><tt>https://www.uk-koeln.de/fhir/ConceptMap/Nebenwirkung_Typ</tt></div>"
+  },
+  "url": "https://www.uk-koeln.de/fhir/ConceptMap/Nebenwirkung_Typ",
+  "sourceUri": "https://www.uk-koeln.de/fhir/ValueSet/Nebenwirkung_Typ",
+  "title": "ConceptMap-NebenwirkungTyp"
+}

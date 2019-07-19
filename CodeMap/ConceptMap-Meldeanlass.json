@@ -1,0 +1,99 @@
+{
+  "resourceType": "ConceptMap",
+  "name": "Meldeanlass",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "439401001",
+              "equivalence": "equivalent",
+              "display": "Diagnosis"
+            }
+          ],
+          "code": "diagnose"
+        },
+        {
+          "target": [
+            {
+              "code": "413946009",
+              "equivalence": "equivalent",
+              "display": "Date treatment started"
+            }
+          ],
+          "code": "behandlungsbeginn"
+        },
+        {
+          "target": [
+            {
+              "code": "413947000",
+              "equivalence": "equivalent",
+              "display": "Date treatment stopped"
+            }
+          ],
+          "code": "behandlungsende"
+        },
+        {
+          "target": [
+            {
+              "code": "263703002",
+              "equivalence": "equivalent",
+              "display": "Changed status"
+            }
+          ],
+          "code": "statusaenderung"
+        },
+        {
+          "target": [
+            {
+              "code": "308552006",
+              "equivalence": "equivalent",
+              "display": "Report status"
+            }
+          ],
+          "code": "statusmeldung"
+        },
+        {
+          "target": [
+            {
+              "code": "419099009",
+              "equivalence": "equivalent",
+              "display": "Dead"
+            }
+          ],
+          "code": "tot"
+        },
+        {
+          "target": [
+            {
+              "code": "365716004",
+              "equivalence": "equivalent",
+              "display": "Cytology - general - finding"
+            }
+          ],
+          "code": "histologie_zytologie"
+        }
+      ],
+      "source": "https://www.uk-koeln.de/fhir/CodeSystem/Meldeanlass",
+      "target": "http://snomed.info/sct"
+    }
+  ],
+  "url": "https://www.uk-koeln.de/fhir/ConceptMap/Meldeanlass",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Meldeanlass</h2><tt>https://www.uk-koeln.de/fhir/ConceptMap/Meldeanlass</tt></div>"
+  },
+  "title": "Meldeanlass",
+  "sourceUri": "https://www.uk-koeln.de/fhir/ValueSet/Meldeanlass"
+}

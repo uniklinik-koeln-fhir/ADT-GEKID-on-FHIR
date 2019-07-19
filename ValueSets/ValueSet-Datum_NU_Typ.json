@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://test.de/fhir/ValueSet/Datum_NU_Typ",
+  "url": "https://www.uk-koeln.de/fhir/ValueSet/Datum_NU_Typ",
   "name": "Datum_NU_Typ",
   "status": "draft",
   "contact": [
@@ -15,7 +15,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://test.de/fhir/CodeSystem/Datum_NU_Typ"
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ"
       }
     ]
   },
