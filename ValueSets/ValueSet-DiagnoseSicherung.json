@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "DiagnoseSicherung",
   "status": "active",
   "compose": {
       "include": [

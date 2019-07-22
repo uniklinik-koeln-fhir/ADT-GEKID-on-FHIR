@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "strahlendosisTyp",
   "status": "active",
   "compose": {
       "include": [

@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "Fernmetastase_Lokalisation_Type",
   "status": "active",
   "compose": {
       "include": [

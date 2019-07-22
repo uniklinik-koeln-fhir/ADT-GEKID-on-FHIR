@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "STZielgebiet",
   "status": "active",
   "compose": {
       "include": [

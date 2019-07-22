@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "Praetherapeutischer_Menopausenstatus_Typ",
   "status": "active",
   "compose": {
       "include": [

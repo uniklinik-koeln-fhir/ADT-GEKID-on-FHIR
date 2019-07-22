@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "PraeopDrahtmarkierung_Typ",
   "status": "active",
   "compose": {
       "include": [

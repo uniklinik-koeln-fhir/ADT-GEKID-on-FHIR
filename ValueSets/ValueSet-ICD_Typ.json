@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "ICD_Typ",
   "status": "active",
   "compose": {
       "include": [

@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "TNMVersion",
   "status": "active",
   "compose": {
       "include": [

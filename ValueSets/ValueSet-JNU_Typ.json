@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "JNU_Typ",
   "status": "active",
   "compose": {
       "include": [

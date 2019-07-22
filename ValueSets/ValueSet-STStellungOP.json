@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "STStellungOP",
   "status": "active",
   "compose": {
       "include": [

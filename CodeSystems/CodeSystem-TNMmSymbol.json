@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "name": "TNMaSymbol",
+  "name": "TNMmSymbol",
   "url": "https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol",
   "status": "draft",
   "contact": [

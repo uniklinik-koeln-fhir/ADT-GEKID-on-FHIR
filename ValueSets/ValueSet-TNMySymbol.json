@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "TNMySymbol",
   "status": "active",
   "compose": {
       "include": [

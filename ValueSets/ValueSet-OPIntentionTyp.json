@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "OPIntentionTyp",
   "status": "active",
   "compose": {
       "include": [

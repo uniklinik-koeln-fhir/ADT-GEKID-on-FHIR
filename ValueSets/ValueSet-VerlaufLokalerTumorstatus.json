@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "VerlaufLokalerTumorStatus",
   "status": "active",
   "compose": {
       "include": [

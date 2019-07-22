@@ -1,5 +1,6 @@
 {
   "resourceType": "ValueSet",
+  "name": "STEndeGrund",
   "status": "active",
   "compose": {
       "include": [
