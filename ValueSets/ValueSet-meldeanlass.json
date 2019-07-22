@@ -1,26 +1,53 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/meldeanlass",
-  "name": "meldeanlass",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>meldeanlass</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/meldeanlass</tt></div>"
+  "expansion": {
+      "identifier": "2ff73580-9a19-4525-9972-dce05d9ce7be",
+      "timestamp": "2019-07-22T09:36:42+00:00",
+      "total": 7,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "diagnose",
+              "display": "diagnose"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "behandlungsbeginn",
+              "display": "behandlungsbeginn"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "behandlungsende",
+              "display": "behandlungsende"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "statusaenderung",
+              "display": "statusaenderung"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "statusmeldung",
+              "display": "statusmeldung"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "tot",
+              "display": "tot"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass",
+              "code": "histologie_zytologie",
+              "display": "histologie_zytologie"
+          }
+      ]
   }
 }

@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/ASA",
-  "name": "ASA",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ASA</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/ASA</tt></div>"
+  "expansion": {
+      "identifier": "024b1608-af47-40e7-85bd-47707245c598",
+      "timestamp": "2019-07-22T09:31:03+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff",
+              "code": "E",
+              "display": "Elektiveingriff"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff",
+              "code": "N",
+              "display": "Notfalleingriff"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

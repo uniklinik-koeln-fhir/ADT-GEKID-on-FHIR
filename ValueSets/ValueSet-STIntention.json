@@ -1,26 +1,38 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/ST_Intention",
-  "name": "STIntention",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STIntention</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/ST_Intention</tt></div>"
+  "expansion": {
+      "identifier": "2f3c13ff-d905-47d2-85bd-9ed5ddb3b354",
+      "timestamp": "2019-07-22T10:40:31+00:00",
+      "total": 4,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention",
+              "code": "K",
+              "display": "Kurativ"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention",
+              "code": "P",
+              "display": "Palliativ"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention",
+              "code": "S",
+              "display": "Sonstiges"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention",
+              "code": "X",
+              "display": "Keine Angabe"
+          }
+      ]
   }
 }

@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNML",
-  "name": "TNML",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNML"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNML"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNML</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNML</tt></div>"
+  "expansion": {
+      "identifier": "feb4396f-5a0a-4d8e-9968-59b838abc910",
+      "timestamp": "2019-07-22T10:42:55+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNML",
+              "code": "LX",
+              "display": "Lymphgefäßinvasion kann nicht beurteilt werden"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNML",
+              "code": "L0",
+              "display": "Keine Lymphgefäßinvasion"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNML",
+              "code": "L1",
+              "display": "Lymphgefäßinvasion"
+          }
+      ]
   }
 }

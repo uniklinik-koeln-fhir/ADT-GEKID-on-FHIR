@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/ICD_Typ",
-  "name": "ICD_Typ",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/ICD_Typ</tt></div>"
+  "expansion": {
+      "identifier": "32f9746e-b448-4a84-94ee-262a3ac72418",
+      "timestamp": "2019-07-22T09:35:01+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ",
+              "code": "31",
+              "display": "ICD-O3; 1. Auflage 2003"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ",
+              "code": "32",
+              "display": "ICD-O3; 2. Auflage 2013"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ",
+              "code": "bb",
+              "display": "Neue Codes aus den WHO-Klassifikationen (Bluebooks)"
+          }
+      ]
   }
 }

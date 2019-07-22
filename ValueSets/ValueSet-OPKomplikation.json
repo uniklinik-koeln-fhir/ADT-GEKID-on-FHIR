@@ -1,26 +1,418 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/OPKomplikation",
-  "name": "OPKomplikation",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OPKomplikation</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/OPKomplikation</tt></div>"
+  "expansion": {
+      "identifier": "2a28b852-9d86-4d8a-8215-f460e57329d0",
+      "timestamp": "2019-07-22T09:44:06+00:00",
+      "total": 80,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "N",
+              "display": "Nein"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "U",
+              "display": "Unbekannt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ABD",
+              "display": "Abszeß in einem Drainagekanal"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ABS",
+              "display": "Abszeß, intraabdominaler oder intrathorakaler"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ASF",
+              "display": "Abszeß, subfaszialer"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ANI",
+              "display": "Akute Niereninsuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "AEP",
+              "display": "Alkoholentzugspsychose"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ALR",
+              "display": "Allergische Reaktion ohne Schocksymptomatik"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ANS",
+              "display": "Anaphylaktischer Schock"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "AEE",
+              "display": "Anastomoseninsuffizienz einer Enterostomie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "API",
+              "display": "Apoplektischer Insult"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "BIF",
+              "display": "Biliäre Fistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "BOG",
+              "display": "Blutung, obere gastrointestinale (z.B \"Stressulkus\")"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "BOE",
+              "display": "Bolusverlegung eines Endotubus"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "BSI",
+              "display": "Bronchusstumpfinsuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "CHI",
+              "display": "Cholangitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DAI",
+              "display": "Darmanastomoseinsuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DPS",
+              "display": "Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DIC",
+              "display": "Disseminierte intravasale Koagulopathie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DEP",
+              "display": "Drogenentzugspsychose"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DLU",
+              "display": "Druck- und Lagerungsschäden, z.B. Dekubitalulzera"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "DSI",
+              "display": "Duodenalstumpfinsuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "ENF",
+              "display": "Enterale Fistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "GER",
+              "display": "Gerinnungsstörung"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HEM",
+              "display": "Hämatemesis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HUR",
+              "display": "Hämaturie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HAE",
+              "display": "Hämorrhagischer Schock"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HFI",
+              "display": "Harnfistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HNK",
+              "display": "Hautnekrose im Operationsbereich"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HZI",
+              "display": "Herzinsuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HRS",
+              "display": "Herzrhythmusstörungen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HNA",
+              "display": "Hirnnervenausfälle"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HOP",
+              "display": "Hirnorganisches Psychosyndrom (z.B.\"Durchgangssyndrom\")"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HYB",
+              "display": "Hyperbilirubinämie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "HYF",
+              "display": "Hypopharynxfistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "IFV",
+              "display": "Ileofemorale Venenthrombose"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "KAS",
+              "display": "Kardiogener Schock"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "KES",
+              "display": "Komplikationen einer Stomaanlage"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "KIM",
+              "display": "Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "KRA",
+              "display": "Krampfanfall"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "KDS",
+              "display": "Kurzdarmsyndrom"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "LEV",
+              "display": "Leberversagen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "LOE",
+              "display": "Lungenödem"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "LYF",
+              "display": "Lymphfistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "LYE",
+              "display": "Lymphozele"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "MES",
+              "display": "Magenentleerungsstörung"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "MIL",
+              "display": "Mechanischer Ileus"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "MED",
+              "display": "Mediastinitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "MAT",
+              "display": "Mesenterialarterien- oder -venenthrombose"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "MYI",
+              "display": "Myokardinfarkt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "RNB",
+              "display": "Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "NAB",
+              "display": "Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "NIN",
+              "display": "Nahtinsuffizienz, anderweitig nicht erwähnt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "OES",
+              "display": "Ösophagitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "OSM",
+              "display": "Osteitis, Osteomyelitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PAF",
+              "display": "Pankreasfistel"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PIT",
+              "display": "Pankreatitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PAB",
+              "display": "Peranale Blutung"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PPA",
+              "display": "Periphere Parese"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PAV",
+              "display": "Peripherer arterieller Verschluß (Embolie, Thrombose)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PER",
+              "display": "Peritonitis"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PLB",
+              "display": "Platzbauch"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PEY",
+              "display": "Pleuraempyem"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PLE",
+              "display": "Pleuraerguß"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PMN",
+              "display": "Pneumonie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PNT",
+              "display": "Pneumothorax"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PDA",
+              "display": "Protrahierte Darmatonie (paralytischer Ileus)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "PAE",
+              "display": "Pulmonalarterienembolie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "RPA",
+              "display": "Rekurrensparese"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "RIN",
+              "display": "Respiratorische Insuffizienz"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "SKI",
+              "display": "Septische Komplikation eines Implantates"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "SES",
+              "display": "Septischer Schock"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "SFH",
+              "display": "Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "SON",
+              "display": "Sonstige Komplikation"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "STK",
+              "display": "Stomakomplikation (z.B. Blutung, Nekrose, Stenose)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "TZP",
+              "display": "Thrombozytopenie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "TIA",
+              "display": "TIA (transitorische ischämische Attacke) oder      RIND (reversibles ischämisches neurologisches Defizit)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "TRZ",
+              "display": "Transfusionszwischenfall"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "WUH",
+              "display": "Wundhämatom (konservativ therapiert)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation",
+              "code": "WSS",
+              "display": "Wundheilungsstörung, subkutane"
+          }
+      ]
   }
 }

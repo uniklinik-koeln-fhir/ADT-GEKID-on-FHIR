@@ -1,26 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNMrSymbol",
-  "name": "TNMr",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMr</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNMrSymbol</tt></div>"
+  "expansion": {
+      "identifier": "90fb41d7-ad6e-4af5-9ca0-12dc1bdf4615",
+      "timestamp": "2019-07-22T10:43:22+00:00",
+      "total": 1,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol",
+              "code": "r",
+              "display": "Klassifikation erfolgte zur Beurteilung eines Rezidivs"
+          }
+      ]
   }
 }

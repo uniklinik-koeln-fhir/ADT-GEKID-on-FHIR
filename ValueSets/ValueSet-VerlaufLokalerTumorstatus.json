@@ -1,26 +1,58 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Lokaler_Tumorstatus",
-  "name": "VerlaufLokalerTumorstatus",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VerlaufLokalerTumorstatus</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Lokaler_Tumorstatus</tt></div>"
+  "expansion": {
+      "identifier": "4ff8ea44-7218-4372-b63b-c2f1ff0db760",
+      "timestamp": "2019-07-22T10:45:43+00:00",
+      "total": 8,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "K",
+              "display": "Kein Tumor nachweisbar"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "T",
+              "display": "Tumorreste (Residualtumor)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "P",
+              "display": "Tumorreste Residualtumor Progress"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "N",
+              "display": "Tumorreste Residualtumor No Change"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "R",
+              "display": "Lokalrezidiv"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "F",
+              "display": "Fraglicher Befund"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "U",
+              "display": "Unbekannt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus",
+              "code": "X",
+              "display": "Fehlende Angabe"
+          }
+      ]
   }
 }

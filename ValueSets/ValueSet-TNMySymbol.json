@@ -1,26 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNMySymbol",
-  "name": "TNMySymbol",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMySymbol</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNMySymbol</tt></div>"
+  "expansion": {
+      "identifier": "b7914cbc-dabe-4d7f-b3a2-748c55b6239f",
+      "timestamp": "2019-07-22T10:44:34+00:00",
+      "total": 1,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol",
+              "code": "y",
+              "display": "Klassifikation erfolgte während oder nach initialer multimodaler Therapie"
+          }
+      ]
   }
 }

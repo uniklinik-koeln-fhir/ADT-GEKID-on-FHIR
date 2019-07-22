@@ -1,26 +1,38 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/GradRektumAnzeichnungStomaposition",
-  "name": "gradRektumAnastomoseninsuffizienz",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>gradRektumAnastomoseninsuffizienz</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/GradRektumAnzeichnungStomaposition</tt></div>"
+  "expansion": {
+      "identifier": "7848b01c-2312-4389-a421-f69f8adcc6cd",
+      "timestamp": "2019-07-22T09:34:16+00:00",
+      "total": 4,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition",
+              "code": "B",
+              "display": "Anastomoseninsuffizienz Grad B"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition",
+              "code": "C",
+              "display": "Anastomoseninsuffizienz Grad C"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition",
+              "code": "K",
+              "display": "Keine Insuffizienz oder höchstens Grad A"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

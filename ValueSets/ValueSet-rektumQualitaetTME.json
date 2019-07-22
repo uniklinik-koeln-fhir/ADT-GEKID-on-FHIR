@@ -1,26 +1,53 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/RektumQualitaetTME",
-  "name": "rektumQualitaetTME",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>rektumQualitaetTME</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/RektumQualitaetTME</tt></div>"
+  "expansion": {
+      "identifier": "f7529330-6278-4fda-8478-bc3197e66838",
+      "timestamp": "2019-07-22T10:39:27+00:00",
+      "total": 7,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "1",
+              "display": "Grad 1 (gut)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "2",
+              "display": "Grad 2 (moderat)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "3",
+              "display": "Grad 3 (schlecht)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "P",
+              "display": "PME durchgeführt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "L",
+              "display": "Lokale Exzision durchgeführt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "A",
+              "display": "Andere Operation durchgeführt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

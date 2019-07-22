@@ -1,26 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNMS",
-  "name": "TNMS",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMS</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNMS</tt></div>"
+  "expansion": {
+      "identifier": "e81848f6-a85f-4922-bdbb-4100a497c117",
+      "timestamp": "2019-07-22T10:43:41+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+              "code": "SX",
+              "display": "Werte der Serumtumormarker nicht verfügbar oder entsprechende Untersuchungen nicht vorgenommen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+              "code": "S0",
+              "display": "Serumtumormarker innerhalb der normalen Grenzen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+              "code": "S1",
+              "display": "LDH <1,5N Und <HCG 5000 Und <AFP 1000, N = obere Grenze des Normalwertes"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+              "code": "S2",
+              "display": "LDH 1,5-10N Oder HCG 5000-50000 Oder AFP 1000-10000, N = obere Grenze des Normalwertes"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMS",
+              "code": "S3",
+              "display": "LDH >10N Oder HCG >50000 Oder AFP >10000, N = obere Grenze des Normalwertes"
+          }
+      ]
   }
 }

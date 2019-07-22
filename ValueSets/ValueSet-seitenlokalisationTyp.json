@@ -1,26 +1,48 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Seitenlokalisation_Typ",
-  "name": "seitenlokalisationTyp",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>seitenlokalisationTyp</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Seitenlokalisation_Typ</tt></div>"
+  "expansion": {
+      "identifier": "eff5dad2-ade6-4cb5-a07e-15b70ed8fa4e",
+      "timestamp": "2019-07-22T10:39:39+00:00",
+      "total": 6,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "L",
+              "display": "Links"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "R",
+              "display": "Rechts"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "B",
+              "display": "Beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "M",
+              "display": "Mittellinie/Mittig"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "U",
+              "display": "Unbekannt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ",
+              "code": "T",
+              "display": "Trifft nicht zu (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)"
+          }
+      ]
   }
 }

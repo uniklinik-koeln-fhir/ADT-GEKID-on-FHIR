@@ -1,26 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Nebenwirkung_Typ",
-  "name": "NebenwirkungTyp",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NebenwirkungTyp</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Nebenwirkung_Typ</tt></div>"
+  "expansion": {
+      "identifier": "72640798-14e4-49be-964e-060b53ba0ea7",
+      "timestamp": "2019-07-22T09:37:28+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ",
+              "code": "K",
+              "display": "Keine oder höchstens Grad 2"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ",
+              "code": "3",
+              "display": "Stark/ausgeprägt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ",
+              "code": "4",
+              "display": "Lebensbedrohlich"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ",
+              "code": "5",
+              "display": "Tödlich"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

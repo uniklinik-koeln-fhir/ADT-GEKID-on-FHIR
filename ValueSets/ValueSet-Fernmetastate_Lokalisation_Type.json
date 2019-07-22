@@ -1,26 +1,78 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Fernmetastate_Lokalisation_Type",
-  "name": "Fernmetastate_Lokalisation_Type",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Fernmetastate_Lokalisation_Type</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Fernmetastate_Lokalisation_Type</tt></div>"
+  "expansion": {
+      "identifier": "4595b826-0243-414b-9302-4bfccc5f21e0",
+      "timestamp": "2019-07-22T09:33:05+00:00",
+      "total": 12,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "PUL",
+              "display": "Lunge"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "OSS",
+              "display": "Knochen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "HEP",
+              "display": "Leber"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "BRA",
+              "display": "Hirn"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "LYM",
+              "display": "Lymphknoten"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "MAR",
+              "display": "Knochenmark"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "PLE",
+              "display": "Pleura"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "PER",
+              "display": "Peritoneum"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "ADR",
+              "display": "Nebennieren"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "SKI",
+              "display": "Haut"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "OTH",
+              "display": "Andere Organe"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type",
+              "code": "GEN",
+              "display": "Generalisierte Metastasierung"
+          }
+      ]
   }
 }

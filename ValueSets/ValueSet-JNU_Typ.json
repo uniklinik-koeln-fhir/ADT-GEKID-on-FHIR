@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/JNU_Typ",
-  "name": "JNU_Typ",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JNU_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/JNU_Typ</tt></div>"
+  "expansion": {
+      "identifier": "cebb54c3-e8b8-4bbe-988a-f00a425cd55c",
+      "timestamp": "2019-07-22T09:36:25+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ",
+              "code": "J",
+              "display": "Ja"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ",
+              "code": "N",
+              "display": "Nein"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

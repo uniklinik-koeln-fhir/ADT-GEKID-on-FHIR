@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Praetherapeutischer_Menopausenstatus_Typ",
-  "name": "Praetherapeutischer_Menopausenstatus_Typ",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Praetherapeutischer_Menopausenstatus_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Praetherapeutischer_Menopausenstatus_Typ</tt></div>"
+  "expansion": {
+      "identifier": "40d0d8d5-faa3-4f92-869f-dfa8af71202b",
+      "timestamp": "2019-07-22T10:38:00+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ",
+              "code": "1",
+              "display": "Prämenopausal"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ",
+              "code": "3",
+              "display": "Postmenopausal"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

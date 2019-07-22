@@ -1,26 +1,93 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
-  "name": "STApplikationsart",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STApplikationsart</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart</tt></div>"
+  "expansion": {
+      "identifier": "ff9e1d68-bd5c-4534-8f00-3fde0d0f34f1",
+      "timestamp": "2019-07-22T10:39:56+00:00",
+      "total": 15,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "P",
+              "display": "Perkutan (Teletherapie)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "PRCJ",
+              "display": "Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "PRCN",
+              "display": "erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "K",
+              "display": "Endokavitäre Kontakttherapie (Brachytherapie)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "KHDR",
+              "display": "Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "KPDR",
+              "display": "Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "KLDR",
+              "display": "Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "I",
+              "display": "Interstitielle Kontakttherapie (Brachytherapie)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "IHDR",
+              "display": "Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "IPDR",
+              "display": "Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "ILDR",
+              "display": "Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "M",
+              "display": "Metabolische Therapie (Radionuklide)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "MSIRT",
+              "display": "Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "MPRRT",
+              "display": "Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart",
+              "code": "S",
+              "display": "Sonstiges"
+          }
+      ]
   }
 }

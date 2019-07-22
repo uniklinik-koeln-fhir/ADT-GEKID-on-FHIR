@@ -1,26 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/MeldeBegruendung",
-  "name": "MeldeBegruendung",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MeldeBegruendung</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/MeldeBegruendung</tt></div>"
+  "expansion": {
+      "identifier": "a6c2109a-89c4-494e-8339-81eb279fec11",
+      "timestamp": "2019-07-22T09:36:56+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+              "code": "I",
+              "display": "Patientin/Patient wurde informiert und hat nicht wiedersprochen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+              "code": "A",
+              "display": "Ausnahme"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+              "code": "D",
+              "display": "Meldung von Ärzten ohne unmittelbaren Patientenkontakt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+              "code": "W",
+              "display": "Patient hat der personenbezogenen Speicherung widersprochen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung",
+              "code": "V",
+              "display": "Verstorben"
+          }
+      ]
   }
 }

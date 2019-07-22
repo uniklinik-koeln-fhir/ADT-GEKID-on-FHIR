@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/AnlassGleasonScore",
-  "name": "AnlassGleasonScore",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AnlassGleasonScore</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/AnlassGleasonScore</tt></div>"
+  "expansion": {
+      "identifier": "795c3dca-ab90-4271-87d4-71e5c3e96498",
+      "timestamp": "2019-07-22T09:29:37+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore",
+              "code": "O",
+              "display": "Op"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore",
+              "code": "S",
+              "display": "Stanze"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore",
+              "code": "U",
+              "display": "Unbekannt"
+          }
+      ]
   }
 }

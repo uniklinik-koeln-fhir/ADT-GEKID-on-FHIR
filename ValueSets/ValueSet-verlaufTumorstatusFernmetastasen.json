@@ -1,26 +1,63 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Tumorstatus_Fernmetastasen",
-  "name": "verlaufTumorstatusFernmetastasen",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>verlaufTumorstatusFernmetastasen</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Verlauf_Tumorstatus_Fernmetastasen</tt></div>"
+  "expansion": {
+      "identifier": "891c17f9-4296-498c-8126-7520dd8807f9",
+      "timestamp": "2019-07-22T10:45:56+00:00",
+      "total": 9,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "K",
+              "display": "Keine Fernmetastasen nachweisbar"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "M",
+              "display": "Verbliebene Fernmetastase(n)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "R",
+              "display": "Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "T",
+              "display": "Fernmetastasenl Residuen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "P",
+              "display": "Fernmetastasen Progress"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "N",
+              "display": "Fernmetastasen No Change"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "F",
+              "display": "Fraglicher Befund"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "U",
+              "display": "Unbekannt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen",
+              "code": "X",
+              "display": "Fehlende Angabe"
+          }
+      ]
   }
 }

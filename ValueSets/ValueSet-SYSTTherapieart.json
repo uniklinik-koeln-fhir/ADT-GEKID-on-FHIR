@@ -1,26 +1,58 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/SYST_Therapieart",
-  "name": "SYSTTherapieart",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SYSTTherapieart</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/SYST_Therapieart</tt></div>"
+  "expansion": {
+      "identifier": "e6e9d6a1-9dba-47b4-aea2-e8175c5e5af2",
+      "timestamp": "2019-07-22T10:41:59+00:00",
+      "total": 8,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "CH",
+              "display": "Chemotherapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "HO",
+              "display": "Hormontherapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "IM",
+              "display": "Immun- und Antikörpertherapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "KM",
+              "display": "Knochenmarktransplantation"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "WS",
+              "display": "Wait and see"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "AS",
+              "display": "Active Surveillance"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "ZS",
+              "display": "Zielgerichtete Substanzen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart",
+              "code": "SO",
+              "display": "Sonstiges"
+          }
+      ]
   }
 }

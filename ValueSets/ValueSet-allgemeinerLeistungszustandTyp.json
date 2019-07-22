@@ -1,26 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/Allgemeiner_Leistungszustand_Typ",
-  "name": "allgemeinerLeistungszustandTyp",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>allgemeinerLeistungszustandTyp</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/Allgemeiner_Leistungszustand_Typ</tt></div>"
+  "expansion": {
+      "identifier": "8f439b1d-1c8e-47a2-aa29-f86c01a55a85",
+      "timestamp": "2019-07-22T09:24:14+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ",
+              "code": "0",
+              "display": "Normale, uneingeschränkte Aktivität wie vor der Erkrankung  (90 - 100% nach Karnofsky)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ",
+              "code": "1",
+              "display": "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z.B. leichte Hausarbeit oder Büroarbeit) möglich   (70 - 80% nach Karnofsky)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ",
+              "code": "2",
+              "display": "Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen  (50-60% nach Karnofsky)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ",
+              "code": "3",
+              "display": "Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden (30-40% nach Karnofsky)"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ",
+              "code": "4",
+              "display": "Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden (10-20% nach Karnofsky)"
+          }
+      ]
   }
 }

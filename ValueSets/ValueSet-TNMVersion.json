@@ -1,26 +1,33 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNMVersion",
-  "name": "TNMVersion",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMVersion</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNMVersion</tt></div>"
+  "expansion": {
+      "identifier": "cbea06b2-1843-4254-aef9-07f5886fc2e4",
+      "timestamp": "2019-07-22T10:44:19+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion",
+              "code": "6",
+              "display": "6. auflage"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion",
+              "code": "7",
+              "display": "7. auflage"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion",
+              "code": "8",
+              "display": "8. auflage"
+          }
+      ]
   }
 }

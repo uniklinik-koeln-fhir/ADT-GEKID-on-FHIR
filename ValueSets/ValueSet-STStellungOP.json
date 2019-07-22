@@ -1,26 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
-  "name": "STStellungOP",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STStellungOP</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP</tt></div>"
+  "expansion": {
+      "identifier": "dcfc8fc2-a8ba-4171-b8f2-a8a3e1716f30",
+      "timestamp": "2019-07-22T10:41:22+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+              "code": "O",
+              "display": "Ohne Bezug zu einer operativen Therapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+              "code": "A",
+              "display": "Adjuvant"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+              "code": "N",
+              "display": "Neoadjuvant"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+              "code": "I",
+              "display": "Intraoperativ"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP",
+              "code": "S",
+              "display": "Sonstiges"
+          }
+      ]
   }
 }

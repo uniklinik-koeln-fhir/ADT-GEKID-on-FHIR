@@ -1,26 +1,103 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/ICD_Version_Typ",
-  "name": "ICD_Version_Typ",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD_Version_Typ</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/ICD_Version_Typ</tt></div>"
+  "expansion": {
+      "identifier": "c363d1aa-29a7-4915-a552-4a7ae3a74f24",
+      "timestamp": "2019-07-22T09:35:17+00:00",
+      "total": 17,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2004 GM",
+              "display": "ICD 10 Version 2004 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2005 GM",
+              "display": "ICD 10 Version 2005 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2006 GM",
+              "display": "ICD 10 Version 2006 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2007 GM",
+              "display": "ICD 10 Version 2007 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2008 GM",
+              "display": "ICD 10 Version 2008 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2009 GM",
+              "display": "ICD 10 Version 2009 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2010 GM",
+              "display": "ICD 10 Version 2010 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2011 GM",
+              "display": "ICD 10 Version 2011 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2012 GM",
+              "display": "ICD 10 Version 2012 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2013 GM",
+              "display": "ICD 10 Version 2013 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2014 GM",
+              "display": "ICD 10 Version 2014 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2015 GM",
+              "display": "ICD 10 Version 2015 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2016 GM",
+              "display": "ICD 10 Version 2016 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2017 GM",
+              "display": "ICD 10 Version 2017 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2018 GM",
+              "display": "ICD 10 Version 2018 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2019 GM",
+              "display": "ICD 10 Version 2019 GM"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ",
+              "code": "ICD 10 Version 2020 GM",
+              "display": "ICD 10 Version 2020 GM"
+          }
+      ]
   }
 }

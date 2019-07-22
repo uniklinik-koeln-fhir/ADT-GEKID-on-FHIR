@@ -1,26 +1,48 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/ST_Ende_Grund",
-  "name": "STEndeGrund",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>STEndeGrund</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/ST_Ende_Grund</tt></div>"
+  "expansion": {
+      "identifier": "56c3ff2b-8ea6-46d8-861e-3743b47b8701",
+      "timestamp": "2019-07-22T10:40:09+00:00",
+      "total": 6,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "A",
+              "display": "Abbruch wegen Nebenwirkungen"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "E",
+              "display": "Reguläres Ende"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "V",
+              "display": "Patient verweigert weitere Therapie"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "P",
+              "display": "Abbruch wegen Progress"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "U",
+              "display": "unbekannt"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund",
+              "code": "S",
+              "display": "Abbruch aus sonstigen Gründen"
+          }
+      ]
   }
 }

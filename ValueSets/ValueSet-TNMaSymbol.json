@@ -1,26 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/TNMaSymbol",
-  "name": "TNMaSymbol",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TNMaSymbol</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/TNMaSymbol</tt></div>"
+  "expansion": {
+      "identifier": "1ac507a8-a3ed-4a7a-b708-4990e63b403c",
+      "timestamp": "2019-07-22T10:42:14+00:00",
+      "total": 1,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol",
+              "code": "a",
+              "display": "Klassifikation erfolgte durch Autopsie"
+          }
+      ]
   }
 }

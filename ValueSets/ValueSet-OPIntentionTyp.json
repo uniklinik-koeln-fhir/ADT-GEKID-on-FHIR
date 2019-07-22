@@ -1,26 +1,48 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.uk-koeln.de/fhir/ValueSet/OPIntention_Typ",
-  "name": "OPIntentionTyp",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "compose": {
-    "include": [
-      {
-        "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ"
-      }
-    ]
+      "include": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ"
+          }
+      ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OPIntentionTyp</h2><tt>https://www.uk-koeln.de/fhir/ValueSet/OPIntention_Typ</tt></div>"
+  "expansion": {
+      "identifier": "d10e22d0-b6e2-4b15-a6a8-c00f9ebc5cef",
+      "timestamp": "2019-07-22T09:43:45+00:00",
+      "total": 6,
+      "contains": [
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "K",
+              "display": "Kurativ"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "P",
+              "display": "Palliativ"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "D",
+              "display": "Diagnostisch"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "R",
+              "display": "Revision/Komplikation"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "S",
+              "display": "Sonstiges"
+          },
+          {
+              "system": "https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ",
+              "code": "X",
+              "display": "Fehlende Angabe"
+          }
+      ]
   }
 }
