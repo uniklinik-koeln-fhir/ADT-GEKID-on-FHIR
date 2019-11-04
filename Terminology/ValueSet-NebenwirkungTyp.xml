@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="nebenwirkungVersion" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="72640798-14e4-49be-964e-060b53ba0ea7" />
+    <timestamp value="2019-07-22T09:37:28+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      <code value="K" />
+      <display value="Keine oder höchstens Grad 2" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      <code value="3" />
+      <display value="Stark/ausgeprägt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      <code value="4" />
+      <display value="Lebensbedrohlich" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      <code value="5" />
+      <display value="Tödlich" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

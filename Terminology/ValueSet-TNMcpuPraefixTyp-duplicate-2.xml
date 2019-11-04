@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMcpuPraefixTyp" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="f59d543d-513b-4ff6-85f7-aaebbe4fb951" />
+    <timestamp value="2019-07-22T10:42:39+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+      <code value="c" />
+      <display value="Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+      <code value="p" />
+      <display value="Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung, mit der auch der höchste Grad der jeweiligen Kategorie hätte festgestellt werden können" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+      <code value="u" />
+      <display value="Feststellung mit Ultraschall (Unterkategorie von c mit besonderer diagnostischer Relevanz, z.B. beim Rektumkarzinom)" />
+    </contains>
+  </expansion>
+</ValueSet>

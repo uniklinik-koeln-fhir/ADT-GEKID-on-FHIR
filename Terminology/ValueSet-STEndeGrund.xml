@@ -1,0 +1,44 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="STEndeGrund" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="56c3ff2b-8ea6-46d8-861e-3743b47b8701" />
+    <timestamp value="2019-07-22T10:40:09+00:00" />
+    <total value="6" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="A" />
+      <display value="Abbruch wegen Nebenwirkungen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="E" />
+      <display value="Reguläres Ende" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="V" />
+      <display value="Patient verweigert weitere Therapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="P" />
+      <display value="Abbruch wegen Progress" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="U" />
+      <display value="unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      <code value="S" />
+      <display value="Abbruch aus sonstigen Gründen" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,54 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="VerlaufLokalerTumorStatus" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="4ff8ea44-7218-4372-b63b-c2f1ff0db760" />
+    <timestamp value="2019-07-22T10:45:43+00:00" />
+    <total value="8" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="K" />
+      <display value="Kein Tumor nachweisbar" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="T" />
+      <display value="Tumorreste (Residualtumor)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="P" />
+      <display value="Tumorreste Residualtumor Progress" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="N" />
+      <display value="Tumorreste Residualtumor No Change" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="R" />
+      <display value="Lokalrezidiv" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="F" />
+      <display value="Fraglicher Befund" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      <code value="X" />
+      <display value="Fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="JNU_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="cebb54c3-e8b8-4bbe-988a-f00a425cd55c" />
+    <timestamp value="2019-07-22T09:36:25+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+      <code value="J" />
+      <display value="Ja" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+      <code value="N" />
+      <display value="Nein" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

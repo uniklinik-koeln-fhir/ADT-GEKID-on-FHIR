@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="STIntention" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="2f3c13ff-d905-47d2-85bd-9ed5ddb3b354" />
+    <timestamp value="2019-07-22T10:40:31+00:00" />
+    <total value="4" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      <code value="K" />
+      <display value="Kurativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      <code value="P" />
+      <display value="Palliativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      <code value="S" />
+      <display value="Sonstiges" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      <code value="X" />
+      <display value="Keine Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

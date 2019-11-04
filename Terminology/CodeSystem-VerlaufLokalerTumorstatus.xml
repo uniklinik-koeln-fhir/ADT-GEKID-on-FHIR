@@ -1,0 +1,62 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>VerlaufLokalerTumorstatus</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+  <name value="VerlaufLokalerTumorstatus" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="9" />
+  <concept>
+    <code value="K" />
+    <display value="Kein Tumor nachweisbar" />
+    <definition value="Kein Tumor nachweisbar" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Tumorreste (Residualtumor)" />
+    <definition value="Tumorreste (Residualtumor)" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Tumorreste Residualtumor Progress" />
+    <definition value="Tumorreste Residualtumor Progress" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Tumorreste Residualtumor No Change" />
+    <definition value="Tumorreste Residualtumor No Change" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Lokalrezidiv" />
+    <definition value="Lokalrezidiv" />
+  </concept>
+  <concept>
+    <code value="F" />
+    <display value="Fraglicher Befund" />
+    <definition value="Fraglicher Befund" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Fehlende Angabe" />
+    <definition value="Fehlende Angabe" />
+  </concept>
+</CodeSystem>

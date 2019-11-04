@@ -1,0 +1,83 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Morphologie_Grading_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+  <name value="Morphologie_Grading_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <caseSensitive value="true" />
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="13" />
+  <concept>
+    <code value="0" />
+    <display value="Malignes Melanom der Konjunktiva" />
+    <definition value="Malignes Melanom der Konjunktiva" />
+  </concept>
+  <concept>
+    <code value="1" />
+    <display value="Gut differenziert" />
+    <definition value="Gut differenziert" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Mäßig differenziert" />
+    <definition value="Mäßig differenziert" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Schlecht differenziert" />
+    <definition value="Schlecht differenziert" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Undifferenziert" />
+    <definition value="Undifferenziert" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Nicht bestimmbar" />
+    <definition value="Nicht bestimmbar" />
+  </concept>
+  <concept>
+    <code value="L" />
+    <display value="Low grade (G1 oder G2)" />
+    <definition value="Low grade (G1 oder G2)" />
+  </concept>
+  <concept>
+    <code value="M" />
+    <display value="Intermediate (G2 oder G3)" />
+    <definition value="Intermediate (G2 oder G3)" />
+  </concept>
+  <concept>
+    <code value="H" />
+    <display value="High grade (G3 oder G4)" />
+    <definition value="High grade (G3 oder G4)" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="Borderline" />
+    <definition value="Borderline" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Trifft nicht zu" />
+    <definition value="Trifft nicht zu" />
+  </concept>
+</CodeSystem>

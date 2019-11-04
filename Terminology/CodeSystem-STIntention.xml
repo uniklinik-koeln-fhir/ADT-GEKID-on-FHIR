@@ -1,0 +1,42 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>STIntention</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+  <name value="STIntention" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <code value="K" />
+    <display value="Kurativ" />
+    <definition value="Kurativ" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Palliativ" />
+    <definition value="Palliativ" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Keine Angabe" />
+    <definition value="Keine Angabe" />
+  </concept>
+</CodeSystem>

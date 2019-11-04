@@ -1,0 +1,42 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNMV</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMV</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+  <name value="TNMV" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="VX" />
+    <display value="Veneninvasion kann nicht beurteilt werden" />
+    <definition value="Veneninvasion kann nicht beurteilt werden" />
+  </concept>
+  <concept>
+    <code value="V0" />
+    <display value="Keine Veneninvasion" />
+    <definition value="Keine Veneninvasion" />
+  </concept>
+  <concept>
+    <code value="V1" />
+    <display value="Mikroscopische Veneninvasion" />
+    <definition value="Mikroscopische Veneninvasion" />
+  </concept>
+  <concept>
+    <code value="V2" />
+    <display value="Makroscopische Veneninvasion" />
+    <definition value="Makroscopische Veneninvasion" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,57 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>meldeanlass</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+  <name value="meldeanlass" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="8" />
+  <concept>
+    <code value="diagnose" />
+    <display value="diagnose" />
+    <definition value="diagnose" />
+  </concept>
+  <concept>
+    <code value="behandlungsbeginn" />
+    <display value="behandlungsbeginn" />
+    <definition value="behandlungsbeginn" />
+  </concept>
+  <concept>
+    <code value="behandlungsende" />
+    <display value="behandlungsende" />
+    <definition value="behandlungsende" />
+  </concept>
+  <concept>
+    <code value="statusaenderung" />
+    <display value="statusaenderung" />
+    <definition value="statusaenderung" />
+  </concept>
+  <concept>
+    <code value="statusmeldung" />
+    <display value="statusmeldung" />
+    <definition value="statusmeldung" />
+  </concept>
+  <concept>
+    <code value="tot" />
+    <display value="tot" />
+    <definition value="tot" />
+  </concept>
+  <concept>
+    <code value="histologie_zytologie" />
+    <display value="histologie_zytologie" />
+    <definition value="histologie_zytologie" />
+  </concept>
+</CodeSystem>

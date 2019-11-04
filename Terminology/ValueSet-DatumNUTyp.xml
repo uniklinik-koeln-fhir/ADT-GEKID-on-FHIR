@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="Datum_NU_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="66963ecd-c63e-4fad-9228-e736c2613e2d" />
+    <timestamp value="2019-07-22T09:32:06+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      <code value="yyyy-mm-dd" />
+      <display value="Datum des Kontakts" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      <code value="N" />
+      <display value="Nein – kein Kontakt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

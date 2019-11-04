@@ -1,0 +1,63 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Nebenwirkung_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/ConceptMap/Nebenwirkung_Typ</tt>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/ConceptMap/Nebenwirkung_Typ" />
+  <name value="Nebenwirkung_Typ" />
+  <title value="ConceptMap-NebenwirkungTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <sourceUri value="https://www.uk-koeln.de/fhir/ValueSet/Nebenwirkung_Typ" />
+  <group>
+    <source value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+    <target value="http://snomed.info/sct" />
+    <element>
+      <code value="Keine oder höchstens Grad 2" />
+      <target>
+        <code value="260413007" />
+        <display value="None" />
+        <equivalence value="narrower" />
+      </target>
+    </element>
+    <element>
+      <code value="Stark/ausgeprägt" />
+      <target>
+        <code value="260404005" />
+        <display value="Strong" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="Lebensbedrohlich" />
+      <target>
+        <code value="442452003" />
+        <display value="Life threatening severity" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="Tödlich" />
+      <target>
+        <code value="399166001" />
+        <display value="Fatal" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="Unbekannt" />
+      <target>
+        <code value="261665006" />
+        <display value="Unknown" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

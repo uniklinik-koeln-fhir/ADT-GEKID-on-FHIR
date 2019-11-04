@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="PraeopDrahtmarkierung_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="c6eaca75-8167-4ecb-9f99-571ca1939be0" />
+    <timestamp value="2019-07-22T09:44:25+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      <code value="M" />
+      <display value="Mammografie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      <code value="S" />
+      <display value="Sonografie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      <code value="T" />
+      <display value="MRT" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      <code value="N" />
+      <display value="Keine Drahtmarkierung durch Bildgebung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,83 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Fernmetastate_Lokalisation_Type</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+  <name value="Fernmetastate_Lokalisation_Type" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <caseSensitive value="false" />
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="14" />
+  <concept>
+    <code value="PUL" />
+    <display value="Lunge" />
+    <definition value="Lunge" />
+  </concept>
+  <concept>
+    <code value="OSS" />
+    <display value="Knochen" />
+    <definition value="Knochen" />
+  </concept>
+  <concept>
+    <code value="HEP" />
+    <display value="Leber" />
+    <definition value="Leber" />
+  </concept>
+  <concept>
+    <code value="BRA" />
+    <display value="Hirn" />
+    <definition value="Hirn" />
+  </concept>
+  <concept>
+    <code value="LYM" />
+    <display value="Lymphknoten" />
+    <definition value="Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="MAR" />
+    <display value="Knochenmark" />
+    <definition value="Knochenmark" />
+  </concept>
+  <concept>
+    <code value="PLE" />
+    <display value="Pleura" />
+    <definition value="Pleura" />
+  </concept>
+  <concept>
+    <code value="PER" />
+    <display value="Peritoneum" />
+    <definition value="Peritoneum" />
+  </concept>
+  <concept>
+    <code value="ADR" />
+    <display value="Nebennieren" />
+    <definition value="Nebennieren" />
+  </concept>
+  <concept>
+    <code value="SKI" />
+    <display value="Haut" />
+    <definition value="Haut" />
+  </concept>
+  <concept>
+    <code value="OTH" />
+    <display value="Andere Organe" />
+    <definition value="Andere Organe" />
+  </concept>
+  <concept>
+    <code value="GEN" />
+    <display value="Generalisierte Metastasierung" />
+    <definition value="Generalisierte Metastasierung" />
+  </concept>
+</CodeSystem>

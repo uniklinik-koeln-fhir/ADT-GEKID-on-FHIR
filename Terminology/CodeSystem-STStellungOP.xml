@@ -1,0 +1,46 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>STStellungOP</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+  <name value="STStellungOP" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="O" />
+    <display value="Ohne Bezug zu einer operativen Therapie" />
+    <definition value="Ohne Bezug zu einer operativen Therapie" />
+  </concept>
+  <concept>
+    <code value="A" />
+    <display value="Adjuvant" />
+    <definition value="Adjuvant" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Neoadjuvant" />
+    <definition value="Neoadjuvant" />
+  </concept>
+  <concept>
+    <code value="I" />
+    <display value="Intraoperativ" />
+    <definition value="Intraoperativ" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+</CodeSystem>

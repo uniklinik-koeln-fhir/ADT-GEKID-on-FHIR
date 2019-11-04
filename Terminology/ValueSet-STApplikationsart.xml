@@ -1,0 +1,89 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="STApplikationsart" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="ff9e1d68-bd5c-4534-8f00-3fde0d0f34f1" />
+    <timestamp value="2019-07-22T10:39:56+00:00" />
+    <total value="15" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="P" />
+      <display value="Perkutan (Teletherapie)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="PRCJ" />
+      <display value="Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="PRCN" />
+      <display value="erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="K" />
+      <display value="Endokavitäre Kontakttherapie (Brachytherapie)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="KHDR" />
+      <display value="Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="KPDR" />
+      <display value="Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="KLDR" />
+      <display value="Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="I" />
+      <display value="Interstitielle Kontakttherapie (Brachytherapie)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="IHDR" />
+      <display value="Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="IPDR" />
+      <display value="Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="ILDR" />
+      <display value="Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="M" />
+      <display value="Metabolische Therapie (Radionuklide)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="MSIRT" />
+      <display value="Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="MPRRT" />
+      <display value="Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      <code value="S" />
+      <display value="Sonstiges" />
+    </contains>
+  </expansion>
+</ValueSet>

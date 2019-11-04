@@ -1,0 +1,62 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>VerlaufTumorstatusLymphknoten</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+  <name value="VerlaufTumorstatusLymphknoten" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="9" />
+  <concept>
+    <code value="K" />
+    <display value="Kein Lymphknotenbefall nachweisbar" />
+    <definition value="Kein Lymphknotenbefall nachweisbar" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Neu aufgetretenes Lymphknotenrezidiv" />
+    <definition value="Neu aufgetretenes Lymphknotenrezidiv" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Bekannter Lymphknotenbefall Residuen" />
+    <definition value="Bekannter Lymphknotenbefall Residuen" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Bekannter Lymphknotenbefall Progress" />
+    <definition value="Bekannter Lymphknotenbefall Progress" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Bekannter Lymphknotenbefall No Change" />
+    <definition value="Bekannter Lymphknotenbefall No Change" />
+  </concept>
+  <concept>
+    <code value="F" />
+    <display value="Fraglicher Befund" />
+    <definition value="Fraglicher Befund" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Fehlende Angabe" />
+    <definition value="Fehlende Angabe" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>R_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/R_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+  <name value="R_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="R0" />
+    <display value="Kein Residualtumor" />
+    <definition value="Kein Residualtumor" />
+  </concept>
+  <concept>
+    <code value="R1" />
+    <display value="Mikroskopischer Residualtumor" />
+    <definition value="Mikroskopischer Residualtumor" />
+  </concept>
+  <concept>
+    <code value="R2" />
+    <display value="Makroskopischer Residualtumor" />
+    <definition value="Makroskopischer Residualtumor" />
+  </concept>
+  <concept>
+    <code value="R1(is)" />
+    <display value="In-Situ-Rest" />
+    <definition value="In-Situ-Rest" />
+  </concept>
+  <concept>
+    <code value="R1(cy+)" />
+    <display value="Cytologischer Rest" />
+    <definition value="Cytologischer Rest" />
+  </concept>
+  <concept>
+    <code value="RX" />
+    <display value="Vorhandensein von Residualtumor kann nicht beurteilt werden" />
+    <definition value="Vorhandensein von Residualtumor kann nicht beurteilt werden" />
+  </concept>
+</CodeSystem>

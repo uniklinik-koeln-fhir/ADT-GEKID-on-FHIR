@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>JNU_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+  <name value="JNU_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="J" />
+    <display value="Ja" />
+    <definition value="Ja" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Nein" />
+    <definition value="Nein" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

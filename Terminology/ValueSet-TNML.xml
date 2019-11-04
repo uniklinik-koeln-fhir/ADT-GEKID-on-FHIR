@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNML" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNML" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="feb4396f-5a0a-4d8e-9968-59b838abc910" />
+    <timestamp value="2019-07-22T10:42:55+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNML" />
+      <code value="LX" />
+      <display value="Lymphgefäßinvasion kann nicht beurteilt werden" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNML" />
+      <code value="L0" />
+      <display value="Keine Lymphgefäßinvasion" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNML" />
+      <code value="L1" />
+      <display value="Lymphgefäßinvasion" />
+    </contains>
+  </expansion>
+</ValueSet>

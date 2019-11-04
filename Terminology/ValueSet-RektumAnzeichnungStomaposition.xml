@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="rektumAnzeichnungStomaposition" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="c939dd06-e53b-44fd-8a0f-f9e1febe3a5a" />
+    <timestamp value="2019-07-22T10:39:00+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      <code value="D" />
+      <display value="Anzeichnung durchgeführt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      <code value="N" />
+      <display value="Anzeichnung nicht durchgeführt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      <code value="K" />
+      <display value="Kein Stoma" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      <code value="S" />
+      <display value="Stoma angelegt, Anzeichnung nicht bekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumAnzeichnungStomaposition" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

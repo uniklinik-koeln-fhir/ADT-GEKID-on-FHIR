@@ -1,0 +1,47 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>allgemeinerLeistungszustandTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+  <name value="allgemeinerLeistungszustandTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="0" />
+    <display value="Normale, uneingeschränkte Aktivität wie vor der Erkrankung  (90 - 100% nach Karnofsky)" />
+    <definition value="Normale, uneingeschränkte Aktivität wie vor der Erkrankung  (90 - 100% nach Karnofsky)" />
+  </concept>
+  <concept>
+    <code value="1" />
+    <display value="Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z.B. leichte Hausarbeit oder Büroarbeit) möglich   (70 - 80% nach Karnofsky)" />
+    <definition value="Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z.B. leichte Hausarbeit oder Büroarbeit) möglich   (70 - 80% nach Karnofsky)" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen  (50-60% nach Karnofsky)" />
+    <definition value="Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen  (50-60% nach Karnofsky)" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden (30-40% nach Karnofsky)" />
+    <definition value="Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden (30-40% nach Karnofsky)" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden (10-20% nach Karnofsky)" />
+    <definition value="Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden (10-20% nach Karnofsky)" />
+  </concept>
+</CodeSystem>

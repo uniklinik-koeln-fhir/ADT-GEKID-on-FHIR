@@ -1,0 +1,62 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>SYSTTherapieart</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+  <name value="SYSTTherapieart" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="9" />
+  <concept>
+    <code value="CH" />
+    <display value="Chemotherapie" />
+    <definition value="Chemotherapie" />
+  </concept>
+  <concept>
+    <code value="HO" />
+    <display value="Hormontherapie" />
+    <definition value="Hormontherapie" />
+  </concept>
+  <concept>
+    <code value="IM" />
+    <display value="Immun- und Antikörpertherapie" />
+    <definition value="Immun- und Antikörpertherapie" />
+  </concept>
+  <concept>
+    <code value="KM" />
+    <display value="Knochenmarktransplantation" />
+    <definition value="Knochenmarktransplantation" />
+  </concept>
+  <concept>
+    <code value="WS" />
+    <display value="Wait and see" />
+    <definition value="Wait and see" />
+  </concept>
+  <concept>
+    <code value="AS" />
+    <display value="Active Surveillance" />
+    <definition value="Active Surveillance" />
+  </concept>
+  <concept>
+    <code value="ZS" />
+    <display value="Zielgerichtete Substanzen" />
+    <definition value="Zielgerichtete Substanzen" />
+  </concept>
+  <concept>
+    <code value="SO" />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+</CodeSystem>

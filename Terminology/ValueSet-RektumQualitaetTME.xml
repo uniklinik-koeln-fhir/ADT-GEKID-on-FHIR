@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="rektumQualitaetTME" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="f7529330-6278-4fda-8478-bc3197e66838" />
+    <timestamp value="2019-07-22T10:39:27+00:00" />
+    <total value="7" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="1" />
+      <display value="Grad 1 (gut)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="2" />
+      <display value="Grad 2 (moderat)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="3" />
+      <display value="Grad 3 (schlecht)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="P" />
+      <display value="PME durchgeführt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="L" />
+      <display value="Lokale Exzision durchgeführt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="A" />
+      <display value="Andere Operation durchgeführt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

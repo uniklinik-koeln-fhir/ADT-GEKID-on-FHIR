@@ -1,0 +1,57 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>rektumQualitaetTME</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/RektumQualitaetTME" />
+  <name value="rektumQualitaetTME" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="8" />
+  <concept>
+    <code value="1" />
+    <display value="Grad 1 (gut)" />
+    <definition value="Grad 1 (gut)" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Grad 2 (moderat)" />
+    <definition value="Grad 2 (moderat)" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Grad 3 (schlecht)" />
+    <definition value="Grad 3 (schlecht)" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="PME durchgeführt" />
+    <definition value="PME durchgeführt" />
+  </concept>
+  <concept>
+    <code value="L" />
+    <display value="Lokale Exzision durchgeführt" />
+    <definition value="Lokale Exzision durchgeführt" />
+  </concept>
+  <concept>
+    <code value="A" />
+    <display value="Andere Operation durchgeführt" />
+    <definition value="Andere Operation durchgeführt" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

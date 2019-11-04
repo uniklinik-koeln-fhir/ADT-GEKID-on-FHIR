@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="STStellungOP" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="dcfc8fc2-a8ba-4171-b8f2-a8a3e1716f30" />
+    <timestamp value="2019-07-22T10:41:22+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      <code value="O" />
+      <display value="Ohne Bezug zu einer operativen Therapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      <code value="A" />
+      <display value="Adjuvant" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      <code value="N" />
+      <display value="Neoadjuvant" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      <code value="I" />
+      <display value="Intraoperativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      <code value="S" />
+      <display value="Sonstiges" />
+    </contains>
+  </expansion>
+</ValueSet>

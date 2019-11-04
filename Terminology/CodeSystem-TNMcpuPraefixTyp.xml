@@ -1,0 +1,41 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNMcpuPraefixTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+  <name value="TNMcpuPraefixTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <display value="Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht" />
+    <definition value="Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht" />
+  </concept>
+  <concept>
+    <code value="c" />
+    <display value="Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht" />
+    <definition value="Kategorie wurde durch klinische Angaben festgestellt, bzw. erfüllt die Kriterien für p nicht" />
+  </concept>
+  <concept>
+    <code value="p" />
+    <display value="Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung, mit der auch der höchste Grad der jeweiligen Kategorie hätte festgestellt werden können" />
+    <definition value="Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung, mit der auch der höchste Grad der jeweiligen Kategorie hätte festgestellt werden können" />
+  </concept>
+  <concept>
+    <code value="u" />
+    <display value="Feststellung mit Ultraschall (Unterkategorie von c mit besonderer diagnostischer Relevanz, z.B. beim Rektumkarzinom)" />
+    <definition value="Feststellung mit Ultraschall (Unterkategorie von c mit besonderer diagnostischer Relevanz, z.B. beim Rektumkarzinom)" />
+  </concept>
+</CodeSystem>

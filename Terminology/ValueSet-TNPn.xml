@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMPn" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNPn" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="ee16e7aa-2635-4eb9-9f2e-81b0e5aa65b7" />
+    <timestamp value="2019-07-22T10:43:09+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNPn" />
+      <code value="PnX" />
+      <display value="Perineurale Invasion kann nicht beurteilt werden" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNPn" />
+      <code value="Pn0" />
+      <display value="Keine perineurale Invasion" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNPn" />
+      <code value="Pn1" />
+      <display value="Perineurale Invasion" />
+    </contains>
+  </expansion>
+</ValueSet>

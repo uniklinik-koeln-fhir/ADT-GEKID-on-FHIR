@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMV" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="91801b45-9c6a-4855-b04c-98e6aee57432" />
+    <timestamp value="2019-07-22T10:44:00+00:00" />
+    <total value="4" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+      <code value="VX" />
+      <display value="Veneninvasion kann nicht beurteilt werden" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+      <code value="V0" />
+      <display value="Keine Veneninvasion" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+      <code value="V1" />
+      <display value="Mikroscopische Veneninvasion" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMV" />
+      <code value="V2" />
+      <display value="Makroscopische Veneninvasion" />
+    </contains>
+  </expansion>
+</ValueSet>

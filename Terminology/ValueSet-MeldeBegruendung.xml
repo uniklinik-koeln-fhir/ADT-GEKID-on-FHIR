@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="MeldeBegruendung" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="a6c2109a-89c4-494e-8339-81eb279fec11" />
+    <timestamp value="2019-07-22T09:36:56+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      <code value="I" />
+      <display value="Patientin/Patient wurde informiert und hat nicht wiedersprochen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      <code value="A" />
+      <display value="Ausnahme" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      <code value="D" />
+      <display value="Meldung von Ärzten ohne unmittelbaren Patientenkontakt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      <code value="W" />
+      <display value="Patient hat der personenbezogenen Speicherung widersprochen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      <code value="V" />
+      <display value="Verstorben" />
+    </contains>
+  </expansion>
+</ValueSet>

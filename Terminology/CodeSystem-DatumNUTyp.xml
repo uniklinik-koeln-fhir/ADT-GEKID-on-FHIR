@@ -1,0 +1,32 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+  <name value="Datum_NU_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="yyyy-mm-dd" />
+    <display value="Datum des Kontakts" />
+    <definition value="Datum des Kontakts" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Nein – kein Kontakt" />
+    <definition value="Nein – kein Kontakt" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

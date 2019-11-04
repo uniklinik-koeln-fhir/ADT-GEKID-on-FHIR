@@ -1,0 +1,47 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Nebenwirkung_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+  <name value="Nebenwirkung_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="K" />
+    <display value="Keine oder höchstens Grad 2" />
+    <definition value="Keine oder höchstens Grad 2" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Stark/ausgeprägt" />
+    <definition value="Stark/ausgeprägt" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Lebensbedrohlich" />
+    <definition value="Lebensbedrohlich" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Tödlich" />
+    <definition value="Tödlich" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

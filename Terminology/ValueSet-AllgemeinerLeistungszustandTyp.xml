@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="allgemeinerLeistungszustandTyp" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="8f439b1d-1c8e-47a2-aa29-f86c01a55a85" />
+    <timestamp value="2019-07-22T09:24:14+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      <code value="0" />
+      <display value="Normale, uneingeschränkte Aktivität wie vor der Erkrankung  (90 - 100% nach Karnofsky)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      <code value="1" />
+      <display value="Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z.B. leichte Hausarbeit oder Büroarbeit) möglich   (70 - 80% nach Karnofsky)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      <code value="2" />
+      <display value="Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen  (50-60% nach Karnofsky)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      <code value="3" />
+      <display value="Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden (30-40% nach Karnofsky)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      <code value="4" />
+      <display value="Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden (10-20% nach Karnofsky)" />
+    </contains>
+  </expansion>
+</ValueSet>

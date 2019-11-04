@@ -1,0 +1,97 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>STApplikationsart</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+  <name value="STApplikationsart" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="part-of" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="16" />
+  <concept>
+    <code value="P" />
+    <display value="Perkutan (Teletherapie)" />
+    <definition value="Perkutan (Teletherapie)" />
+  </concept>
+  <concept>
+    <code value="PRCJ" />
+    <display value="Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja" />
+    <definition value="Perkutan (Teletherapie) Radiochemotherapie/Sensitizer: ja Radiochemotherapie/Sensitizer: ja" />
+  </concept>
+  <concept>
+    <code value="PRCN" />
+    <display value="erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein" />
+    <definition value="erkutan (Teletherapie) Radiochemotherapie/Sensitizer: nein Radiochemotherapie/Sensitizer: nein" />
+  </concept>
+  <concept>
+    <code value="K" />
+    <display value="Endokavitäre Kontakttherapie (Brachytherapie)" />
+    <definition value="Endokavitäre Kontakttherapie (Brachytherapie)" />
+  </concept>
+  <concept>
+    <code value="KHDR" />
+    <display value="Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy" />
+    <definition value="Endokavitäre Kontakttherapie (Brachytherapie) high dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="KPDR" />
+    <display value="Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+    <definition value="Endokavitäre Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="KLDR" />
+    <display value="Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy" />
+    <definition value="Endokavitäre Kontakttherapie (Brachytherapie) low dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="I" />
+    <display value="Interstitielle Kontakttherapie (Brachytherapie)" />
+    <definition value="Interstitielle Kontakttherapie (Brachytherapie)" />
+  </concept>
+  <concept>
+    <code value="IHDR" />
+    <display value="Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy" />
+    <definition value="Interstitielle Kontakttherapie (Brachytherapie) high dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="IPDR" />
+    <display value="Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+    <definition value="Interstitielle Kontakttherapie (Brachytherapie) pulsed dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="ILDR" />
+    <display value="Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy" />
+    <definition value="Interstitielle Kontakttherapie (Brachytherapie) low dose rate therapy" />
+  </concept>
+  <concept>
+    <code value="M" />
+    <display value="Metabolische Therapie (Radionuklide)" />
+    <definition value="Metabolische Therapie (Radionuklide)" />
+  </concept>
+  <concept>
+    <code value="MSIRT" />
+    <display value="Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie" />
+    <definition value="Metabolische Therapie (Radionuklide) Selektive Interne Radio-Therapie" />
+  </concept>
+  <concept>
+    <code value="MPRRT" />
+    <display value="Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie" />
+    <definition value="Metabolische Therapie (Radionuklide) Peptid -Radio-Rezeptor-Therapie" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMS" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="e81848f6-a85f-4922-bdbb-4100a497c117" />
+    <timestamp value="2019-07-22T10:43:41+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+      <code value="SX" />
+      <display value="Werte der Serumtumormarker nicht verfügbar oder entsprechende Untersuchungen nicht vorgenommen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+      <code value="S0" />
+      <display value="Serumtumormarker innerhalb der normalen Grenzen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+      <code value="S1" />
+      <display value="LDH &lt;1,5N Und &lt;HCG 5000 Und &lt;AFP 1000, N = obere Grenze des Normalwertes" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+      <code value="S2" />
+      <display value="LDH 1,5-10N Oder HCG 5000-50000 Oder AFP 1000-10000, N = obere Grenze des Normalwertes" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMS" />
+      <code value="S3" />
+      <display value="LDH &gt;10N Oder HCG &gt;50000 Oder AFP &gt;10000, N = obere Grenze des Normalwertes" />
+    </contains>
+  </expansion>
+</ValueSet>

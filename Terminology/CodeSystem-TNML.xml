@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNML</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNML</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNML" />
+  <name value="TNML" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="LX" />
+    <display value="Lymphgefäßinvasion kann nicht beurteilt werden" />
+    <definition value="Lymphgefäßinvasion kann nicht beurteilt werden" />
+  </concept>
+  <concept>
+    <code value="L0" />
+    <display value="Keine Lymphgefäßinvasion" />
+    <definition value="Keine Lymphgefäßinvasion" />
+  </concept>
+  <concept>
+    <code value="L1" />
+    <display value="Lymphgefäßinvasion" />
+    <definition value="Lymphgefäßinvasion" />
+  </concept>
+</CodeSystem>

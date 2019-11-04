@@ -1,0 +1,38 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>ICD_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+  <name value="ICD_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <caseSensitive value="false" />
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="31" />
+    <display value="ICD-O3; 1. Auflage 2003" />
+    <definition value="ICD-O3; 1. Auflage 2003" />
+  </concept>
+  <concept>
+    <code value="32" />
+    <display value="ICD-O3; 2. Auflage 2013" />
+    <definition value="ICD-O3; 2. Auflage 2013" />
+  </concept>
+  <concept>
+    <code value="bb" />
+    <display value="Neue Codes aus den WHO-Klassifikationen (Bluebooks)" />
+    <definition value="Neue Codes aus den WHO-Klassifikationen (Bluebooks)" />
+  </concept>
+</CodeSystem>

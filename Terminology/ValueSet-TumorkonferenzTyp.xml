@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TumorkonferenzTyp" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="9e24a012-0993-4cb9-afd8-339269b1acc3" />
+    <timestamp value="2019-07-22T10:44:52+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+      <code value="praeth" />
+      <display value="prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+      <code value="postop" />
+      <display value="postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+      <code value="postth" />
+      <display value="posttherapeutisch (manche Tumoren werden nicht operiert)" />
+    </contains>
+  </expansion>
+</ValueSet>

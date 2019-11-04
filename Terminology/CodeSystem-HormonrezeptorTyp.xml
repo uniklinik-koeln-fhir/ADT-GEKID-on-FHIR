@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>hormonrezeptorTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+  <name value="hormonrezeptorTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="P" />
+    <display value="Positiv (IRS &amp;gt;= 1)" />
+    <definition value="Positiv (IRS &amp;gt;= 1)" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Negativ" />
+    <definition value="Negativ" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

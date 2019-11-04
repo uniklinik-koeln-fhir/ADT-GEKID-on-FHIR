@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="GleasonGradPrimaer_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="10aadbcc-f995-40d9-85de-80b750a4d740" />
+    <timestamp value="2019-07-22T09:33:37+00:00" />
+    <total value="5" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+      <code value="1" />
+      <display value="Small, uniform glands" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+      <code value="2" />
+      <display value="More space (stroma) between glands" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+      <code value="3" />
+      <display value="Distinctly infiltration of cells from glands and margins" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+      <code value="4" />
+      <display value="Irregular masses of neoplastic cells with few glands" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonGradPrimaer_Typ" />
+      <code value="5" />
+      <display value="Lack of or ocasional glands, sheets of cells" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,57 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>DiagnoseSicherung</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+  <name value="DiagnoseSicherung" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="10" />
+  <concept>
+    <code value="1" />
+    <display value="Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung)" />
+    <definition value="Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung)" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein." />
+    <definition value="Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein." />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Spezifische Tumormarker" />
+    <definition value="Spezifische Tumormarker" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein." />
+    <definition value="Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein." />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="Histologie einer Metastase." />
+    <definition value="Histologie einer Metastase." />
+  </concept>
+  <concept>
+    <code value="7" />
+    <display value="Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie." />
+    <definition value="Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie." />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

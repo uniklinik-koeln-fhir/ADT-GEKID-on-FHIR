@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="DiagnoseSicherung" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="06088cdc-0c5a-40d7-8a24-651cb68111ab" />
+    <timestamp value="2019-07-22T09:32:40+00:00" />
+    <total value="7" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="1" />
+      <display value="Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="2" />
+      <display value="Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein." />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="4" />
+      <display value="Spezifische Tumormarker" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="5" />
+      <display value="Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein." />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="6" />
+      <display value="Histologie einer Metastase." />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="7" />
+      <display value="Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie." />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      <code value="9" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

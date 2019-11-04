@@ -1,0 +1,56 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulMammaTyp" />
+  <name value="ModulMammaTyp" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="ModulMammaTyp">
+      <path value="ModulMammaTyp" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="ModulMammaTyp.praetherapeutischerMenopausen">
+      <path value="ModulMammaTyp.praetherapeutischerMenopausen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
+      </type>
+    </element>
+    <element id="ModulMammaTyp.hormonrezeptor">
+      <path value="ModulMammaTyp.hormonrezeptor" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+      </type>
+    </element>
+    <element id="ModulMammaTyp.praeopDrahtmarkierung">
+      <path value="ModulMammaTyp.praeopDrahtmarkierung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+      </type>
+    </element>
+    <element id="ModulMammaTyp.intraopPraeparatkontrolle">
+      <path value="ModulMammaTyp.intraopPraeparatkontrolle" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>

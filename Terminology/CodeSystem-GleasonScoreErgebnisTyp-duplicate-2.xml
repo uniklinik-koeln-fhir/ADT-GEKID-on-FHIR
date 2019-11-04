@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>GleasonScoreErgebnis_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/GleasonScoreErgebnis_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/GleasonScoreErgebnis_Typ" />
+  <name value="GleasonScoreErgebnis_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="6" />
+    <display value="Only individual discrete well-formed glands" />
+    <definition value="Only individual discrete well-formed glands, 5% relapse risk" />
+  </concept>
+  <concept>
+    <code value="7a" />
+    <display value="Predominantly well-formed glands with a lesser component of poorly-formed/fused/cribriform glands" />
+    <definition value="Predominantly well-formed glands with a lesser component of poorly-formed/fused/cribriform glands, 17% relapse risk" />
+  </concept>
+  <concept>
+    <code value="7b" />
+    <display value="Predominantly poorly-formed/fused/cribriform glands with a lesser component of well-formed glands" />
+    <definition value="Predominantly poorly-formed/fused/cribriform glands with a lesser component of well-formed glands, 35% relapse risk" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="Only poorly-formed/fused/cribriform glands or Predominantly well-formed glands with a lesser component lacking glands or Predominantly lacking glands with a lesser component of well-formed glands" />
+    <definition value="Only poorly-formed/fused/cribriform glands or Predominantly well-formed glands with a lesser component lacking glands or Predominantly lacking glands with a lesser component of well-formed glands, 37% relapse risk" />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display value="Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands" />
+    <definition value="Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands, 76% relapse risk" />
+  </concept>
+  <concept>
+    <code value="10" />
+    <display value="Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands" />
+    <definition value="Lacks gland formation (or with necrosis) with or w/o poorly-formed/fused/cribriform glands, 76% relapse risk" />
+  </concept>
+</CodeSystem>

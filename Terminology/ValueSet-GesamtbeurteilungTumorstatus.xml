@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="GesamtbeurteilungTumorstatus" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="9df093b9-0bac-4077-bcdb-69bdbbacb7b9" />
+    <timestamp value="2019-07-22T09:33:22+00:00" />
+    <total value="9" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="V" />
+      <display value="Vollremission (complete remission, CR)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="T" />
+      <display value="Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="K" />
+      <display value="Keine Änderung (no change, NC) = stable disease" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="P" />
+      <display value="Progression" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="D" />
+      <display value="Divergentes Geschehen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="B" />
+      <display value="Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="U" />
+      <display value="Beurteilung unmöglich" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="X" />
+      <display value="Fehlende Angaben" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      <code value="R" />
+      <display value="Vollremission mit residualen Auffälligkeiten (CRr)" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,112 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="histologieTyp" />
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ" />
+  <name value="histologieTyp" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="histologieTyp">
+      <path value="histologieTyp" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="histologieTyp.tumorHistologiedatum">
+      <path value="histologieTyp.tumorHistologiedatum" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="histologieTyp.histologieEinsendeNr">
+      <path value="histologieTyp.histologieEinsendeNr" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="histologieTyp.morphologieCode">
+      <path value="histologieTyp.morphologieCode" />
+      <definition value="\d\d\d\d/\d" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="histologieTyp.morphologieICD0Version">
+      <path value="histologieTyp.morphologieICD0Version" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="histologieTyp.morphologieFreitext">
+      <path value="histologieTyp.morphologieFreitext" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="histologieTyp.grading">
+      <path value="histologieTyp.grading" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      </type>
+    </element>
+    <element id="histologieTyp.LKundersucht">
+      <path value="histologieTyp.LKundersucht" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="positiveInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+      </type>
+    </element>
+    <element id="histologieTyp.LKbefallen">
+      <path value="histologieTyp.LKbefallen" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="positiveInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+      </type>
+    </element>
+    <element id="histologieTyp.sentinelLKuntersucht">
+      <path value="histologieTyp.sentinelLKuntersucht" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="positiveInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+      </type>
+    </element>
+    <element id="histologieTyp.sentinelLKbefallen">
+      <path value="histologieTyp.sentinelLKbefallen" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="positiveInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>

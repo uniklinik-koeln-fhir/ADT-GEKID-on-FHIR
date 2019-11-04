@@ -1,0 +1,32 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>strahlendosisTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ" />
+  <name value="strahlendosisTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="Gy" />
+    <display value="Dosis in Gray" />
+    <definition value="Dosis in Gray" />
+  </concept>
+  <concept>
+    <code value="GBq" />
+    <display value="Dosis in Gigabecquerel" />
+    <definition value="Dosis in Gigabecquerel" />
+  </concept>
+</CodeSystem>

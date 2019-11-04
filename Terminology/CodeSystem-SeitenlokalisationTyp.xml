@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>seitenlokalisationTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ" />
+  <name value="seitenlokalisationTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="L" />
+    <display value="Links" />
+    <definition value="Links" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Rechts" />
+    <definition value="Rechts" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="Beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben)" />
+    <definition value="Beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben)" />
+  </concept>
+  <concept>
+    <code value="M" />
+    <display value="Mittellinie/Mittig" />
+    <definition value="Mittellinie/Mittig" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Trifft nicht zu (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)" />
+    <definition value="Trifft nicht zu (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)" />
+  </concept>
+</CodeSystem>

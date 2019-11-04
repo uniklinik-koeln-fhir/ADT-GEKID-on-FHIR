@@ -1,0 +1,68 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="c48ac531-990e-439f-bbbe-f274be5fc93e" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>GesamtbeurteilungTumorstatus</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+  <name value="GesamtbeurteilungTumorstatus" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="10" />
+  <concept>
+    <code value="V" />
+    <display value="Vollremission (complete remission, CR)" />
+    <definition value="Vollremission (complete remission, CR)" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)" />
+    <definition value="Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)" />
+  </concept>
+  <concept>
+    <code value="K" />
+    <display value="Keine Änderung (no change, NC) = stable disease" />
+    <definition value="Keine Änderung (no change, NC) = stable disease" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Progression" />
+    <definition value="Progression" />
+  </concept>
+  <concept>
+    <code value="D" />
+    <display value="Divergentes Geschehen" />
+    <definition value="Divergentes Geschehen" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)" />
+    <definition value="Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Beurteilung unmöglich" />
+    <definition value="Beurteilung unmöglich" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Fehlende Angaben" />
+    <definition value="Fehlende Angaben" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Vollremission mit residualen Auffälligkeiten (CRr)" />
+    <definition value="Vollremission mit residualen Auffälligkeiten (CRr)" />
+  </concept>
+</CodeSystem>

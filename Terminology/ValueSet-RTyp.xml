@@ -1,0 +1,44 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="R_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="1110e261-898a-454d-9c28-886a681a137d" />
+    <timestamp value="2019-07-22T10:38:21+00:00" />
+    <total value="6" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="R0" />
+      <display value="Kein Residualtumor" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="R1" />
+      <display value="Mikroskopischer Residualtumor" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="R2" />
+      <display value="Makroskopischer Residualtumor" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="R1(is)" />
+      <display value="In-Situ-Rest" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="R1(cy+)" />
+      <display value="Cytologischer Rest" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      <code value="RX" />
+      <display value="Vorhandensein von Residualtumor kann nicht beurteilt werden" />
+    </contains>
+  </expansion>
+</ValueSet>

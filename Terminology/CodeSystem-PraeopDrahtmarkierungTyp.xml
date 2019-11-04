@@ -1,0 +1,47 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PraeopDrahtmarkierung_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/PraeopDrahtmarkierung_Typ" />
+  <name value="PraeopDrahtmarkierung_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="M" />
+    <display value="Mammografie" />
+    <definition value="Mammografie" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Sonografie" />
+    <definition value="Sonografie" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="MRT" />
+    <definition value="MRT" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Keine Drahtmarkierung durch Bildgebung" />
+    <definition value="Keine Drahtmarkierung durch Bildgebung" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

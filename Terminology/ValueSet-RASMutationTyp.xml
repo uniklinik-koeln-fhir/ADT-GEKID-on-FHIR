@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="RASMutation_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="46c2ae29-ba78-4a01-ae69-5fddeaaf3d07" />
+    <timestamp value="2019-07-22T10:38:40+00:00" />
+    <total value="4" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+      <code value="W" />
+      <display value="Wildtyp" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+      <code value="M" />
+      <display value="Mutation" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+      <code value="N" />
+      <display value="Nicht untersucht" />
+    </contains>
+  </expansion>
+</ValueSet>

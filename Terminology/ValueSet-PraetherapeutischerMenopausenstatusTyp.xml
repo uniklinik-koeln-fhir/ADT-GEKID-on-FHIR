@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="Praetherapeutischer_Menopausenstatus_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="40d0d8d5-faa3-4f92-869f-dfa8af71202b" />
+    <timestamp value="2019-07-22T10:38:00+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
+      <code value="1" />
+      <display value="Prämenopausal" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
+      <code value="3" />
+      <display value="Postmenopausal" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Praetherapeutischer_Menopausenstatus_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

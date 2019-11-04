@@ -1,0 +1,54 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="SYSTTherapieart" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="e6e9d6a1-9dba-47b4-aea2-e8175c5e5af2" />
+    <timestamp value="2019-07-22T10:41:59+00:00" />
+    <total value="8" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="CH" />
+      <display value="Chemotherapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="HO" />
+      <display value="Hormontherapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="IM" />
+      <display value="Immun- und Antikörpertherapie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="KM" />
+      <display value="Knochenmarktransplantation" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="WS" />
+      <display value="Wait and see" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="AS" />
+      <display value="Active Surveillance" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="ZS" />
+      <display value="Zielgerichtete Substanzen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      <code value="SO" />
+      <display value="Sonstiges" />
+    </contains>
+  </expansion>
+</ValueSet>

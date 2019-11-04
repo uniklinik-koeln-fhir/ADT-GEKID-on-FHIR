@@ -1,0 +1,414 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="OPKomplikation" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="2a28b852-9d86-4d8a-8215-f460e57329d0" />
+    <timestamp value="2019-07-22T09:44:06+00:00" />
+    <total value="80" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="N" />
+      <display value="Nein" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ABD" />
+      <display value="Abszeß in einem Drainagekanal" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ABS" />
+      <display value="Abszeß, intraabdominaler oder intrathorakaler" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ASF" />
+      <display value="Abszeß, subfaszialer" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ANI" />
+      <display value="Akute Niereninsuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="AEP" />
+      <display value="Alkoholentzugspsychose" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ALR" />
+      <display value="Allergische Reaktion ohne Schocksymptomatik" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ANS" />
+      <display value="Anaphylaktischer Schock" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="AEE" />
+      <display value="Anastomoseninsuffizienz einer Enterostomie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="API" />
+      <display value="Apoplektischer Insult" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="BIF" />
+      <display value="Biliäre Fistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="BOG" />
+      <display value="Blutung, obere gastrointestinale (z.B &quot;Stressulkus&quot;)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="BOE" />
+      <display value="Bolusverlegung eines Endotubus" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="BSI" />
+      <display value="Bronchusstumpfinsuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="CHI" />
+      <display value="Cholangitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DAI" />
+      <display value="Darmanastomoseinsuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DPS" />
+      <display value="Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DIC" />
+      <display value="Disseminierte intravasale Koagulopathie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DEP" />
+      <display value="Drogenentzugspsychose" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DLU" />
+      <display value="Druck- und Lagerungsschäden, z.B. Dekubitalulzera" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="DSI" />
+      <display value="Duodenalstumpfinsuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="ENF" />
+      <display value="Enterale Fistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="GER" />
+      <display value="Gerinnungsstörung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HEM" />
+      <display value="Hämatemesis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HUR" />
+      <display value="Hämaturie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HAE" />
+      <display value="Hämorrhagischer Schock" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HFI" />
+      <display value="Harnfistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HNK" />
+      <display value="Hautnekrose im Operationsbereich" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HZI" />
+      <display value="Herzinsuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HRS" />
+      <display value="Herzrhythmusstörungen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HNA" />
+      <display value="Hirnnervenausfälle" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HOP" />
+      <display value="Hirnorganisches Psychosyndrom (z.B.&quot;Durchgangssyndrom&quot;)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HYB" />
+      <display value="Hyperbilirubinämie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="HYF" />
+      <display value="Hypopharynxfistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="IFV" />
+      <display value="Ileofemorale Venenthrombose" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="KAS" />
+      <display value="Kardiogener Schock" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="KES" />
+      <display value="Komplikationen einer Stomaanlage" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="KIM" />
+      <display value="Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="KRA" />
+      <display value="Krampfanfall" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="KDS" />
+      <display value="Kurzdarmsyndrom" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="LEV" />
+      <display value="Leberversagen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="LOE" />
+      <display value="Lungenödem" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="LYF" />
+      <display value="Lymphfistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="LYE" />
+      <display value="Lymphozele" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="MES" />
+      <display value="Magenentleerungsstörung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="MIL" />
+      <display value="Mechanischer Ileus" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="MED" />
+      <display value="Mediastinitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="MAT" />
+      <display value="Mesenterialarterien- oder -venenthrombose" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="MYI" />
+      <display value="Myokardinfarkt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="RNB" />
+      <display value="Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="NAB" />
+      <display value="Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="NIN" />
+      <display value="Nahtinsuffizienz, anderweitig nicht erwähnt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="OES" />
+      <display value="Ösophagitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="OSM" />
+      <display value="Osteitis, Osteomyelitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PAF" />
+      <display value="Pankreasfistel" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PIT" />
+      <display value="Pankreatitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PAB" />
+      <display value="Peranale Blutung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PPA" />
+      <display value="Periphere Parese" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PAV" />
+      <display value="Peripherer arterieller Verschluß (Embolie, Thrombose)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PER" />
+      <display value="Peritonitis" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PLB" />
+      <display value="Platzbauch" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PEY" />
+      <display value="Pleuraempyem" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PLE" />
+      <display value="Pleuraerguß" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PMN" />
+      <display value="Pneumonie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PNT" />
+      <display value="Pneumothorax" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PDA" />
+      <display value="Protrahierte Darmatonie (paralytischer Ileus)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="PAE" />
+      <display value="Pulmonalarterienembolie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="RPA" />
+      <display value="Rekurrensparese" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="RIN" />
+      <display value="Respiratorische Insuffizienz" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="SKI" />
+      <display value="Septische Komplikation eines Implantates" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="SES" />
+      <display value="Septischer Schock" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="SFH" />
+      <display value="Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="SON" />
+      <display value="Sonstige Komplikation" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="STK" />
+      <display value="Stomakomplikation (z.B. Blutung, Nekrose, Stenose)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="TZP" />
+      <display value="Thrombozytopenie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="TIA" />
+      <display value="TIA (transitorische ischämische Attacke) oder      RIND (reversibles ischämisches neurologisches Defizit)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="TRZ" />
+      <display value="Transfusionszwischenfall" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="WUH" />
+      <display value="Wundhämatom (konservativ therapiert)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      <code value="WSS" />
+      <display value="Wundheilungsstörung, subkutane" />
+    </contains>
+  </expansion>
+</ValueSet>

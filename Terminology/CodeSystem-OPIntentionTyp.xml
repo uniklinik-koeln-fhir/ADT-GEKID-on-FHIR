@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>OPIntentionTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+  <name value="OPIntentionTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="K" />
+    <display value="Kurativ" />
+    <definition value="Kurativ" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Palliativ" />
+    <definition value="Palliativ" />
+  </concept>
+  <concept>
+    <code value="D" />
+    <display value="Diagnostisch" />
+    <definition value="Diagnostisch" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Revision/Komplikation" />
+    <definition value="Revision/Komplikation" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Fehlende Angabe" />
+    <definition value="Fehlende Angabe" />
+  </concept>
+</CodeSystem>

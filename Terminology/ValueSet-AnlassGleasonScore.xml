@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="AnlassGleasonScore" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="795c3dca-ab90-4271-87d4-71e5c3e96498" />
+    <timestamp value="2019-07-22T09:29:37+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore" />
+      <code value="O" />
+      <display value="Op" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore" />
+      <code value="S" />
+      <display value="Stanze" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/AnlassGleasonScore" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

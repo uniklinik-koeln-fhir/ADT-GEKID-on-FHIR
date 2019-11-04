@@ -1,0 +1,66 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>verlaufTumorstatusFernmetastasen</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+  <name value="verlaufTumorstatusFernmetastasen" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="10" />
+  <concept>
+    <code value="K" />
+    <display value="Keine Fernmetastasen nachweisbar" />
+    <definition value="Keine Fernmetastasen nachweisbar" />
+  </concept>
+  <concept>
+    <code value="M" />
+    <display value="Verbliebene Fernmetastase(n)" />
+    <definition value="Verbliebene Fernmetastase(n)" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv" />
+    <definition value="Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Fernmetastasenl Residuen" />
+    <definition value="Fernmetastasenl Residuen" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Fernmetastasen Progress" />
+    <definition value="Fernmetastasen Progress" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Fernmetastasen No Change" />
+    <definition value="Fernmetastasen No Change" />
+  </concept>
+  <concept>
+    <code value="F" />
+    <display value="Fraglicher Befund" />
+    <definition value="Fraglicher Befund" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="Fehlende Angabe" />
+    <definition value="Fehlende Angabe" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="verlaufTumorstatusFernmetastasen" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="891c17f9-4296-498c-8126-7520dd8807f9" />
+    <timestamp value="2019-07-22T10:45:56+00:00" />
+    <total value="9" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="K" />
+      <display value="Keine Fernmetastasen nachweisbar" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="M" />
+      <display value="Verbliebene Fernmetastase(n)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="R" />
+      <display value="Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="T" />
+      <display value="Fernmetastasenl Residuen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="P" />
+      <display value="Fernmetastasen Progress" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="N" />
+      <display value="Fernmetastasen No Change" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="F" />
+      <display value="Fraglicher Befund" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      <code value="X" />
+      <display value="Fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

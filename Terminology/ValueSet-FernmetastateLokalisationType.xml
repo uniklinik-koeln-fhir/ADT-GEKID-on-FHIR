@@ -1,0 +1,74 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="Fernmetastase_Lokalisation_Type" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="4595b826-0243-414b-9302-4bfccc5f21e0" />
+    <timestamp value="2019-07-22T09:33:05+00:00" />
+    <total value="12" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="PUL" />
+      <display value="Lunge" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="OSS" />
+      <display value="Knochen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="HEP" />
+      <display value="Leber" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="BRA" />
+      <display value="Hirn" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="LYM" />
+      <display value="Lymphknoten" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="MAR" />
+      <display value="Knochenmark" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="PLE" />
+      <display value="Pleura" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="PER" />
+      <display value="Peritoneum" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="ADR" />
+      <display value="Nebennieren" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="SKI" />
+      <display value="Haut" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="OTH" />
+      <display value="Andere Organe" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Fernmetastate_Lokalisation_Type" />
+      <code value="GEN" />
+      <display value="Generalisierte Metastasierung" />
+    </contains>
+  </expansion>
+</ValueSet>

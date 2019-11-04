@@ -1,0 +1,422 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>OPKomplikation</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+  <name value="OPKomplikation" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="81" />
+  <concept>
+    <code value="N" />
+    <display value="Nein" />
+    <definition value="Nein" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="ABD" />
+    <display value="Abszeß in einem Drainagekanal" />
+    <definition value="Abszeß in einem Drainagekanal" />
+  </concept>
+  <concept>
+    <code value="ABS" />
+    <display value="Abszeß, intraabdominaler oder intrathorakaler" />
+    <definition value="Abszeß, intraabdominaler oder intrathorakaler" />
+  </concept>
+  <concept>
+    <code value="ASF" />
+    <display value="Abszeß, subfaszialer" />
+    <definition value="Abszeß, subfaszialer" />
+  </concept>
+  <concept>
+    <code value="ANI" />
+    <display value="Akute Niereninsuffizienz" />
+    <definition value="Akute Niereninsuffizienz" />
+  </concept>
+  <concept>
+    <code value="AEP" />
+    <display value="Alkoholentzugspsychose" />
+    <definition value="Alkoholentzugspsychose" />
+  </concept>
+  <concept>
+    <code value="ALR" />
+    <display value="Allergische Reaktion ohne Schocksymptomatik" />
+    <definition value="Allergische Reaktion ohne Schocksymptomatik" />
+  </concept>
+  <concept>
+    <code value="ANS" />
+    <display value="Anaphylaktischer Schock" />
+    <definition value="Anaphylaktischer Schock" />
+  </concept>
+  <concept>
+    <code value="AEE" />
+    <display value="Anastomoseninsuffizienz einer Enterostomie" />
+    <definition value="Anastomoseninsuffizienz einer Enterostomie" />
+  </concept>
+  <concept>
+    <code value="API" />
+    <display value="Apoplektischer Insult" />
+    <definition value="Apoplektischer Insult" />
+  </concept>
+  <concept>
+    <code value="BIF" />
+    <display value="Biliäre Fistel" />
+    <definition value="Biliäre Fistel" />
+  </concept>
+  <concept>
+    <code value="BOG" />
+    <display value="Blutung, obere gastrointestinale (z.B &quot;Stressulkus&quot;)" />
+    <definition value="Blutung, obere gastrointestinale (z.B &quot;Stressulkus&quot;)" />
+  </concept>
+  <concept>
+    <code value="BOE" />
+    <display value="Bolusverlegung eines Endotubus" />
+    <definition value="Bolusverlegung eines Endotubus" />
+  </concept>
+  <concept>
+    <code value="BSI" />
+    <display value="Bronchusstumpfinsuffizienz" />
+    <definition value="Bronchusstumpfinsuffizienz" />
+  </concept>
+  <concept>
+    <code value="CHI" />
+    <display value="Cholangitis" />
+    <definition value="Cholangitis" />
+  </concept>
+  <concept>
+    <code value="DAI" />
+    <display value="Darmanastomoseinsuffizienz" />
+    <definition value="Darmanastomoseinsuffizienz" />
+  </concept>
+  <concept>
+    <code value="DPS" />
+    <display value="Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus)" />
+    <definition value="Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus)" />
+  </concept>
+  <concept>
+    <code value="DIC" />
+    <display value="Disseminierte intravasale Koagulopathie" />
+    <definition value="Disseminierte intravasale Koagulopathie" />
+  </concept>
+  <concept>
+    <code value="DEP" />
+    <display value="Drogenentzugspsychose" />
+    <definition value="Drogenentzugspsychose" />
+  </concept>
+  <concept>
+    <code value="DLU" />
+    <display value="Druck- und Lagerungsschäden, z.B. Dekubitalulzera" />
+    <definition value="Druck- und Lagerungsschäden, z.B. Dekubitalulzera" />
+  </concept>
+  <concept>
+    <code value="DSI" />
+    <display value="Duodenalstumpfinsuffizienz" />
+    <definition value="Duodenalstumpfinsuffizienz" />
+  </concept>
+  <concept>
+    <code value="ENF" />
+    <display value="Enterale Fistel" />
+    <definition value="Enterale Fistel" />
+  </concept>
+  <concept>
+    <code value="GER" />
+    <display value="Gerinnungsstörung" />
+    <definition value="Gerinnungsstörung" />
+  </concept>
+  <concept>
+    <code value="HEM" />
+    <display value="Hämatemesis" />
+    <definition value="Hämatemesis" />
+  </concept>
+  <concept>
+    <code value="HUR" />
+    <display value="Hämaturie" />
+    <definition value="Hämaturie" />
+  </concept>
+  <concept>
+    <code value="HAE" />
+    <display value="Hämorrhagischer Schock" />
+    <definition value="Hämorrhagischer Schock" />
+  </concept>
+  <concept>
+    <code value="HFI" />
+    <display value="Harnfistel" />
+    <definition value="Harnfistel" />
+  </concept>
+  <concept>
+    <code value="HNK" />
+    <display value="Hautnekrose im Operationsbereich" />
+    <definition value="Hautnekrose im Operationsbereich" />
+  </concept>
+  <concept>
+    <code value="HZI" />
+    <display value="Herzinsuffizienz" />
+    <definition value="Herzinsuffizienz" />
+  </concept>
+  <concept>
+    <code value="HRS" />
+    <display value="Herzrhythmusstörungen" />
+    <definition value="Herzrhythmusstörungen" />
+  </concept>
+  <concept>
+    <code value="HNA" />
+    <display value="Hirnnervenausfälle" />
+    <definition value="Hirnnervenausfälle" />
+  </concept>
+  <concept>
+    <code value="HOP" />
+    <display value="Hirnorganisches Psychosyndrom (z.B.&quot;Durchgangssyndrom&quot;)" />
+    <definition value="Hirnorganisches Psychosyndrom (z.B.&quot;Durchgangssyndrom&quot;)" />
+  </concept>
+  <concept>
+    <code value="HYB" />
+    <display value="Hyperbilirubinämie" />
+    <definition value="Hyperbilirubinämie" />
+  </concept>
+  <concept>
+    <code value="HYF" />
+    <display value="Hypopharynxfistel" />
+    <definition value="Hypopharynxfistel" />
+  </concept>
+  <concept>
+    <code value="IFV" />
+    <display value="Ileofemorale Venenthrombose" />
+    <definition value="Ileofemorale Venenthrombose" />
+  </concept>
+  <concept>
+    <code value="KAS" />
+    <display value="Kardiogener Schock" />
+    <definition value="Kardiogener Schock" />
+  </concept>
+  <concept>
+    <code value="KES" />
+    <display value="Komplikationen einer Stomaanlage" />
+    <definition value="Komplikationen einer Stomaanlage" />
+  </concept>
+  <concept>
+    <code value="KIM" />
+    <display value="Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation" />
+    <definition value="Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z.B. Dislokation" />
+  </concept>
+  <concept>
+    <code value="KRA" />
+    <display value="Krampfanfall" />
+    <definition value="Krampfanfall" />
+  </concept>
+  <concept>
+    <code value="KDS" />
+    <display value="Kurzdarmsyndrom" />
+    <definition value="Kurzdarmsyndrom" />
+  </concept>
+  <concept>
+    <code value="LEV" />
+    <display value="Leberversagen" />
+    <definition value="Leberversagen" />
+  </concept>
+  <concept>
+    <code value="LOE" />
+    <display value="Lungenödem" />
+    <definition value="Lungenödem" />
+  </concept>
+  <concept>
+    <code value="LYF" />
+    <display value="Lymphfistel" />
+    <definition value="Lymphfistel" />
+  </concept>
+  <concept>
+    <code value="LYE" />
+    <display value="Lymphozele" />
+    <definition value="Lymphozele" />
+  </concept>
+  <concept>
+    <code value="MES" />
+    <display value="Magenentleerungsstörung" />
+    <definition value="Magenentleerungsstörung" />
+  </concept>
+  <concept>
+    <code value="MIL" />
+    <display value="Mechanischer Ileus" />
+    <definition value="Mechanischer Ileus" />
+  </concept>
+  <concept>
+    <code value="MED" />
+    <display value="Mediastinitis" />
+    <definition value="Mediastinitis" />
+  </concept>
+  <concept>
+    <code value="MAT" />
+    <display value="Mesenterialarterien- oder -venenthrombose" />
+    <definition value="Mesenterialarterien- oder -venenthrombose" />
+  </concept>
+  <concept>
+    <code value="MYI" />
+    <display value="Myokardinfarkt" />
+    <definition value="Myokardinfarkt" />
+  </concept>
+  <concept>
+    <code value="RNB" />
+    <display value="Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt" />
+    <definition value="Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt" />
+  </concept>
+  <concept>
+    <code value="NAB" />
+    <display value="Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt" />
+    <definition value="Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt" />
+  </concept>
+  <concept>
+    <code value="NIN" />
+    <display value="Nahtinsuffizienz, anderweitig nicht erwähnt" />
+    <definition value="Nahtinsuffizienz, anderweitig nicht erwähnt" />
+  </concept>
+  <concept>
+    <code value="OES" />
+    <display value="Ösophagitis" />
+    <definition value="Ösophagitis" />
+  </concept>
+  <concept>
+    <code value="OSM" />
+    <display value="Osteitis, Osteomyelitis" />
+    <definition value="Osteitis, Osteomyelitis" />
+  </concept>
+  <concept>
+    <code value="PAF" />
+    <display value="Pankreasfistel" />
+    <definition value="Pankreasfistel" />
+  </concept>
+  <concept>
+    <code value="PIT" />
+    <display value="Pankreatitis" />
+    <definition value="Pankreatitis" />
+  </concept>
+  <concept>
+    <code value="PAB" />
+    <display value="Peranale Blutung" />
+    <definition value="Peranale Blutung" />
+  </concept>
+  <concept>
+    <code value="PPA" />
+    <display value="Periphere Parese" />
+    <definition value="Periphere Parese" />
+  </concept>
+  <concept>
+    <code value="PAV" />
+    <display value="Peripherer arterieller Verschluß (Embolie, Thrombose)" />
+    <definition value="Peripherer arterieller Verschluß (Embolie, Thrombose)" />
+  </concept>
+  <concept>
+    <code value="PER" />
+    <display value="Peritonitis" />
+    <definition value="Peritonitis" />
+  </concept>
+  <concept>
+    <code value="PLB" />
+    <display value="Platzbauch" />
+    <definition value="Platzbauch" />
+  </concept>
+  <concept>
+    <code value="PEY" />
+    <display value="Pleuraempyem" />
+    <definition value="Pleuraempyem" />
+  </concept>
+  <concept>
+    <code value="PLE" />
+    <display value="Pleuraerguß" />
+    <definition value="Pleuraerguß" />
+  </concept>
+  <concept>
+    <code value="PMN" />
+    <display value="Pneumonie" />
+    <definition value="Pneumonie" />
+  </concept>
+  <concept>
+    <code value="PNT" />
+    <display value="Pneumothorax" />
+    <definition value="Pneumothorax" />
+  </concept>
+  <concept>
+    <code value="PDA" />
+    <display value="Protrahierte Darmatonie (paralytischer Ileus)" />
+    <definition value="Protrahierte Darmatonie (paralytischer Ileus)" />
+  </concept>
+  <concept>
+    <code value="PAE" />
+    <display value="Pulmonalarterienembolie" />
+    <definition value="Pulmonalarterienembolie" />
+  </concept>
+  <concept>
+    <code value="RPA" />
+    <display value="Rekurrensparese" />
+    <definition value="Rekurrensparese" />
+  </concept>
+  <concept>
+    <code value="RIN" />
+    <display value="Respiratorische Insuffizienz" />
+    <definition value="Respiratorische Insuffizienz" />
+  </concept>
+  <concept>
+    <code value="SKI" />
+    <display value="Septische Komplikation eines Implantates" />
+    <definition value="Septische Komplikation eines Implantates" />
+  </concept>
+  <concept>
+    <code value="SES" />
+    <display value="Septischer Schock" />
+    <definition value="Septischer Schock" />
+  </concept>
+  <concept>
+    <code value="SFH" />
+    <display value="Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes" />
+    <definition value="Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes" />
+  </concept>
+  <concept>
+    <code value="SON" />
+    <display value="Sonstige Komplikation" />
+    <definition value="Sonstige Komplikation" />
+  </concept>
+  <concept>
+    <code value="STK" />
+    <display value="Stomakomplikation (z.B. Blutung, Nekrose, Stenose)" />
+    <definition value="Stomakomplikation (z.B. Blutung, Nekrose, Stenose)" />
+  </concept>
+  <concept>
+    <code value="TZP" />
+    <display value="Thrombozytopenie" />
+    <definition value="Thrombozytopenie" />
+  </concept>
+  <concept>
+    <code value="TIA" />
+    <display value="TIA (transitorische ischämische Attacke) oder      RIND (reversibles ischämisches neurologisches Defizit)" />
+    <definition value="TIA (transitorische ischämische Attacke) oder      RIND (reversibles ischämisches neurologisches Defizit)" />
+  </concept>
+  <concept>
+    <code value="TRZ" />
+    <display value="Transfusionszwischenfall" />
+    <definition value="Transfusionszwischenfall" />
+  </concept>
+  <concept>
+    <code value="WUH" />
+    <display value="Wundhämatom (konservativ therapiert)" />
+    <definition value="Wundhämatom (konservativ therapiert)" />
+  </concept>
+  <concept>
+    <code value="WSS" />
+    <display value="Wundheilungsstörung, subkutane" />
+    <definition value="Wundheilungsstörung, subkutane" />
+  </concept>
+</CodeSystem>

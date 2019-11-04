@@ -1,0 +1,31 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNMaSymbol</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol" />
+  <name value="TNMaSymbol" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <display value="Klassifikation erfolgte nicht durch Autopsie" />
+    <definition value="Klassifikation erfolgte nicht durch Autopsie" />
+  </concept>
+  <concept>
+    <code value="a" />
+    <display value="Klassifikation erfolgte durch Autopsie" />
+    <definition value="Klassifikation erfolgte durch Autopsie" />
+  </concept>
+</CodeSystem>

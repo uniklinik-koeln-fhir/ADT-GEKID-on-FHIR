@@ -1,0 +1,762 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>STZielgebiet</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet" />
+  <name value="STZielgebiet" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="149" />
+  <concept>
+    <code value="1." />
+    <display value="ZNS" />
+    <definition value="ZNS" />
+  </concept>
+  <concept>
+    <code value="1.1." />
+    <display value="Ganzhirn" />
+    <definition value="Ganzhirn" />
+  </concept>
+  <concept>
+    <code value="1.2." />
+    <display value="Teilhirn" />
+    <definition value="Teilhirn" />
+  </concept>
+  <concept>
+    <code value="1.3." />
+    <display value="Neuroachse" />
+    <definition value="Neuroachse" />
+  </concept>
+  <concept>
+    <code value="2." />
+    <display value="Kopf-Hals" />
+    <definition value="Kopf-Hals" />
+  </concept>
+  <concept>
+    <code value="2.+" />
+    <display value="Kopf-Hals mit Lymphknoten" />
+    <definition value="Kopf-Hals mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.1.+" />
+    <display value="Orbita mit Lymphknoten" />
+    <definition value="Orbita mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.1.-" />
+    <display value="Orbita ohne Lymphknoten" />
+    <definition value="Orbita ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.2." />
+    <display value="Nase/ Nasennebenhöhle" />
+    <definition value="Nase/ Nasennebenhöhle" />
+  </concept>
+  <concept>
+    <code value="2.2.+" />
+    <display value="Nase/ Nasennebenhöhle mit Lymphknoten" />
+    <definition value="Nase/ Nasennebenhöhle mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.2.-" />
+    <display value="Nase/ Nasennebenhöhle ohne Lymphknoten" />
+    <definition value="Nase/ Nasennebenhöhle ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.3." />
+    <display value="Mundhöhle" />
+    <definition value="Mundhöhle" />
+  </concept>
+  <concept>
+    <code value="2.3.+" />
+    <display value="Mundhöhle mit Lymphknoten" />
+    <definition value="Mundhöhle mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.3.-" />
+    <display value="Mundhöhle mit Lymphknoten" />
+    <definition value="Mundhöhle mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.4." />
+    <display value="Ohr" />
+    <definition value="Ohr" />
+  </concept>
+  <concept>
+    <code value="2.4.+" />
+    <display value="Ohr mit Lymphknoten" />
+    <definition value="Ohr mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.4.-" />
+    <display value="Ohr ohne Lymphknoten" />
+    <definition value="Ohr ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.5." />
+    <display value="Speicheldrüse" />
+    <definition value="Speicheldrüse" />
+  </concept>
+  <concept>
+    <code value="2.5.+" />
+    <display value="Speicheldrüse mit Lymphknoten" />
+    <definition value="Speicheldrüse mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.5.-" />
+    <display value="Speicheldrüse ohne Lymphknoten" />
+    <definition value="Speicheldrüse ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.6." />
+    <display value="Pharynx" />
+    <definition value="Pharynx" />
+  </concept>
+  <concept>
+    <code value="2.6.+" />
+    <display value="Pharynx mit Lymphknoten" />
+    <definition value="Pharynx mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.6.-" />
+    <display value="Pharynx ohne Lymphknoten" />
+    <definition value="Pharynx ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.7." />
+    <display value="Larynx" />
+    <definition value="Larynx" />
+  </concept>
+  <concept>
+    <code value="2.7.+" />
+    <display value="Larynx mit Lymphknoten" />
+    <definition value="Larynx mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.7.-" />
+    <display value="Larynx ohne Lymphknoten" />
+    <definition value="Larynx ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.8." />
+    <display value="Schilddrüse" />
+    <definition value="Schilddrüse" />
+  </concept>
+  <concept>
+    <code value="2.8.+" />
+    <display value="Schilddrüse mit Lymphknoten" />
+    <definition value="Schilddrüse mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.8.-" />
+    <display value="Schilddrüse ohne Lymphknoten" />
+    <definition value="Schilddrüse ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="2.9." />
+    <display value="Halslymphknoten (also ohne Primärtumor)" />
+    <definition value="Halslymphknoten (also ohne Primärtumor)" />
+  </concept>
+  <concept>
+    <code value="3." />
+    <display value="Thorax" />
+    <definition value="Thorax" />
+  </concept>
+  <concept>
+    <code value="3.+" />
+    <display value="Thorax mit Lymphknoten" />
+    <definition value="Thorax mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.-" />
+    <display value="Thorax ohne Lymphknoten" />
+    <definition value="Thorax ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.1." />
+    <display value="Mamma als Ganzbrust" />
+    <definition value="Mamma als Ganzbrust" />
+  </concept>
+  <concept>
+    <code value="3.1.+" />
+    <display value="Mamma als Ganzbrust mit Lymphknoten" />
+    <definition value="Mamma als Ganzbrust mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.1.-" />
+    <display value="Mamma als Ganzbrust ohne Lymphknoten" />
+    <definition value="Mamma als Ganzbrust ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.2." />
+    <display value="Mamma als Teilbrust" />
+    <definition value="Mamma als Teilbrust" />
+  </concept>
+  <concept>
+    <code value="3.2.+" />
+    <display value="Mamma als Teilbrust mit Lymphknoten" />
+    <definition value="Mamma als Teilbrust mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.2.-" />
+    <display value="Mamma als Teilbrust ohne Lymphknoten" />
+    <definition value="Mamma als Teilbrust ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.3." />
+    <display value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome)" />
+    <definition value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome)" />
+  </concept>
+  <concept>
+    <code value="3.3.+" />
+    <display value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten" />
+    <definition value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.3.-" />
+    <display value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten" />
+    <definition value="Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.4." />
+    <display value="Lunge" />
+    <definition value="Lunge" />
+  </concept>
+  <concept>
+    <code value="3.4.+" />
+    <display value="Lunge mit Lymphknoten" />
+    <definition value="Lunge mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.4.-" />
+    <display value="Lunge ohne Lymphknoten" />
+    <definition value="Lunge ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.5." />
+    <display value="Ösophagus" />
+    <definition value="Ösophagus" />
+  </concept>
+  <concept>
+    <code value="3.5.+" />
+    <display value="Ösophagus mit Lymphknoten" />
+    <definition value="Ösophagus mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.5.-" />
+    <display value="Ösophagus ohne Lymphknoten" />
+    <definition value="Ösophagus ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.6." />
+    <display value="Thymus" />
+    <definition value="Thymus" />
+  </concept>
+  <concept>
+    <code value="3.6.+" />
+    <display value="Thymus mit Lymphknoten" />
+    <definition value="Thymus mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.6.-" />
+    <display value="Thymus ohne Lymphknoten" />
+    <definition value="Thymus ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="3.7." />
+    <display value="Mediastinale Lymphknoten (also ohne Primärtumor)" />
+    <definition value="Mediastinale Lymphknoten (also ohne Primärtumor)" />
+  </concept>
+  <concept>
+    <code value="4." />
+    <display value="Abdomen (ohne Becken)" />
+    <definition value="Abdomen (ohne Becken)" />
+  </concept>
+  <concept>
+    <code value="4.+" />
+    <display value="Abdomen (ohne Becken) mit Lymphknoten" />
+    <definition value="Abdomen (ohne Becken) mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.-" />
+    <display value="Abdomen (ohne Becken) ohne Lymphknoten" />
+    <definition value="Abdomen (ohne Becken) ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.1." />
+    <display value="Magen" />
+    <definition value="Magen" />
+  </concept>
+  <concept>
+    <code value="4.1.+" />
+    <display value="Magen mit Lymphknoten" />
+    <definition value="Magen mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.1.-" />
+    <display value="Magen ohne Lymphknoten" />
+    <definition value="Magen ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.2." />
+    <display value="Pankreas" />
+    <definition value="Pankreas" />
+  </concept>
+  <concept>
+    <code value="4.2.+" />
+    <display value="Pankreas mit Lymphknoten" />
+    <definition value="Pankreas mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.2.-" />
+    <display value="Pankreas ohne Lymphknoten" />
+    <definition value="Pankreas ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.3." />
+    <display value="Leber" />
+    <definition value="Leber" />
+  </concept>
+  <concept>
+    <code value="4.3.+" />
+    <display value="Leber mit Lymphknoten" />
+    <definition value="Leber mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.3.-" />
+    <display value="Leber ohne Lymphknoten" />
+    <definition value="Leber ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.4." />
+    <display value="Milz" />
+    <definition value="Milz" />
+  </concept>
+  <concept>
+    <code value="4.4.+" />
+    <display value="Milz mit Lymphknoten" />
+    <definition value="Milz mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.4.-" />
+    <display value="Milz ohne Lymphknoten" />
+    <definition value="Milz ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.5." />
+    <display value="Niere" />
+    <definition value="Niere" />
+  </concept>
+  <concept>
+    <code value="4.5.+" />
+    <display value="Niere mit Lymphknoten" />
+    <definition value="Niere mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.5.-" />
+    <display value="Niere ohne Lymphknoten" />
+    <definition value="Niere ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.6." />
+    <display value="Nebenniere" />
+    <definition value="Nebenniere" />
+  </concept>
+  <concept>
+    <code value="4.6.+" />
+    <display value="Nebenniere mit Lymphknoten" />
+    <definition value="Nebenniere mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.6.-" />
+    <display value="Nebenniere ohne Lymphknoten" />
+    <definition value="Nebenniere ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.7." />
+    <display value="Retroperitoneale Lymphknoten (also ohne Primärtumor)" />
+    <definition value="Retroperitoneale Lymphknoten (also ohne Primärtumor)" />
+  </concept>
+  <concept>
+    <code value="4.8." />
+    <display value="Retroperitoneum (z.B. Sarkome)" />
+    <definition value="Retroperitoneum (z.B. Sarkome)" />
+  </concept>
+  <concept>
+    <code value="4.8.+" />
+    <display value="Retroperitoneum (z.B. Sarkome) mit Lymphknoten" />
+    <definition value="Retroperitoneum (z.B. Sarkome) mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.8.-" />
+    <display value="Retroperitoneum (z.B. Sarkome) ohne Lymphknoten" />
+    <definition value="Retroperitoneum (z.B. Sarkome) ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.9." />
+    <display value="Bauchwand (z.B. Sarkome)" />
+    <definition value="Bauchwand (z.B. Sarkome)" />
+  </concept>
+  <concept>
+    <code value="4.9.+" />
+    <display value="Bauchwand (z.B. Sarkome) mit Lymphknoten" />
+    <definition value="Bauchwand (z.B. Sarkome) mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="4.9.-" />
+    <display value="Bauchwand (z.B. Sarkome) ohne Lymphknoten" />
+    <definition value="Bauchwand (z.B. Sarkome) ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5." />
+    <display value="Becken" />
+    <definition value="Becken" />
+  </concept>
+  <concept>
+    <code value="5.+" />
+    <display value="Becken mit Lymphknoten" />
+    <definition value="Becken mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.-" />
+    <display value="Becken ohne Lymphknoten" />
+    <definition value="Becken ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.1." />
+    <display value="Rektum" />
+    <definition value="Rektum" />
+  </concept>
+  <concept>
+    <code value="5.1.+" />
+    <display value="Rektum mit Lymphknoten" />
+    <definition value="Rektum mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.1.-" />
+    <display value="Rektum ohne Lymphknoten" />
+    <definition value="Rektum ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.2." />
+    <display value="Analbereich" />
+    <definition value="Analbereich" />
+  </concept>
+  <concept>
+    <code value="5.2.+" />
+    <display value="Analbereich mit Lymphknoten" />
+    <definition value="Analbereich mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.2.-" />
+    <display value="Analbereich ohne Lymphknoten" />
+    <definition value="Analbereich ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.3." />
+    <display value="Harnblase" />
+    <definition value="Harnblase" />
+  </concept>
+  <concept>
+    <code value="5.3.+" />
+    <display value="Harnblase mit Lymphknoten" />
+    <definition value="Harnblase mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.3.-" />
+    <display value="Harnblase ohne Lymphknoten" />
+    <definition value="Harnblase ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.4." />
+    <display value="Prostata" />
+    <definition value="Prostata" />
+  </concept>
+  <concept>
+    <code value="5.4.+" />
+    <display value="Prostata mit Lymphknoten" />
+    <definition value="Prostata mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.4.-" />
+    <display value="Prostata ohne Lymphknoten" />
+    <definition value="Prostata ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.5." />
+    <display value="Hoden" />
+    <definition value="Hoden" />
+  </concept>
+  <concept>
+    <code value="5.5.+" />
+    <display value="Hoden mit Lymphknoten" />
+    <definition value="Hoden mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.5.-" />
+    <display value="Hoden ohne Lymphknoten" />
+    <definition value="Hoden ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.6." />
+    <display value="Penis" />
+    <definition value="Penis" />
+  </concept>
+  <concept>
+    <code value="5.6.+" />
+    <display value="Penis mit Lymphknoten" />
+    <definition value="Penis mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.6.-" />
+    <display value="Penis ohne Lymphknoten" />
+    <definition value="Penis ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7." />
+    <display value="Uterus/Zervix" />
+    <definition value="Uterus/Zervix" />
+  </concept>
+  <concept>
+    <code value="5.7.+" />
+    <display value="Uterus/Zervix mit Lymphknoten" />
+    <definition value="Uterus/Zervix mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7.-" />
+    <display value="Uterus/Zervix ohne Lymphknoten" />
+    <definition value="Uterus/Zervix ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7.1." />
+    <display value="Uterus" />
+    <definition value="Uterus" />
+  </concept>
+  <concept>
+    <code value="5.7.1.+" />
+    <display value="Uterus mit Lymphknoten" />
+    <definition value="Uterus mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7.1.-" />
+    <display value="Uterus ohne Lymphknoten" />
+    <definition value="Uterus ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7.2." />
+    <display value="Zervix" />
+    <definition value="Zervix" />
+  </concept>
+  <concept>
+    <code value="5.7.2.+" />
+    <display value="Zervix mit Lymphknoten" />
+    <definition value="Zervix mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.7.2.-" />
+    <display value="Zervix ohne Lymphknoten" />
+    <definition value="Zervix ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.8." />
+    <display value="Ovar" />
+    <definition value="Ovar" />
+  </concept>
+  <concept>
+    <code value="5.8.+" />
+    <display value="Ovar mit Lymphknoten" />
+    <definition value="Ovar mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.8.-" />
+    <display value="Ovar ohne Lymphknoten" />
+    <definition value="Ovar ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.9." />
+    <display value="Vulva" />
+    <definition value="Vulva" />
+  </concept>
+  <concept>
+    <code value="5.9.+" />
+    <display value="Vulva mit Lymphknoten" />
+    <definition value="Vulva mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.9.-" />
+    <display value="Vulva ohne Lymphknoten" />
+    <definition value="Vulva ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.10." />
+    <display value="Vagina" />
+    <definition value="Vagina" />
+  </concept>
+  <concept>
+    <code value="5.10.+" />
+    <display value="Vagina mit Lymphknoten" />
+    <definition value="Vagina mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.10.-" />
+    <display value="Vagina ohne Lymphknoten" />
+    <definition value="Vagina ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.11." />
+    <display value="Beckenwand" />
+    <definition value="Beckenwand" />
+  </concept>
+  <concept>
+    <code value="5.11.+" />
+    <display value="Beckenwand mit Lymphknoten" />
+    <definition value="Beckenwand mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.11.-" />
+    <display value="Beckenwand ohne Lymphknoten" />
+    <definition value="Beckenwand ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="5.12." />
+    <display value="Beckenlymphknoten (ohne Primärtumor)" />
+    <definition value="Beckenlymphknoten (ohne Primärtumor)" />
+  </concept>
+  <concept>
+    <code value="6." />
+    <display value="Stütz/Bewegungsapparat" />
+    <definition value="Stütz/Bewegungsapparat" />
+  </concept>
+  <concept>
+    <code value="6.1." />
+    <display value="Schädelknochen" />
+    <definition value="Schädelknochen" />
+  </concept>
+  <concept>
+    <code value="6.2." />
+    <display value="Rippen" />
+    <definition value="Rippen" />
+  </concept>
+  <concept>
+    <code value="6.3." />
+    <display value="Sternum" />
+    <definition value="Sternum" />
+  </concept>
+  <concept>
+    <code value="6.4." />
+    <display value="HWS" />
+    <definition value="HWS" />
+  </concept>
+  <concept>
+    <code value="6.5." />
+    <display value="BWS" />
+    <definition value="BWS" />
+  </concept>
+  <concept>
+    <code value="6.6." />
+    <display value="LWS" />
+    <definition value="LWS" />
+  </concept>
+  <concept>
+    <code value="6.7." />
+    <display value="knöchernes Becken" />
+    <definition value="knöchernes Becken" />
+  </concept>
+  <concept>
+    <code value="6.8." />
+    <display value="Hüfte" />
+    <definition value="Hüfte" />
+  </concept>
+  <concept>
+    <code value="6.9." />
+    <display value="Achsel" />
+    <definition value="Achsel" />
+  </concept>
+  <concept>
+    <code value="6.10." />
+    <display value="Oberarm" />
+    <definition value="Oberarm" />
+  </concept>
+  <concept>
+    <code value="6.11." />
+    <display value="Unterarm" />
+    <definition value="Unterarm" />
+  </concept>
+  <concept>
+    <code value="6.12." />
+    <display value="Hand" />
+    <definition value="Hand" />
+  </concept>
+  <concept>
+    <code value="6.13." />
+    <display value="Leiste" />
+    <definition value="Leiste" />
+  </concept>
+  <concept>
+    <code value="6.14." />
+    <display value="Oberschenkel" />
+    <definition value="Oberschenkel" />
+  </concept>
+  <concept>
+    <code value="6.15." />
+    <display value="Unterschenkel" />
+    <definition value="Unterschenkel" />
+  </concept>
+  <concept>
+    <code value="6.16." />
+    <display value="Fuß" />
+    <definition value="Fuß" />
+  </concept>
+  <concept>
+    <code value="7." />
+    <display value="Haut" />
+    <definition value="Haut" />
+  </concept>
+  <concept>
+    <code value="7.+" />
+    <display value="Haut mit Lymphknoten" />
+    <definition value="Haut mit Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="7.-" />
+    <display value="Haut ohne Lymphknoten" />
+    <definition value="Haut ohne Lymphknoten" />
+  </concept>
+  <concept>
+    <code value="7.1." />
+    <display value="Primärer Hauttumor (auch kutane Lymphome)" />
+    <definition value="Primärer Hauttumor (auch kutane Lymphome)" />
+  </concept>
+  <concept>
+    <code value="7.2." />
+    <display value="Hautmetastasen" />
+    <definition value="Hautmetastasen" />
+  </concept>
+  <concept>
+    <code value="8." />
+    <display value="Sonstiges" />
+    <definition value="Sonstiges" />
+  </concept>
+  <concept>
+    <code value="8.1." />
+    <display value="Ganzkörperbestrahlung" />
+    <definition value="Ganzkörperbestrahlung" />
+  </concept>
+  <concept>
+    <code value="8.2." />
+    <display value="Mantelfeldbestrahlung" />
+    <definition value="Mantelfeldbestrahlung" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,99 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="ICD_Version_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="c363d1aa-29a7-4915-a552-4a7ae3a74f24" />
+    <timestamp value="2019-07-22T09:35:17+00:00" />
+    <total value="17" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2004 GM" />
+      <display value="ICD 10 Version 2004 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2005 GM" />
+      <display value="ICD 10 Version 2005 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2006 GM" />
+      <display value="ICD 10 Version 2006 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2007 GM" />
+      <display value="ICD 10 Version 2007 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2008 GM" />
+      <display value="ICD 10 Version 2008 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2009 GM" />
+      <display value="ICD 10 Version 2009 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2010 GM" />
+      <display value="ICD 10 Version 2010 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2011 GM" />
+      <display value="ICD 10 Version 2011 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2012 GM" />
+      <display value="ICD 10 Version 2012 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2013 GM" />
+      <display value="ICD 10 Version 2013 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2014 GM" />
+      <display value="ICD 10 Version 2014 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2015 GM" />
+      <display value="ICD 10 Version 2015 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2016 GM" />
+      <display value="ICD 10 Version 2016 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2017 GM" />
+      <display value="ICD 10 Version 2017 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2018 GM" />
+      <display value="ICD 10 Version 2018 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2019 GM" />
+      <display value="ICD 10 Version 2019 GM" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      <code value="ICD 10 Version 2020 GM" />
+      <display value="ICD 10 Version 2020 GM" />
+    </contains>
+  </expansion>
+</ValueSet>

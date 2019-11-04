@@ -1,0 +1,19 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMySymbol" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="b7914cbc-dabe-4d7f-b3a2-748c55b6239f" />
+    <timestamp value="2019-07-22T10:44:34+00:00" />
+    <total value="1" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol" />
+      <code value="y" />
+      <display value="Klassifikation erfolgte während oder nach initialer multimodaler Therapie" />
+    </contains>
+  </expansion>
+</ValueSet>

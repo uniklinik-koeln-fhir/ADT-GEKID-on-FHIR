@@ -1,0 +1,54 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="VerlaufTumorstatusLymphknoten" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="b2e41361-3d12-4179-85a3-f60e19b23e61" />
+    <timestamp value="2019-07-22T10:46:09+00:00" />
+    <total value="8" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="K" />
+      <display value="Kein Lymphknotenbefall nachweisbar" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="R" />
+      <display value="Neu aufgetretenes Lymphknotenrezidiv" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="T" />
+      <display value="Bekannter Lymphknotenbefall Residuen" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="P" />
+      <display value="Bekannter Lymphknotenbefall Progress" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="N" />
+      <display value="Bekannter Lymphknotenbefall No Change" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="F" />
+      <display value="Fraglicher Befund" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      <code value="X" />
+      <display value="Fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

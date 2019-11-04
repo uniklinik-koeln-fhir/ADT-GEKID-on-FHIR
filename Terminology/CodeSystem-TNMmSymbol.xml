@@ -1,0 +1,59 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+  <name value="TNMmSymbol" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="10" />
+  <concept>
+    <code value="m" />
+    <display value="multiple Tumoren ohne Angabe der Zahl" />
+    <definition value="multiple Tumoren ohne Angabe der Zahl" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="(2)" />
+    <definition value="(2)" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="(3)" />
+    <definition value="(3)" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="(4)" />
+    <definition value="(4)" />
+  </concept>
+  <concept>
+    <code value="5" />
+    <display value="(5)" />
+    <definition value="(5)" />
+  </concept>
+  <concept>
+    <code value="6" />
+    <display value="(6)" />
+    <definition value="(6)" />
+  </concept>
+  <concept>
+    <code value="7" />
+    <display value="(7)" />
+    <definition value="(7)" />
+  </concept>
+  <concept>
+    <code value="8" />
+    <display value="(8)" />
+    <definition value="(8)" />
+  </concept>
+  <concept>
+    <code value="9" />
+    <display value="(9)" />
+    <definition value="(9)" />
+  </concept>
+</CodeSystem>

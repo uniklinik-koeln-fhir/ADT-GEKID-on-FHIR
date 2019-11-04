@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>STEndeGrund</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+  <name value="STEndeGrund" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="A" />
+    <display value="Abbruch wegen Nebenwirkungen" />
+    <definition value="Abbruch wegen Nebenwirkungen" />
+  </concept>
+  <concept>
+    <code value="E" />
+    <display value="Reguläres Ende" />
+    <definition value="Reguläres Ende" />
+  </concept>
+  <concept>
+    <code value="V" />
+    <display value="Patient verweigert weitere Therapie" />
+    <definition value="Patient verweigert weitere Therapie" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="Abbruch wegen Progress" />
+    <definition value="Abbruch wegen Progress" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="unbekannt" />
+    <definition value="unbekannt" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Abbruch aus sonstigen Gründen" />
+    <definition value="Abbruch aus sonstigen Gründen" />
+  </concept>
+</CodeSystem>

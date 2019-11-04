@@ -1,0 +1,2114 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ADT-GEKID" />
+  <url value="https://www.uk-koeln.de/fhir/StructureDefinition/ADT-GEKID" />
+  <name value="ADT-GEKID" />
+  <status value="draft" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="ADT-GEKID">
+      <path value="ADT-GEKID" />
+      <definition value="No description" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="ADT-GEKID.absender">
+      <path value="ADT-GEKID.absender" />
+      <label value="absender" />
+      <short value="Absender" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderBezeichnung">
+      <path value="ADT-GEKID.absender.absenderBezeichnung" />
+      <label value="absenderBezeichnung" />
+      <short value="absenderBezeichnung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderAnsprechpartner">
+      <path value="ADT-GEKID.absender.absenderAnsprechpartner" />
+      <label value="absenderAnsprechpartner" />
+      <short value="absenderAnsprechpartner" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderAnschrift">
+      <path value="ADT-GEKID.absender.absenderAnschrift" />
+      <label value="absenderAnschrift" />
+      <short value="absenderAnschrift" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderTelefon">
+      <path value="ADT-GEKID.absender.absenderTelefon" />
+      <label value="absenderTelefon" />
+      <short value="absenderTelefon" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderEMail">
+      <path value="ADT-GEKID.absender.absenderEMail" />
+      <label value="absenderEMail" />
+      <short value="absenderEMail" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.absenderID">
+      <path value="ADT-GEKID.absender.absenderID" />
+      <label value="absenderID" />
+      <short value="absenderID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.softwareID">
+      <path value="ADT-GEKID.absender.softwareID" />
+      <label value="softwareID" />
+      <short value="softwareID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.absender.installationsID">
+      <path value="ADT-GEKID.absender.installationsID" />
+      <label value="installationsID" />
+      <short value="installationsID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient">
+      <path value="ADT-GEKID.mengePatient" />
+      <label value="mengePatient" />
+      <short value="mengePatient" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient">
+      <path value="ADT-GEKID.mengePatient.patient" />
+      <label value="patient" />
+      <short value="patient" />
+      <definition value="No description" />
+      <comment value="should be between mengePatient and patientStammdaten" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten" />
+      <label value="patientStammdaten" />
+      <short value="patientStammdaten" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.krankenversichertenNr">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.krankenversichertenNr" />
+      <label value="krankenversichertenNr" />
+      <short value="krankenversichertenNr" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.familienangehoerigenNr">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.familienangehoerigenNr" />
+      <label value="familienangehoerigenNr" />
+      <short value="familienangehoerigenNr" />
+      <definition value="not nillable&#xA;max_length = 10" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <maxLength value="10" />
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.krankenkassenNr">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.krankenkassenNr" />
+      <label value="krankenkassenNr" />
+      <short value="krankenkassenNr" />
+      <definition value="not nillable&#xA;maxlength = 9" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <maxLength value="9" />
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNachname">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNachname" />
+      <label value="patientenNachname" />
+      <short value="patientenNachname" />
+      <definition value="no explicit cardinality in original model, cardinality &gt;0 ?" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenTitel">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenTitel" />
+      <label value="patientenTitel" />
+      <short value="patientenTitel" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNamenszusatz">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenNamenszusatz" />
+      <label value="patientenNamenszusatz" />
+      <short value="patientenNamenszusatz" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenVornamen">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenVornamen" />
+      <label value="patientenVornamen" />
+      <short value="patientenVornamen" />
+      <definition value="No description" />
+      <comment value="no explicit cardinality in original model, &gt;0?" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsname">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsname" />
+      <label value="patientenGeburtsname" />
+      <short value="patientenGeburtsname" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName" />
+      <label value="mengeFruehereName" />
+      <short value="mengeFruehereName" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName.patientenFruehereName">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeFruehereName.patientenFruehereName" />
+      <label value="patientenFruehereName" />
+      <short value="patientenFruehereName" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientGeslecht">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientGeslecht" />
+      <label value="patientGeslecht" />
+      <short value="patientGeslecht" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsdatum">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenGeburtsdatum" />
+      <label value="patientenGeburtsdatum" />
+      <short value="patientenGeburtsdatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse" />
+      <label value="mengeAdresse" />
+      <short value="mengeAddresse" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse" />
+      <label value="addresse" />
+      <short value="addresse" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenStrasse">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenStrasse" />
+      <label value="patientenStrasse" />
+      <short value="patientenStrasse" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenHausnummer">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenHausnummer" />
+      <label value="patientenHausnummer" />
+      <short value="patientenHausnummer" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenLand">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenLand" />
+      <label value="patientenLand" />
+      <short value="patientenLand" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenPLZ">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenPLZ" />
+      <label value="patientenPLZ" />
+      <short value="patientenPLZ" />
+      <definition value="PLZ_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenOrt">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.patientenOrt" />
+      <label value="patientenOrt" />
+      <short value="patientenOrt" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigVon">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigVon" />
+      <label value="gueltigVon" />
+      <short value="gueltigVon" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigBis">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.mengeAdresse.addresse.gueltigBis" />
+      <label value="gueltigBis" />
+      <short value="gueltigBis" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenID">
+      <path value="ADT-GEKID.mengePatient.patient.patientStammdaten.patientenID" />
+      <label value="patientenID" />
+      <short value="patientenID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung" />
+      <label value="mengeMeldung" />
+      <short value="mengeMeldung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeDatum" />
+      <label value="meldeDatum" />
+      <short value="meldeDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldebegruendung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldebegruendung" />
+      <label value="meldebegruendung" />
+      <short value="meldebegruendung" />
+      <definition value="Widerspruch/Einwilligung des Patienten &#xA;I = Patientin/Patient wurde informiert und hat nicht widersprochen &#xA;A = Ausnahme: Patientenunterrichtung entfallen wegen möglicher gesundheitlicher Nachteile &#xA;D = Meldung von Ärzten ohne unmittelbaren Patientenkontakt &#xA;W = Patient hat der personenbezogenen Speicherung widersprochen V = Verstorben" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystems/MeldeBegruendung" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeanlass">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.meldeanlass" />
+      <label value="meldeanlass" />
+      <short value="meldeanlass" />
+      <definition value="* diagnose&#xA;* behandlungsbeginn&#xA;* behandlungsende&#xA;* statusaenderung&#xA;* statusmeldung&#xA;* tod&#xA;* histologyZytologie" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung" />
+      <label value="tumorZuordnung" />
+      <short value="tumorZuordnung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDCode">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDCode" />
+      <label value="primaertumorICDCode" />
+      <short value="primaertumorICDCode" />
+      <definition value="ICD_TYP" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.primaertumorICDVersion" />
+      <label value="primaertumorICDVersion" />
+      <short value="primaertumorICDVersion" />
+      <definition value="ICD_Version_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.diagnosedatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.diagnosedatum" />
+      <label value="diagnosedatum" />
+      <short value="diagnosedatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.seitenlokalisation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.seitenlokalisation" />
+      <label value="seitenlokalisation" />
+      <short value="seitenlokalisation" />
+      <definition value="seitenlokaliosationTyp (SNOMED CT body site codes?)&#xA;L = links&#xA;R = rechts&#xA;B = beidseitig (sollte bei bestimmten Tumoren 2 Meldungen ergeben&#xA;M = Mittellinie/Mittig&#xA;U = Unbekannt&#xA;T = Trifft nicht u (Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.tumorID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.tumorZuordnung.tumorID" />
+      <label value="tumorID" />
+      <short value="tumorID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose" />
+      <label value="diagnose" />
+      <short value="diagnose" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDCode">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDCode" />
+      <label value="primaertumorICDCode" />
+      <short value="primaertumorICDCode" />
+      <definition value="ICD_TYP" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorICDVersion" />
+      <label value="primaertumorICDVersion" />
+      <short value="primaertumorICDVersion" />
+      <definition value="ICDVersionTyp" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorDiagnosetext">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorDiagnosetext" />
+      <label value="primaertumorDiagnosetext" />
+      <short value="primaertumorDiagnosetext" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDO">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDO" />
+      <label value="primaertumorTopographieICDO" />
+      <short value="primaertumorTopographieICD0" />
+      <definition value="C\d\d\.\d('d)?" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOVersion" />
+      <label value="primaertumorTopographieICD0Version" />
+      <short value="primaertumorTopographieICDOVersion" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOFreitext">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.primaertumorTopographieICDOFreitext" />
+      <label value="primaertumorTopographieICDOFreitext" />
+      <short value="primaertumorTopographieICDOFreitext" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosedatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosedatum" />
+      <label value="diagnosedatum" />
+      <short value="diagnosedatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosesicherung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.diagnosesicherung" />
+      <label value="diagnosesicherung" />
+      <short value="diagnosesicherung" />
+      <definition value="Höchste erreichte Diagnosesicherheit zum Diagnosedatum. (siehe ICD-O-3 S.60) &#xA;&#xA;1 = Klinisch ohne tumorspezifische Diagnostik (nur körperliche Untersuchung) &#xA;2 = Klinisch: Klinische Diagnose vor dem Sterbedatum durchgeführt; schließt diagnostische Techniken, inklusive Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparatomie, etc.) und Autopsie, ohne mikroskopische Gewebediagnose, ein. &#xA;4 = Spezifische Tumormarker &#xA;5 = Zytologisch: Untersuchung von Zellen aus primären Lokalisationen inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen ein. &#xA;6 = Histologie einer Metastase. &#xA;7 = Histologisch: Histologie des Primärtumors: Histologische Untersuchung von Gewebe des Primärtumors einschließlich aller Schnitttechniken und Knochenmarksbiopsien. Dies schließt Proben des Primärtumors aus Autopsien ein. Histologische Untersuchung des Gewebes aus einer Metastase, einschließlich bei Autopsie. &#xA;9 = Unbekannt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Diagnose_Sicherung" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.seitenlokalisation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.seitenlokalisation" />
+      <label value="seitenlokalisation" />
+      <short value="seitenlokalisation" />
+      <definition value="Seitenlokalisation_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung" />
+      <label value="mengeFruehereTumorerkrankung" />
+      <short value="mengeFruehereTumorerkrankung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung" />
+      <label value="fruehereTumorerkrankung" />
+      <short value="fruehereTumorerkrankung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.freitext" />
+      <label value="freitext" />
+      <definition value="Freitext zu Tumorerkrankungen die in der Anamnese zu einem früheren Zeitpunkt diagnostiziert/behandelt wurden." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDCode" />
+      <label value="ICDCode" />
+      <short value="ICDCode" />
+      <definition value="ICD_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.ICDVersion" />
+      <label value="ICDVersion" />
+      <short value="ICDVersion" />
+      <definition value="ICD_Version_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFruehereTumorerkrankung.fruehereTumorerkrankung.diagnosedatum" />
+      <label value="diagnosedatum" />
+      <short value="diagnosedatum" />
+      <definition value="Diagnosedatum, falls vorhanden Ist Tag und/oder Monat unbekannt, bitte &quot;00&quot; einsetzen. Beispiel, wenn nur Diagnosejahr bekannt &quot;00.00.JJJJ&quot;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie" />
+      <label value="mengeHistologie" />
+      <short value="mengeHistologie" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologie">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologie" />
+      <label value="histologie" />
+      <short value="histologie" />
+      <definition value="Histologie_Typ" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologieID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeHistologie.histologieID" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeFM" />
+      <label value="mengeFM" />
+      <short value="mengeFM" />
+      <definition value="Menge_FM_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/MengeFMTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.cTNM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.cTNM" />
+      <label value="cTNM" />
+      <short value="cTNM" />
+      <definition value="TNM_Typ&#xA;Prätherapeutisches TNM" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.pTNM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.pTNM" />
+      <label value="pTNM" />
+      <short value="pTNM" />
+      <definition value="TNM_Typ&#xA;Postoperatives TNM. Es ist nicht nötig, dass alle Bestandteile der TNM-Formel die Einstufung 'p' aufweisen." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/TNMcpuPraefixTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.datum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.datum" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.name">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.stadium">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.mengeWeitereKlassifikation.stadium" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulMamma">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulMamma" />
+      <label value="modulMamma" />
+      <short value="modulMamma" />
+      <definition value="Modul_Mamma_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulMammaTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulDarm">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulDarm" />
+      <label value="modulDarm" />
+      <short value="modulDarm" />
+      <definition value="Modul_Darm_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulDarmTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulProstata">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulProstata" />
+      <label value="modulProstata" />
+      <short value="modulProstata" />
+      <definition value="Modul_Prostata_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumSozialdienstkontakt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.modulAllgemein.datumStudienrekrutierung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.allgemeinerLeistungszustand">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.allgemeinerLeistungszustand" />
+      <label value="allgemeinerLeistungszustand" />
+      <short value="allgemeinerLeistungszustand" />
+      <definition value="Allgemeiner_leistungszustand_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.tumorID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.diagnose.tumorID" />
+      <label value="tumorID" />
+      <short value="tumorID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP" />
+      <label value="mengeOP" />
+      <short value="mengeOP" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP" />
+      <label value="OP" />
+      <short value="OP" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPIntention">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPIntention" />
+      <label value="OPIntention" />
+      <short value="OPIntention" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPDatum" />
+      <label value="OPDatum" />
+      <short value="OPDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS" />
+      <label value="mengeOPS" />
+      <short value="mengeOPS" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS.OPOPS">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOPS.OPOPS" />
+      <label value="OPOPS" />
+      <short value="OPOPS" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPOPSVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPOPSVersion" />
+      <label value="OPOPSVersion" />
+      <short value="OPOPSVersion" />
+      <definition value="2004 = version 2004 &#xA;2005 = version 2005 &#xA;2006 = version 2006&#xA;2007 = version 2007&#xA;2008 = version 2008&#xA;2009 = version 2009&#xA;2010 = version 2010&#xA;2011 = version 2011&#xA;2012 = version 2012&#xA;2013 = version 2013&#xA;2014 = version 2014&#xA;2015 = version 2015&#xA;2016 = version 2016&#xA;2017 = version 2017&#xA;2018 = version 2018&#xA;2019 = version 2019&#xA;2020 = version 2020" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="positiveInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/positiveInt" />
+      </type>
+      <minValuePositiveInt value="2004" />
+      <maxValuePositiveInt value="2018" />
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.histologie">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.histologie" />
+      <label value="histologie" />
+      <short value="histologie" />
+      <definition value="Histologie_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.TNM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.TNM" />
+      <label value="TNM" />
+      <short value="TNM" />
+      <definition value="TNM_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.lokaleBeurteilungResidualstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.lokaleBeurteilungResidualstatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.gesamtbeurteilungResidualstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.residualstatus.gesamtbeurteilungResidualstatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation" />
+      <label value="mengeKomplikation" />
+      <short value="mengeKomplikation" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation.OPKomplikation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeKomplikation.OPKomplikation" />
+      <label value="OPKomplikation" />
+      <short value="OPKomplikation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/OPKomplikation" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulMamma">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulMamma" />
+      <label value="modulMamma" />
+      <short value="modulMamma" />
+      <definition value="Modul_Mamma_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulMammaTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulDarm">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulDarm" />
+      <label value="modulDarm" />
+      <short value="modulDarm" />
+      <definition value="Modul_Darm_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulDarmTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulProstata">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulProstata" />
+      <label value="modulProstata" />
+      <short value="modulProstata" />
+      <definition value="Modul_Prostata_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumSozialdienstkontakt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumSozialdienstkontakt" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumStudienrekrutierung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.modulAllgemein.datumStudienrekrutierung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur" />
+      <label value="mengeOperateur" />
+      <short value="mengeOperateur" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur.nameOperateur">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.mengeOperateur.nameOperateur" />
+      <label value="nameOperateur" />
+      <short value="nameOperateur" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeOP.OP.OPID" />
+      <label value="OPID" />
+      <short value="OPID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST" />
+      <label value="mengeST" />
+      <short value="mengeST" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST" />
+      <label value="ST" />
+      <short value="ST" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STIntention">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STIntention" />
+      <label value="STIntention" />
+      <short value="STIntention" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STStellungOP">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STStellungOP" />
+      <label value="STStellungOP" />
+      <short value="STStellungOP" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung" />
+      <label value="mengeBestrahlung" />
+      <short value="mengeBestrahlung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung" />
+      <label value="bestrahlung" />
+      <short value="bestrahlung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STZielgebiet" />
+      <label value="STZielgebiet" />
+      <short value="STZielgebiet" />
+      <definition value="1. ZNS&#xA;1.1. Ganzhirn&#xA;1.2. Teilhirn&#xA;1.3. Neuroachse&#xA;2. Kopf-Hals&#xA;2.+ Kopf-Hals mit Lymphknoten&#xA;2.- Kopf-Hals ohne Lymphknoten&#xA;2.1 Orbita&#xA;2.1.+Orbita mit Lymphknoten&#xA;2.1.- Orbita ohne Lymphknoten&#xA;2.2. Nase/ Nasennebenhöhle&#xA;2.2.+ Nase/ Nasennebenhöhle mit Lymphknoten&#xA;2.2.- Nase/ Nasennebenhöhle ohne Lymphknoten&#xA;2.3. Mundhöhle&#xA;2.3.+ Mundhöhle mit Lymphknoten&#xA;2.3.- Mundhöhle ohne Lymphknoten&#xA;2.4. Ohr&#xA;2.4.+ Ohr mit Lymphknoten&#xA;2.4.- Ohr ohne Lymphknoten&#xA;2.5. Speicheldrüse&#xA;2.5.+ Speicheldrüse mit Lymphknoten&#xA;2.5.- Speicheldrüse ohne Lymphknoten&#xA;2.6. Pharynx&#xA;2.6.+ Pharynx mit Lymphknoten&#xA;2.6.-Pharynx ohne Lymphknoten&#xA;2.7.Larynx&#xA;2.7.+Larynx mit Lymphknoten&#xA;2.7.-Larynx ohne Lymphknoten&#xA;2.8.Schilddrüse&#xA;2.8.+Schilddrüse mit Lymphknoten&#xA;2.8.-Schilddrüse ohne Lymphknoten&#xA;2.9.Halslymphknoten (also ohne Primärtumor)&#xA;&#xA;3.Thorax&#xA;3.+Thorax mit Lymphknoten&#xA;3.-Thorax ohne Lymphknoten&#xA;3.1.Mamma als Ganzbrust&#xA;3.1.+Mamma als Ganzbrust mit Lymphknoten&#xA;3.1.-Mamma als Ganzbrust ohne Lymphknoten&#xA;3.2.Mamma als Teilbrust&#xA;3.2.+Mamma als Teilbrust mit Lymphknoten&#xA;3.2.-Mamma als Teilbrust ohne Lymphknoten&#xA;3.3.Brustwand (z.B. Rezidiven n. Ablatio Sarkome)&#xA;3.3.+Brustwand (z.B. Rezidiven n. Ablatio Sarkome) mit Lymphknoten&#xA;3.3.-Brustwand (z.B. Rezidiven n. Ablatio Sarkome) ohne Lymphknoten&#xA;3.4.Lunge&#xA;3.4.+Lunge mit Lymphknoten&#xA;3.4.-Lunge ohne Lymphknoten&#xA;3.5.Ösophagus&#xA;3.5.+Ösophagus mit Lymphknoten&#xA;3.5.-Ösophagus ohne Lymphknoten&#xA;3.6.Thymus&#xA;3.6.+Thymus mit Lymphknoten&#xA;3.6.-Thymus ohne Lymphknoten&#xA;3.7.Mediastinale Lymphknoten (also ohne Primärtumor)&#xA;&#xA;4.Abdomen (ohne Becken)&#xA;4.+Abdomen (ohne Becken) mit Lymphknoten&#xA;4.-Abdomen (ohne Becken) ohne Lymphknoten&#xA;4.1.Magen&#xA;4.1.+Magen mit Lymphknoten&#xA;4.1.-Magen ohne Lymphknoten&#xA;4.2.Pankreas&#xA;4.2.+Pankreas mit Lymphknoten&#xA;4.2.-Pankreas ohne Lymphknoten&#xA;4.3.Leber&#xA;4.3.+Leber mit Lymphknoten&#xA;4.3.-Leber ohne Lymphknoten&#xA;4.4.Milz&#xA;4.4.+Milz mit Lymphknoten&#xA;4.4.-Milz ohne Lymphknoten&#xA;4.5.Niere&#xA;4.5.+Niere mit Lymphknoten&#xA;4.5.-Niere ohne Lymphknoten&#xA;4.6.Nebenniere&#xA;4.6.+Nebenniere mit Lymphknoten&#xA;4.6.-Nebenniere ohne Lymphknoten&#xA;4.7.Retroperitoneale Lymphknoten (also ohne Primärtumor)&#xA;4.8.Retroperitoneum (z.B. Sarkome);&#xA;4.8.+Retroperitoneum (z.B. Sarkome); mit Lymphknoten&#xA;4.8.-Retroperitoneum (z.B. Sarkome); ohne Lymphknoten&#xA;4.9.Bauchwand (z.B. Sarkome)&#xA;4.9.+Bauchwand (z.B. Sarkome) mit Lymphknoten&#xA;4.9.-Bauchwand (z.B. Sarkome) ohne Lymphknoten&#xA;&#xA;5.Becken&#xA;5.+Becken mit Lymphknoten&#xA;5.-Becken ohne Lymphknoten&#xA;5.1.Rektum&#xA;5.1.+Rektum mit Lymphknoten&#xA;5.1.-Rektum ohne Lymphknoten&#xA;5.2.Analbereich&#xA;5.2.+Analbereich mit Lymphknoten&#xA;5.2.-Analbereich ohne Lymphknoten&#xA;5.3.Harnblase&#xA;5.3.+Harnblase mit Lymphknoten&#xA;5.3.-Harnblase ohne Lymphknoten&#xA;5.4.Prostata&#xA;5.4.+Prostata mit Lymphknoten&#xA;5.4.-Prostata ohne Lymphknoten&#xA;5.5.Hoden&#xA;5.5.+Hoden mit Lymphknoten&#xA;5.5.-Hoden ohne Lymphknoten&#xA;5.6.Penis&#xA;5.6.+Penis mit Lymphknoten&#xA;5.6.-Penis ohne Lymphknoten&#xA;5.7.Uterus/Zervix&#xA;5.7.+Uterus/Zervix mit Lymphknoten&#xA;5.7.-Uterus/Zervix ohne Lymphknoten&#xA;5.7.1.Uterus&#xA;5.7.1.+Uterus mit Lymphknoten&#xA;5.7.1.-Uterus ohne Lymphknoten&#xA;5.7.2.Zervix&#xA;5.7.2.+Zervix mit Lymphknoten&#xA;5.7.2.-Zervix ohne Lymphknoten&#xA;5.8.Ovar&#xA;5.8.+Ovar mit Lymphknoten&#xA;5.8.-Ovar ohne Lymphknoten&#xA;5.9.Vulva&#xA;5.9.+Vulva mit Lymphknoten&#xA;5.9.-Vulva ohne Lymphknoten&#xA;5.10.Vagina&#xA;5.10.+Vagina mit Lymphknoten&#xA;5.10.-Vagina ohne Lymphknoten&#xA;5.11.Beckenwand&#xA;5.11.+Beckenwand mit Lymphknoten&#xA;5.11.-Beckenwand ohne Lymphknoten&#xA;5.12.Beckenlymphknoten (ohne Primärtumor)&#xA;&#xA;6.Stütz/Bewegungsapparat&#xA;6.1.Schädelknochen&#xA;6.2.Rippen&#xA;6.3.Sternum&#xA;6.4.HWS&#xA;6.5.BWS&#xA;6.6.LWS&#xA;6.7.knöchernes Becken&#xA;6.8.Hüfte&#xA;6.9.Achsel&#xA;6.10.Oberarm&#xA;6.11.Unterarm&#xA;6.12.Hand&#xA;6.13.Leiste&#xA;6.14.Oberschenkel&#xA;6.15.Unterschenkel&#xA;6.16.Fuß&#xA;&#xA;7.Haut&#xA;7.+Haut mit Lymphknoten&#xA;7.- Haut ohne Lymphknoten&#xA;7.1.Primärer Hauttumor (auch kutane Lymphome)&#xA;7.2.Hautmetastasen&#xA;&#xA;8.Sonstiges&#xA;8.1.Ganzkörperbestrahlung&#xA;8.2.Mantelfeldbestrahlung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/STZielgebiet" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STSeiteZielgebiet" />
+      <label value="STSeiteZielgebiet" />
+      <short value="STSeiteZielgebiet" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STBeginnDatum" />
+      <label value="STBeginnDatum" />
+      <short value="STBeginnDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEndeDatum" />
+      <label value="STEndeDatum" />
+      <short value="STEndeDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationsart">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STApplikationsart" />
+      <label value="STApplikationenstart" />
+      <short value="STApplikationenstart" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Applikationsart" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STGesamtdosis" />
+      <label value="STGesamtdosis" />
+      <short value="STGesamtdosis" />
+      <definition value="Strahlendosis_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeBestrahlung.bestrahlung.STEinzeldosis" />
+      <label value="STEinzeldosis" />
+      <short value="STEinzeldosis" />
+      <definition value="Strahlendosis_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Strahlendosis_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STEndeGrund">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STEndeGrund" />
+      <label value="STEndeGrund" />
+      <short value="STEndeGrund" />
+      <definition value="Gibt den Grund an, warum die Strahlentherapie beendet wurde. A = Abbruch wegen Nebenwirkungen E = Reguläres Ende V = Patient verweigert weitere Therapie P = Abbruch wegen Progress U = unbekannt S = Abbruch aus sonstigen Gründen" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.residualstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.residualstatus" />
+      <label value="residualstatus" />
+      <short value="residualstatus" />
+      <definition value="Residualstatus_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung" />
+      <label value="mengeNemenwirkung" />
+      <short value="mengeNemenwirkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.mengeNemenwirkung.STNebenwirkung" />
+      <label value="STNebenwirkung" />
+      <short value="STNebenwirkung" />
+      <definition value="Nebenwirkung_Typ" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumSozialdienstkontakt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumSozialdienstkontakt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumStudienrekrutierung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.modulAllgemein.datumStudienrekrutierung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeST.ST.STID" />
+      <label value="STID" />
+      <short value="STID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST" />
+      <label value="mengeSYST" />
+      <short value="mengeSYST" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST" />
+      <label value="SYST" />
+      <short value="SYST" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTIntention">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTIntention" />
+      <label value="SYSTIntention" />
+      <short value="SYSTIntention" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Intention" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTStellungOP">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTStellungOP" />
+      <label value="SYSTStellungOP" />
+      <short value="SYSTStellungOP" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Stellung_OP" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart" />
+      <label value="mengeTherapieart" />
+      <short value="mengeTherapieart" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeTherapieart.SYSTTherapieart" />
+      <label value="SYSTTherapieart" />
+      <short value="SYSTTherapieart" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/SYST_Therapieart" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTTherapieartAnmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTTherapieartAnmerkung" />
+      <label value="SYSTTherapieartAnmerkung" />
+      <short value="SYSTTherapieartAnmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTProtokoll">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTProtokoll" />
+      <label value="SYSTProtokoll" />
+      <short value="SYSTProtokoll" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTBeginnDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTBeginnDatum" />
+      <label value="SYSTBeginnDatum" />
+      <short value="SYSTBeginnDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz" />
+      <label value="mengeSubstanz" />
+      <short value="mengeSubstanz" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeSubstanz.SYSTSubstanz" />
+      <label value="SYSTSubstanz" />
+      <short value="SYSTSubstanz" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeGrund">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeGrund" />
+      <label value="SYSTEndeGrund" />
+      <short value="SYSTEndeGrund" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTEndeDatum" />
+      <label value="SYSTEndeDatum" />
+      <short value="SYSTEndeDatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.residualStatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.residualStatus" />
+      <label value="residualStatus" />
+      <short value="residualStatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/R_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung" />
+      <label value="mengeNebenwirkung" />
+      <short value="mengeNebenwirkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.mengeNebenwirkung.SYSTNebenwirkung" />
+      <label value="SYSTNebenwirkung" />
+      <short value="SYSTNebenwirkung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Nebenwirkung_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumSozialdienstkontakt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumSozialdienstkontakt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumStudienrekrutierung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.modulAllgemein.datumStudienrekrutierung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeSYST.SYST.SYSTID" />
+      <label value="SYSTID" />
+      <short value="SYSTID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf" />
+      <label value="mengeVerlauf" />
+      <short value="mengeVerlauf" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf" />
+      <label value="verlauf" />
+      <short value="verlauf" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.histologie">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.histologie" />
+      <label value="histologie" />
+      <short value="histologie" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/Histologie_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.TNM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.TNM" />
+      <label value="TNM" />
+      <short value="TNM" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/TNM_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.datum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.datum" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.name">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.stadium">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeWeitereKlassifikation.stadium" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.untersuchungsdatumVerlauf" />
+      <label value="untersuchungsdatumVerlauf" />
+      <short value="untersuchungsdatumVerlauf" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.gesamtbeurteilungTumorstatus" />
+      <label value="gesamtbeurteilungTumorstatus" />
+      <short value="gesamtbeurteilungTumorstatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Gesamtbeurteilung_Tumorstatus" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufLokalerTumorstatus" />
+      <label value="verlaufLokalerTumorstatus" />
+      <short value="verlaufLokalerTumorstatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Lokaler_Tumorstatus" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusLymphknoten" />
+      <label value="verlaufTumorstatusLymphknoten" />
+      <short value="verlaufTumorstatusLymphknoten" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Lymphknoten" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.verlaufTumorstatusFernmetastasen" />
+      <label value="verlaufTumorstatusFernmetastasen" />
+      <short value="VerlaufTumorstatusFernmetastasen" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Verlauf_Tumorstatus_Fernmetastasen" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeFM">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.mengeFM" />
+      <label value="mengeFM" />
+      <short value="MengeFM" />
+      <definition value="Menge_FM_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/MengeFMTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.allgemeinerLeistungsZustand" />
+      <label value="allgemeinerLeistungsZustand" />
+      <short value="AllgemeinerLeistungsZustand" />
+      <definition value="Allgemeiner_Leistungszustand_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Allgemeiner_Leistungszustand_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulProstata">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulProstata" />
+      <label value="modulProstata" />
+      <short value="modulProstata" />
+      <definition value="Modul_Prostata_Typ" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/ModulProstataTyp" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumSozialdienstkontakt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumSozialdienstkontakt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumStudienrekrutierung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.modulAllgemein.datumStudienrekrutierung" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Datum_NU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod" />
+      <label value="Tod" />
+      <short value="Tod" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.sterbedatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.sterbedatum" />
+      <label value="sterbedatum" />
+      <short value="sterbedatum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.todTumorbedingt">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.todTumorbedingt" />
+      <label value="todTumorbedingt" />
+      <short value="todTumorbedingt" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/JNU_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache" />
+      <label value="mengeTodesursache" />
+      <short value="mengeTodesursache" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICD" />
+      <label value="todesursacheICD" />
+      <short value="TodesursacheICD" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.Tod.mengeTodesursache.todesursacheICDVersion" />
+      <label value="todesursacheICDVersion" />
+      <short value="todesursacheICDVersion" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Version_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlauf.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlaufID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeVerlauf.verlaufID" />
+      <label value="verlaufID" />
+      <short value="verlaufID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz" />
+      <label value="mengeTumorkonferenz" />
+      <short value="mengeTumorkonferenz" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz" />
+      <label value="tumorkonferenz" />
+      <short value="tumorkonferenz" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzDatum" />
+      <label value="tumorkonferenzDatum" />
+      <short value="tumorkonferenzDatum" />
+      <definition value="DatumTyp" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.tumorkonferenzTyp" />
+      <label value="tumorkonferenzTyp" />
+      <short value="tumorkonferenzTyp" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenz.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenzID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeTumorkonferenz.tumorkonferenzID" />
+      <label value="tumorkonferenzID" />
+      <short value="tumorkonferenzID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem" />
+      <label value="mengeZusatzitem" />
+      <short value="mengeZusatzitem" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem" />
+      <label value="zuzatzitem" />
+      <short value="zuzatzitem" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.datum">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.datum" />
+      <label value="datum" />
+      <short value="datum" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.art">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.art" />
+      <label value="art" />
+      <short value="art" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.wert">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.wert" />
+      <label value="wert" />
+      <short value="wert" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.bemerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.zuzatzitem.bemerkung" />
+      <label value="bemerkung" />
+      <short value="bemerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldung.mengeZusatzitem.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.meldungID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.meldungID" />
+      <label value="meldungID" />
+      <short value="meldungID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.mengeMeldung.melderID">
+      <path value="ADT-GEKID.mengePatient.patient.mengeMeldung.melderID" />
+      <label value="melderID" />
+      <short value="melderID" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengePatient.patient.anmerkung">
+      <path value="ADT-GEKID.mengePatient.patient.anmerkung" />
+      <label value="anmerkung" />
+      <short value="anmerkung" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengeMelder">
+      <path value="ADT-GEKID.mengeMelder" />
+      <label value="mengeMelder" />
+      <short value="mengeMelder" />
+      <definition value="No description" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="ADT-GEKID.mengeMelder.melder">
+      <path value="ADT-GEKID.mengeMelder.melder" />
+      <label value="melder" />
+      <short value="melder" />
+      <definition value="Melder_Typ" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://www.uk-koeln.de/fhir/StructureDefinition/MelderTyp" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>

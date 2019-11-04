@@ -1,0 +1,37 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TumorkonferenzTyp</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/Tumorkonferenz_Typ" />
+  <name value="TumorkonferenzTyp" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="praeth" />
+    <display value="prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation)" />
+    <definition value="prätherapeutisch (Festlegung der Gesamttherapiestrategie, z.B. neoadjuvant oder direkte Operation)" />
+  </concept>
+  <concept>
+    <code value="postop" />
+    <display value="postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie)" />
+    <definition value="postoperativ (Planung der postoperativen Therapie, z.B. zur Frage adjuvante Therapie)" />
+  </concept>
+  <concept>
+    <code value="postth" />
+    <display value="posttherapeutisch (manche Tumoren werden nicht operiert)" />
+    <definition value="posttherapeutisch (manche Tumoren werden nicht operiert)" />
+  </concept>
+</CodeSystem>

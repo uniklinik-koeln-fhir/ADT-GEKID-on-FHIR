@@ -1,0 +1,42 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>RASMutation_Typ</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/RASMutation_Typ" />
+  <name value="RASMutation_Typ" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <code value="W" />
+    <display value="Wildtyp" />
+    <definition value="Wildtyp" />
+  </concept>
+  <concept>
+    <code value="M" />
+    <display value="Mutation" />
+    <definition value="Mutation" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="Nicht untersucht" />
+    <definition value="Nicht untersucht" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,31 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNMr</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMrSymbol" />
+  <name value="TNMr" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <display value="&quot;native&quot; Klassifikation vor Eintreten eines Rezidivs" />
+    <definition value="&quot;native&quot; Klassifikation vor Eintreten eines Rezidivs" />
+  </concept>
+  <concept>
+    <code value="r" />
+    <display value="Klassifikation erfolgte zur Beurteilung eines Rezidivs" />
+    <definition value="Klassifikation erfolgte zur Beurteilung eines Rezidivs" />
+  </concept>
+</CodeSystem>

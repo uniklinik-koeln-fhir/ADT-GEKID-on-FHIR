@@ -1,0 +1,41 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>gradRektumAnastomoseninsuffizienz</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/GradRektumAnzeichnungStomaposition" />
+  <name value="gradRektumAnastomoseninsuffizienz" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <code value="B" />
+    <display value="Anastomoseninsuffizienz Grad B" />
+    <definition value="Anastomoseninsuffizienz Grad B" />
+  </concept>
+  <concept>
+    <code value="C" />
+    <display value="Anastomoseninsuffizienz Grad C" />
+    <definition value="Anastomoseninsuffizienz Grad C" />
+  </concept>
+  <concept>
+    <code value="K" />
+    <display value="Keine Insuffizienz oder höchstens Grad A" />
+    <definition value="Keine Insuffizienz oder höchstens Grad A" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="Unbekannt" />
+    <definition value="Unbekannt" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,58 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMV" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="91801b45-9c6a-4855-b04c-98e6aee57432" />
+    <total value="10" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="m" />
+      <display value="multiple Tumoren ohne Angabe der Zahl" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="2" />
+      <display value="(2)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="3" />
+      <display value="(3)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="4" />
+      <display value="(4)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="5" />
+      <display value="(5)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="6" />
+      <display value="(6)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="7" />
+      <display value="(7)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="8" />
+      <display value="(8)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMmSymbol" />
+      <code value="9" />
+      <display value="(9)" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="IntraopPraeparatkontrolle_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="ece66bca-c71f-47ff-a335-8c19ca4d3d07" />
+    <timestamp value="2019-07-22T09:35:39+00:00" />
+    <total value="4" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+      <code value="M" />
+      <display value="Mammografie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+      <code value="S" />
+      <display value="Sonografie" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+      <code value="N" />
+      <display value="Nein" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/IntraopPraeparatkontrolle_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

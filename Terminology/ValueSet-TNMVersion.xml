@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMVersion" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="cbea06b2-1843-4254-aef9-07f5886fc2e4" />
+    <timestamp value="2019-07-22T10:44:19+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion" />
+      <code value="6" />
+      <display value="6. auflage" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion" />
+      <code value="7" />
+      <display value="7. auflage" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMVersion" />
+      <code value="8" />
+      <display value="8. auflage" />
+    </contains>
+  </expansion>
+</ValueSet>

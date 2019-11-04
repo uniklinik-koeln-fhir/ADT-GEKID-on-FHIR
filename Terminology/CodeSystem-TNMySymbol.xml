@@ -1,0 +1,31 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>TNMySymbol</h2>
+      <tt>https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol</tt>
+      <p></p>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/CodeSystem/TNMySymbol" />
+  <name value="TNMySymbol" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <hierarchyMeaning value="classified-with" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <display value="native Klassifikation" />
+    <definition value="native Klassifikation" />
+  </concept>
+  <concept>
+    <code value="y" />
+    <display value="Klassifikation erfolgte während oder nach initialer multimodaler Therapie" />
+    <definition value="Klassifikation erfolgte während oder nach initialer multimodaler Therapie" />
+  </concept>
+</CodeSystem>

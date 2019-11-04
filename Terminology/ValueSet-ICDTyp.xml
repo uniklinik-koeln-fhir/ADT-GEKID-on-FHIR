@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="ICD_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="32f9746e-b448-4a84-94ee-262a3ac72418" />
+    <timestamp value="2019-07-22T09:35:01+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      <code value="31" />
+      <display value="ICD-O3; 1. Auflage 2003" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      <code value="32" />
+      <display value="ICD-O3; 2. Auflage 2013" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ICD_Typ" />
+      <code value="bb" />
+      <display value="Neue Codes aus den WHO-Klassifikationen (Bluebooks)" />
+    </contains>
+  </expansion>
+</ValueSet>

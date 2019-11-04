@@ -1,0 +1,79 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Meldeanlass</h2>
+      <tt>https://www.uk-koeln.de/fhir/ConceptMap/Meldeanlass</tt>
+    </div>
+  </text>
+  <url value="https://www.uk-koeln.de/fhir/ConceptMap/Meldeanlass" />
+  <name value="Meldeanlass" />
+  <title value="Meldeanlass" />
+  <status value="draft" />
+  <contact>
+    <telecom>
+      <system value="email" />
+    </telecom>
+  </contact>
+  <sourceUri value="https://www.uk-koeln.de/fhir/ValueSet/Meldeanlass" />
+  <group>
+    <source value="https://www.uk-koeln.de/fhir/CodeSystem/Meldeanlass" />
+    <target value="http://snomed.info/sct" />
+    <element>
+      <code value="diagnose" />
+      <target>
+        <code value="439401001" />
+        <display value="Diagnosis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="behandlungsbeginn" />
+      <target>
+        <code value="413946009" />
+        <display value="Date treatment started" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="behandlungsende" />
+      <target>
+        <code value="413947000" />
+        <display value="Date treatment stopped" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="statusaenderung" />
+      <target>
+        <code value="263703002" />
+        <display value="Changed status" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="statusmeldung" />
+      <target>
+        <code value="308552006" />
+        <display value="Report status" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="tot" />
+      <target>
+        <code value="419099009" />
+        <display value="Dead" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="histologie_zytologie" />
+      <target>
+        <code value="365716004" />
+        <display value="Cytology - general - finding" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

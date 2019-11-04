@@ -1,0 +1,74 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="Morphologie_Grading_Typ" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="a18bacd1-30d4-419f-80db-7badaac2603e" />
+    <timestamp value="2019-07-22T09:37:12+00:00" />
+    <total value="12" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="0" />
+      <display value="Malignes Melanom der Konjunktiva" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="1" />
+      <display value="Gut differenziert" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="2" />
+      <display value="Mäßig differenziert" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="3" />
+      <display value="Schlecht differenziert" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="4" />
+      <display value="Undifferenziert" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="X" />
+      <display value="Nicht bestimmbar" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="L" />
+      <display value="Low grade (G1 oder G2)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="M" />
+      <display value="Intermediate (G2 oder G3)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="H" />
+      <display value="High grade (G3 oder G4)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="B" />
+      <display value="Borderline" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Morphologie_Grading_Typ" />
+      <code value="T" />
+      <display value="Trifft nicht zu" />
+    </contains>
+  </expansion>
+</ValueSet>

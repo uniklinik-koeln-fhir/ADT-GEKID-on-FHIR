@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="artEingriff" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="df699ed9-8cdb-4294-8258-87fbe348f29a" />
+    <timestamp value="2019-07-22T09:29:55+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff" />
+      <code value="E" />
+      <display value="Elektiveingriff" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff" />
+      <code value="N" />
+      <display value="Notfalleingriff" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/ArtEingriff" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

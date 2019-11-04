@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="hormonrezeptorTyp" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="c55d107e-324f-4818-b198-601a340eb234" />
+    <timestamp value="2019-07-22T09:34:45+00:00" />
+    <total value="3" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+      <code value="P" />
+      <display value="Positiv (IRS &amp;gt;= 1)" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+      <code value="N" />
+      <display value="Negativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/Hormonrezeptor_Typ" />
+      <code value="U" />
+      <display value="Unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

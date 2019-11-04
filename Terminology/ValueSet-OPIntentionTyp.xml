@@ -1,0 +1,44 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="OPIntentionTyp" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="d10e22d0-b6e2-4b15-a6a8-c00f9ebc5cef" />
+    <timestamp value="2019-07-22T09:43:45+00:00" />
+    <total value="6" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="K" />
+      <display value="Kurativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="P" />
+      <display value="Palliativ" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="D" />
+      <display value="Diagnostisch" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="R" />
+      <display value="Revision/Komplikation" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="S" />
+      <display value="Sonstiges" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/OPIntention_Typ" />
+      <code value="X" />
+      <display value="Fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

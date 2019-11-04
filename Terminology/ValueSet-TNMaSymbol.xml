@@ -1,0 +1,19 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="TNMaSymbol" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="1ac507a8-a3ed-4a7a-b708-4990e63b403c" />
+    <timestamp value="2019-07-22T10:42:14+00:00" />
+    <total value="1" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/TNMaSymbol" />
+      <code value="a" />
+      <display value="Klassifikation erfolgte durch Autopsie" />
+    </contains>
+  </expansion>
+</ValueSet>

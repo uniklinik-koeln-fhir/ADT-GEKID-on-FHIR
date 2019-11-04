@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="meldeanlass" />
+  <status value="active" />
+  <compose>
+    <include>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="2ff73580-9a19-4525-9972-dce05d9ce7be" />
+    <timestamp value="2019-07-22T09:36:42+00:00" />
+    <total value="7" />
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="diagnose" />
+      <display value="diagnose" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="behandlungsbeginn" />
+      <display value="behandlungsbeginn" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="behandlungsende" />
+      <display value="behandlungsende" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="statusaenderung" />
+      <display value="statusaenderung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="statusmeldung" />
+      <display value="statusmeldung" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="tot" />
+      <display value="tot" />
+    </contains>
+    <contains>
+      <system value="https://www.uk-koeln.de/fhir/CodeSystem/meldeanlass" />
+      <code value="histologie_zytologie" />
+      <display value="histologie_zytologie" />
+    </contains>
+  </expansion>
+</ValueSet>
